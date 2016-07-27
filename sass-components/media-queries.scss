@@ -1,0 +1,213 @@
+$xs: 480px;
+$md: 1024px;
+$lg: 1230px;
+
+@media only screen and (max-width: #{$xs - 1 }) {
+	#bg-wrapper {
+		background-image: url('../img/main_xs.jpg');
+	}
+}
+@media only screen and (min-width: $xs) {
+	#bg-wrapper {
+		background-image: url('../img/main_md.jpg');
+	}
+}
+@media   only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+		 only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+		 only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+		 only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+		 only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+		 only screen and (                min-resolution: 2dppx)  and (min-width: 320px) {
+	#bg-wrapper {
+		background-image: url('../img/main_md.jpg');
+	}
+}
+@media only screen and (min-width: $lg) {
+	#bg-wrapper {
+		background-image: url('../img/main_lg.jpg');
+	}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 800px), 
+	   only screen and (min-resolution: 1.5dppx) and (min-width: 800px), 
+	   (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 800px), 
+	   (min-resolution: 144dpi) and (min-width: 800px){
+	#bg-wrapper {
+		background-image: url('../img/main_high.jpg');
+	}
+}
+@media   only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1800px),
+		 only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1800px),
+		 only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1800px),
+		 only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1800px),
+		 only screen and (                min-resolution: 192dpi) and (min-width: 1800px),
+		 only screen and (                min-resolution: 2dppx)  and (min-width: 1800px) {
+	#bg-wrapper {
+		background-image: url('../img/main_mac.jpg');
+	}
+}
+@media only screen and (max-width: #{$xs - 1}) {
+	.portfolio-item {
+		width: 100%;
+	}
+	footer ul li:not(:first-child) {
+	    margin-left: 10px;
+	}
+	#about {
+		.bio {
+			p {
+				font-size: .875em;
+			}
+		}
+	}
+	.section {
+		h2 {
+			margin-bottom: 50px;
+			font-size: 1.8em;
+		}
+	}
+	#contacts {
+		.aside-info {
+			padding-top: 30px;
+			font-size: 1em;
+			> div {
+				margin-bottom: 7px;
+			}
+			blockquote {
+				padding-top: 30px;
+				padding-right: 17px;
+				span:before {
+					background-size: 25px;
+					width: 25px;
+					height: 25px;
+				}
+			}
+		}
+	}
+	footer {
+		p {font-size: .8em;}
+		ul {
+			top: -85%;
+		}
+	}
+}
+@media only screen and (max-width: #{$md - 1}) {
+	.section {
+		h2 {
+			margin-bottom: 60px;
+		}
+	}
+	#contacts {
+		#send-form {
+			p {
+				font-size: .875em;
+			}
+			input[id *= '-field'], textarea {
+				width: 100%;
+			}
+		}
+		input[type='submit'] {
+			display: block;
+			margin: 0 auto;
+			width: 150px;
+		}
+	}
+	#about {
+		.bio {
+			p {
+				padding: 0;
+			}
+		}
+		h3 {
+			font-size: 1.65em;
+		}
+		.skills {
+			h3 {
+				padding-left: 0;
+			}
+		}
+		.skills-list {
+			padding: 0;
+		}
+		.separator {
+			position: relative;
+			left: 15px;
+			height: 1px;
+			width: calc(100% - 30px);
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	}
+	#contacts {
+		.aside-info {
+			text-align: center;
+			br {
+				display: none;
+			}
+		}
+		
+	}
+}
+@media only screen and (max-width: #{$lg - 1}){
+	nav {
+		#navigation {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 85px;
+			max-height: 0;
+			padding-top: 0;
+			-webkit-transition: max-height .5s ease, padding-top .5s ease;
+			transition: max-height .5s ease, padding-top .5s ease;
+			overflow: scroll;
+			background-color: rgba(255,255,255, .97);
+			text-align: center;
+			li {
+				display: block;
+				float: none;
+				margin-left: 0!important;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+			}
+		}
+	}
+	header {
+		background-color: rgba(255,255,255,.97);
+		&.white-bg {
+			background-color: rgba(255,255,255,.97);
+		}
+	}
+	.menu-open {
+		#navigation {
+			padding-top: 15px;
+			max-height: 100%;
+			box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 3px 0px;
+		}
+	}
+	.animated #mouse-icon {
+		display: none;
+	}
+	.animated #swipe-up {
+		display: block;
+	}
+	.animated {
+		&#about {
+			.bio, .skills {
+				-webkit-animation: fadeIn 1.5s ease;
+				animation: fadeIn 1.5s ease;
+			}
+		 	
+		 }
+		&#contacts {
+			.form, .aside-info {
+				-webkit-animation: fadeIn 1.5s ease;
+				animation: fadeIn 1.5s ease;
+			}
+		 	
+		 }
+	}
+}

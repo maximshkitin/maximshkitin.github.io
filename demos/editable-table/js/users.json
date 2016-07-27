@@ -1,0 +1,31 @@
+{
+	"users": [{
+			"id": 1,
+			"name": "John",
+			"surname": "Doe",
+			"age": 35,
+			"gender": "male"
+		},
+		{
+			"id": 2,
+			"name": "Kate",
+			"surname": "Adamson",
+			"age": 21,
+			"gender": "female"
+		},
+		{
+			"id": 3,
+			"name": "Anthony",
+			"surname": "Smith",
+			"age": 26,
+			"gender": "male"
+		},
+		{
+			"id": 4,
+			"name": "Ann",
+			"surname": "Johnson",
+			"age": 49,
+			"gender": "female"
+		}
+	]
+}

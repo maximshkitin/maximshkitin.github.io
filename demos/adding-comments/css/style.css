@@ -1,0 +1,100 @@
+#header {
+  width: 100%;
+  display: table;
+    background: -webkit-linear-gradient(#0143A3,#0273D4);
+    background: linear-gradient(#0143A3,#0273D4);
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+#header .container {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+#header .container img {
+  margin-top: 10px;
+  width: 105px;
+  height: 100px;
+}
+.table-wrapper > div {
+  display: table-cell;
+  float: none;
+}
+.order {
+  padding-top: 30px;
+}
+.order button {
+  margin-bottom: 50px;
+  font-size: 2.125em;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+  border: 1px solid #2a2a2a;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 30px;
+  font-weight: 100;
+}
+.order .table-wrapper > div {
+  float: left;
+}
+.form-wrapper #name {
+  margin-top: 30px;
+}
+.form-wrapper #mail {
+  margin-top: 10px;
+}
+.form-wrapper input,
+.form-wrapper textarea {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+#name, #mail {
+  width: 50%;
+}
+.form-wrapper textarea {
+  width: 70%;
+}
+.form-wrapper textarea {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+.form-wrapper #push {
+  background-color: transparent;
+  margin-bottom: 50px;
+  color: red;
+  border: 1px solid red;
+  text-transform: uppercase;
+}
+.form-wrapper #push:hover {
+  font-weight: 800;
+}
+.form-wrapper .greetings {
+  text-align: left;
+  text-transform: none;
+}
+.comment {
+  margin-bottom: 40px;
+}
+.i-date {
+  font-size: .8em;
+}
+.ng-dirty.ng-invalid {
+  border-color: #E74C3C;
+}
+.ng-submitted .ng-dirty.ng-invalid.ng-empty {
+  border-color: #2a2a2a;
+}
+.ng-dirty.ng-valid {
+  border-color: #85DB18;
+}
+.comment-wrapper h1 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+

@@ -1,0 +1,141 @@
+$neue: 'Helvetica Neue';
+$black: rgb(30,30,32);
+@font-face {
+	font-family: $neue;
+	src: url('../fonts/helv/neue_ul.eot');
+	src: url('../fonts/helv/neue_ul.woff') format('woff'),
+		 url('../fonts/helv/neue_ul.ttf') format('truetype');
+	font-weight: 100;
+}
+@font-face {
+	font-family: $neue;
+	src: url('../fonts/helv/neue_thin.eot');
+	src: url('../fonts/helv/neue_thin.woff') format('woff'),
+		 url('../fonts/helv/neue_thin.ttf') format('truetype');
+	font-weight: 200;
+}
+@font-face {
+	font-family: $neue;
+	src: url('../fonts/helv/neue_light.eot');
+	src: url('../fonts/helv/neue_light.woff') format('woff'),
+		 url('../fonts/helv/neue_light.ttf') format('truetype');
+	font-weight: 300;
+}
+@font-face {
+	font-family: icons;
+	src: url('../fonts/icons/icons.woff') format('woff'),
+		 url('../fonts/icons/icons.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.loader {
+	z-index: 100000;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+// ---------- MENU ------------
+
+.hamburger-menu {
+  display: none;
+  width: 30px;
+  height: 21px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1229px) {
+  .hamburger-menu {
+    display: inline-block;
+  }
+}
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: $black;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+}
+.hamburger-menu span:nth-child(1) {
+  top: 0px;
+}
+.hamburger-menu span:nth-child(2) {
+  top: 8px;
+}
+.hamburger-menu span:nth-child(3) {
+  top: 16px;
+}
+
+// ---------- SVG -------------
+#mouse-icon {
+	display: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	bottom: 20px;
+	svg {
+	    fill: white;
+	}
+	circle {
+		fill: white;
+	}
+}
+#swipe-up {
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -35px;
+	svg {
+		position: relative;
+		-webkit-animation: upDown 2s infinite;
+	    animation: upDown 2s infinite;
+	}
+}
+.animated {
+	#mouse-icon {
+		display: block;
+		-webkit-animation: fadeInUp 2s ease;
+	    animation: fadeInUp 2s ease;
+	}
+	#swipe-up {
+		display: none;
+		-webkit-animation: fadeInUp 2s ease;
+	    animation: fadeInUp 2s ease;
+	}
+	#circle {
+		-webkit-animation: fadeCircle 2s infinite;
+	    animation: fadeCircle 2s infinite;
+	}
+}
+.loader {
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -49px;
+		margin-top: -49px;
+	}
+}
+#ie-circle {
+	display: none;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	margin-left: -3px;
+	background-color: #fff;
+}

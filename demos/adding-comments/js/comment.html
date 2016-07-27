@@ -1,0 +1,19 @@
+<section class="stn comment-wrapper" ng-controller="Ctrl as Control">
+		<h1 class="stn-heading">Comments</h1>
+	<div ng-repeat="reviewItem in reviews.contacts" class="comment">
+		<b>{{reviewItem.name}} ({{reviewItem.email}}) thinks, that it is <br></b>
+		<i>"{{reviewItem.comment}}"</i><br>
+		<i class="i-date">{{reviewItem.createdOn | date}}</i>
+	</div> 
+		
+	</div>
+	<div class="form-wrapper">
+		<form name="commentForm" ng-class="{'submitted': submitted}" ng-submit="commentForm.$valid && Control.addReview()" novalidate>
+			<p class="greetings">Hi, {{Control.review.name || "stranger"}}!</p>
+			<input class="form-control" autocomplete="off" ng-model="Control.review.name" type="text" id="name" placeholder="Name" required>
+			<input class="form-control" autocomplete="off" ng-model="Control.review.email" type="email" id="mail" placeholder="Email:" required>
+			<textarea class="form-control" autocomplete="off" ng-model="Control.review.comment" name="comment"  placeholder="Leave a comment" required></textarea>
+			<input type="submit" id="push" value="Send">
+		</form>
+	</div>
+</section>

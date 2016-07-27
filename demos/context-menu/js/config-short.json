@@ -1,0 +1,442 @@
+{
+	"location": "section-1",
+	"listItems": 
+	[
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-First",
+			"enabled": false,
+			"submenu": []
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-2",
+			"enabled": true,
+			"submenu": []
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-3",
+			"enabled": true,
+			"submenu": [
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-First",
+					"enabled": false,
+					"submenu": []
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-2",
+					"enabled": true,
+					"submenu": [
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-First",
+							"enabled": false,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-2",
+							"enabled": true,
+							"submenu": [
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-First",
+									"enabled": false,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-2",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-3",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-4",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-5",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-Last",
+									"enabled": false,
+									"submenu": []
+								}
+							]
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-3",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-4",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-5",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-Last",
+							"enabled": false,
+							"submenu": []
+						}
+					]
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-3",
+					"enabled": true,
+					"submenu": []
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-4",
+					"enabled": true,
+					"submenu": []
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-5",
+					"enabled": true,
+					"submenu": [
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-First",
+							"enabled": false,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-2",
+							"enabled": true,
+							"submenu": [
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-First",
+									"enabled": false,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-2",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-3",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-4",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-5",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-Last",
+									"enabled": false,
+									"submenu": []
+								}
+							]
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-3",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-4",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-5",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-Last",
+							"enabled": false,
+							"submenu": []
+						}
+					]
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-Last",
+					"enabled": false,
+					"submenu": []
+				}
+			]
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-4",
+			"enabled": true,
+			"submenu": []
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-5",
+			"enabled": true,
+			"submenu": []
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-6",
+			"enabled": false,
+			"submenu": []
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-7",
+			"enabled": true,
+			"submenu": []
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-8",
+			"enabled": true,
+			"submenu": [
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-First",
+					"enabled": false,
+					"submenu": []
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-2",
+					"enabled": true,
+					"submenu": [
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-First",
+							"enabled": false,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-2",
+							"enabled": true,
+							"submenu": [
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-First",
+									"enabled": false,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-2",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-3",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-4",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-5",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-Last",
+									"enabled": false,
+									"submenu": []
+								}
+							]
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-3",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-4",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-5",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-Last",
+							"enabled": false,
+							"submenu": []
+						}
+					]
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-3",
+					"enabled": true,
+					"submenu": []
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-4",
+					"enabled": true,
+					"submenu": []
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-5",
+					"enabled": true,
+					"submenu": [
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-First",
+							"enabled": false,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-2",
+							"enabled": true,
+							"submenu": [
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-First",
+									"enabled": false,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-2",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-3",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-4",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-5",
+									"enabled": true,
+									"submenu": []
+								},
+								{
+									"onclick": "someActionsHappen()",
+									"title": "Sub Item-Last",
+									"enabled": false,
+									"submenu": []
+								}
+							]
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-3",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-4",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-5",
+							"enabled": true,
+							"submenu": []
+						},
+						{
+							"onclick": "someActionsHappen()",
+							"title": "Sub Item-Last",
+							"enabled": false,
+							"submenu": []
+						}
+					]
+				},
+				{
+					"onclick": "someActionsHappen()",
+					"title": "Sub Item-Last",
+					"enabled": false,
+					"submenu": []
+				}
+			]
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-9",
+			"enabled": true,
+			"submenu": []
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-10",
+			"enabled": true,
+			"submenu": []
+		},
+		{
+			"onclick": "someActionsHappen()",
+			"title": "Item-Last",
+			"enabled": false,
+			"submenu": []
+		}
+	]
+}

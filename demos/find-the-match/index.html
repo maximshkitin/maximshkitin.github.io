@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-cloak ng-class="{overflow: gameOver}" ng-controller="mainCtrl">
+	<div ng-class="{ appeared: gameOver }" class="pop-up">
+		<div class="info-box">
+			<div><span class="heading">Congratulations!</span>
+				<br>
+				Your score: {{rounds}} attempts.
+				<br>
+				<div class="buttons">
+					<button ng-click="newGame('pop-up')" class="btn btn-success">Try better</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<div class="heading">Find the match</div>
+			<div ng-cloak>Round: {{rounds}}</div>
+			<button ng-click="newGame('restart')" class="btn btn-primary" id="restart">Restart</button>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-3 tile" ng-repeat="tile in tiles" ng-cloak>
+					<div class="tile-item" ng-click="flip($index)" ng-class="{flipped: tile.selected || tile.fixed, fixed: tile.fixed}">
+						<div class="tile-front"></div>
+						<div class="tile-back {{'img-' + tile.id}}"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/angular.min.js"></script>
+	<script src="js/es5/app.js"></script>
+</body>
+</html>

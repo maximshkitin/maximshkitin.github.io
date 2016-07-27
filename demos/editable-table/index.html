@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/angular.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        Editable Table<br>
+        <img src="ang.png" alt="">
+    </div>
+  </div>
+  <div class="container" ng-controller="mainCtrl">
+    <button ng-click="addUser()" class="btn btn-primary add-user">Add teammate</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th ng-click="sort('name')">
+            Name
+            <i class="glyphicon glyphicon-sort"></i>
+          </th>
+          <th ng-click="sort('surname')">
+            Surname
+            <i class="glyphicon glyphicon-sort"></i>
+          </th>
+          <th ng-click="sort('age')">
+            Age
+            <i class="glyphicon glyphicon-sort"></i>
+          </th>
+          <th ng-click="sort('gender')">
+            Gender
+            <i class="glyphicon glyphicon-sort"></i>
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="user in model.users" ng-include="getTemplate(user)" ng-cloak></tr>
+      </tbody>
+    </table>
+    <pre ng-cloak>{{model | json}}</pre>
+    <script type="text/ng-template" id="display">
+          <td>{{user.name || "unknown"}}</td>
+          <td>{{user.surname || "unknown"}}</td>
+          <td>{{user.age || "unknown"}}</td>
+          <td>{{user.gender || "unselect"}}</td>
+          <td>
+              <button class="btn btn-default" ng-click="editUser(user)">Edit</button>
+              <button class="btn btn-danger" ng-click="deleteUser($index)">Delete</button>
+          </td>
+      </script>
+      <script type="text/ng-template" id="edit">
+          <td><input class="form-control" type="text" ng-model="selected.name"></td>
+          <td><input class="form-control" type="text" ng-model="selected.surname"></td>
+          <td><input class="form-control" type="number" min="1" max="100" ng-model="selected.age" required></td>
+          <td>
+            <select class="form-control" name="gender" id="gender" ng-model="selected.gender">
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+          </td>
+          <td>
+              <button class="btn btn-success" ng-click="saveUser($index)">Save</button>
+              <button class="btn btn-danger" ng-click="reset()">Cancel</button>
+          </td>
+      </script>
+    
+  </div>
+</body>
+</html>

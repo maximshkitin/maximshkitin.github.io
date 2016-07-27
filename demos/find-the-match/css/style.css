@@ -1,0 +1,154 @@
+body {
+	background: -moz-linear-gradient(45deg, rgba(255,64,188,1) 0%, rgba(0,110,110,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,64,188,1)), color-stop(100%, rgba(0,110,110,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(45deg, rgba(255,64,188,1) 0%, rgba(0,110,110,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(45deg, rgba(255,64,188,1) 0%, rgba(0,110,110,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(45deg, rgba(255,64,188,1) 0%, rgba(0,110,110,1) 100%); /* ie10+ */
+	background: linear-gradient(45deg, rgba(255,64,188,1) 0%, rgba(0,110,110,1) 100%); /* w3c */
+}
+body.overflow {
+	overflow: hidden;
+}
+header {
+	background-color: rgba(0,0,0,.3);
+	padding-bottom: 50px;
+}
+header > div {
+	padding-top: 50px;
+	text-align: center;
+}
+.heading {
+	font-size: 30px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	color: white;
+}
+header .heading + div {color: white; margin-bottom: 20px;}
+main {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 992px) {
+	.container {width: 750px !important;}
+}
+
+.col-md-3 {
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+}
+.row {
+	margin-left: -8px !important;
+	margin-right: -8px !important;
+}
+.tile {
+	margin-bottom: 16px;
+}
+.tile-item {
+	position: relative;
+	cursor: pointer;
+}
+.tile-front, .tile-back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 10px;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	transform-style:preserve-3d;
+	-webkit-transition:transform ease 500ms;
+	-moz-transition:transform ease 500ms;
+	-o-transition:transform ease 500ms;
+    transition:transform ease 500ms;
+}
+.tile-front {
+	z-index: 2;
+	background-color: rgba(0,0,0,.3);
+	transform: rotateY(0deg);
+}
+.fixed .tile-back {
+	border: 2px solid yellow;
+	border-radius: 10px;
+
+}
+.tile-back {
+	transform: rotateY(-180deg);
+}
+.tile-item:after, .tile-back:after, .tile-front:after {
+	content: '';
+	padding-bottom: 100%;
+	display: block;
+}
+.flipped .tile-front {
+	transform: rotateY(180deg);
+}
+.flipped .tile-back {
+	transform: rotateY(0deg);
+}
+.tile-back {
+	background-size: cover;
+}
+.tile-back.img-1 {
+	background-image: url('../img/nb.png');
+}
+.tile-back.img-2 {
+	background-image: url('../img/jordan.png');
+}
+.tile-back.img-3 {
+	background-image: url('../img/adidas.jpg');
+}
+.tile-back.img-4 {
+	background-image: url('../img/ua.jpg');
+}
+.tile-back.img-5 {
+	background-image: url('../img/puma.jpg');
+}
+.tile-back.img-6 {
+	background-image: url('../img/si.jpg');
+}
+.tile-back.img-7 {
+	background-image: url('../img/reebok.jpg');
+}
+.tile-back.img-8 {
+	background-image: url('../img/nike.jpg');
+}
+.pop-up {
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	background-color: rgba(0,0,0,.7);
+	-webkit-transition:opacity ease 500ms, visibility ease 500ms;
+	-moz-transition:opacity ease 500ms, visibility ease 500ms;
+	-o-transition:opacity ease 500ms, visibility ease 500ms;
+    transition:opacity ease 500ms, visibility ease 500ms;
+}
+.pop-up.appeared {
+	opacity: 1;
+	visibility: visible;
+}
+.info-box {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	right: 10%;
+	margin-top: -100px;
+	height: 200px;
+	padding: 20px;
+	vertical-align: middle;
+	border-radius: 10px;
+	background-color: white;
+}
+.info-box > div {
+	text-align: center;
+	font-size: 20px;
+}
+.info-box > div .heading {
+	color: black;
+}
+.info-box .buttons {
+	margin-top: 50px;
+}

@@ -1,0 +1,36 @@
+#header {
+	width: 100%;
+	display: table;
+    background: -webkit-linear-gradient(#0143A3,#0273D4);
+    background: linear-gradient(#0143A3,#0273D4);
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+#header .container {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+}
+#header .container img {
+	margin-top: 10px;
+	width: 105px;
+	height: 100px;
+}
+.container {
+	margin-top: 50px;
+}
+tbody tr td:last-child {
+	text-align: right;
+}
+th {
+	cursor: pointer;
+}
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {vertical-align: middle;}
