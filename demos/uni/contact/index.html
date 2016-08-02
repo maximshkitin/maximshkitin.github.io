@@ -100,16 +100,21 @@
 					<div class="col-md-5">
 						<div class="config-block">
 							<!-- question-1 -->
-							<div class="skew-block" data-animate="fadeIn">
+							<div class="skew-block question active-form" data-animate="fadeIn">
 								<section class="fixed-deg-y">
 									<span>
 										<i class="fa fa-envelope-o"></i>
 									</span>
 									<h2 data-animate="fadeInUp">What should we call you?</h2>
-									<form action="http://example.com" data-animate="fadeInUp">
+									<form data-animate="fadeInUp">
 										<div class="input-field">
-											<input type="text" placeholder="Mr./Mrs." required>
-											<i class="fa fa-angle-down"></i>
+											<select name="" id="">
+												<option value="mr">Mr.</option>
+												<option value="mrs">Mrs.</option>
+												<option value="doc">Doc</option>
+												<option value="lady">Lady</option>
+												<option value="sir">Sir</option>
+											</select>
 										</div>
 										<div class="input-field">
 											<input type="text" placeholder="Your full name..." required>
@@ -120,13 +125,13 @@
 								</section>
 							</div>
 							<!-- question-2 -->
-							<div class="skew-block hidden" data-animate="fadeIn">
+							<div class="skew-block question" data-animate="fadeIn">
 								<section class="fixed-deg-y">
 									<span>
 										<i class="fa fa-envelope-o"></i>
 									</span>
 									<h2 data-animate="fadeInUp">How to contact you back?</h2>
-									<form action="http://example.com" data-animate="fadeInUp">
+									<form data-animate="fadeInUp">
 										<div class="input-field">
 											<input type="email" placeholder="Your email address..." required>
 											<i class="fa fa-envelope"></i>
@@ -146,14 +151,14 @@
 								</section>
 							</div>
 							<!-- question-3 -->
-							<div class="skew-block hidden" data-animate="fadeIn">
+							<div class="skew-block question" data-animate="fadeIn">
 								<section class="fixed-deg-y">
 									<span>
 										<i class="fa fa-envelope-o"></i>
 									</span>
 									<h2 data-animate="fadeInUp">How can we help you?</h2>
-									<form action="http://example.com" data-animate="fadeInUp">
-										<textarea placeholder="Type your message here..." rows="5"></textarea>
+									<form data-animate="fadeInUp">
+										<textarea placeholder="Type your message here..." rows="3"></textarea>
 										<input class="button" type="submit" value="Submit">
 									</form>
 									<div class="go-back" data-animate="fadeInUp">
@@ -165,7 +170,7 @@
 								</section>
 							</div>
 							<!-- question-4 -->
-							<div class="skew-block hidden" data-animate="fadeIn">
+							<div class="skew-block question" data-animate="fadeIn">
 								<section class="fixed-deg-y">
 									<span>
 										<i class="fa fa-envelope-o"></i>

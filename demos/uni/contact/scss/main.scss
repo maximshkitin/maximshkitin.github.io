@@ -54,8 +54,8 @@ body {
 			}
 			a {
 				display: block;
-				padding-top: 47px;
-				padding-bottom: 45px;
+				padding-top: 2.88em;
+				padding-bottom: 2.875em;
 				font-family: exo;
 				font-size: 0.875em;
 				font-weight: 600;
@@ -156,7 +156,7 @@ body {
 		.info-block {
 			margin-top: 30px;
 			position: relative;
-			padding: 20px 30px 20px 45px;
+			padding: 20px 30px 20px 2.875em;
 			color: $dark;
 			background-color: white;
 			i {
@@ -171,14 +171,18 @@ body {
     	padding-left: 35px;
     }
 	.skew-block {
+		display: none;
 		margin-right: -25px;
-		margin-top: 30px;
+		margin-top: 45px;
 		padding: 70px 50px;
 		background-color: $skew-block;
 		-webkit-transform: skewY(-2deg);
 	    -ms-transform: skewY(-2deg);
 	    transform: skewY(-2deg);
 	    border-radius: 10px;
+	    &.active-form {
+	    	display: block;
+	    }
 	    span {
 	    	padding-top: 20px;
 	    	width: 75px;
@@ -202,34 +206,40 @@ body {
 	    	position: relative;
 	    	margin-bottom: 5px;
 	    	i {
-	    		color: grey;
+	    		color: $grey;
 	    		position: absolute;
 	    		top: 50%;
 	    		-webkit-transform: translateY(-50%);
 	    		transform: translateY(-50%);
-	    		right: 25px;
+	    		right: 15px;
 	    	}
 	    }
 	    textarea {
 	    	resize: none;
 	    	margin-bottom: 5px;
 	    }
-		input, textarea, .button {
+	    .button {
+	    	width: 100%;
+			border-radius: 5px;
+			padding-top: 0.8em;
+			padding-bottom: 0.8em;
+			background-color: $blue;
+			border: 0;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: white;
+	    }
+	    select {
+	    	color: $grey;
+	    	background-color: #fff;
+	    	height: 44px;
+	    }
+		input, textarea, select {
 			width: 100%;
 			border-radius: 5px;
-			&:not(.button) {
-				color: grey;
-				padding: 10px 45px 10px 10px;
-				border: 1px solid #ededed;
-			}
-			&.button {
-				padding-top: 0.7em;
-				padding-bottom: 0.7em;
-				background-color: $blue;
-				border: 0;
-				text-transform: uppercase;
-				font-weight: 700;
-			}
+			color: $grey;
+			padding: .625em 2.875em .625em .625em;
+			border: 1px solid #ededed;
 		}
 		.final-text {
 			display: inline-block;
@@ -256,7 +266,7 @@ body {
 	h2 {
 		position: relative;
 		text-transform: uppercase;
-		padding-bottom: 10px;
+		padding-bottom: .625em;
 		font-family: exo;
 		font-size: 1.5em;
 		font-weight: 300;

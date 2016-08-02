@@ -312,8 +312,8 @@ body {
 
 .navbar ul li a {
   display: block;
-  padding-top: 47px;
-  padding-bottom: 45px;
+  padding-top: 2.88em;
+  padding-bottom: 2.875em;
   font-family: exo;
   font-size: 0.875em;
   font-weight: 600;
@@ -429,7 +429,7 @@ body {
 #main .main-info .info-block {
   margin-top: 30px;
   position: relative;
-  padding: 20px 30px 20px 45px;
+  padding: 20px 30px 20px 2.875em;
   color: #404040;
   background-color: white;
 }
@@ -446,14 +446,19 @@ body {
 }
 
 #main .skew-block {
+  display: none;
   margin-right: -25px;
-  margin-top: 30px;
+  margin-top: 45px;
   padding: 70px 50px;
   background-color: #4769b0;
   -webkit-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
   transform: skewY(-2deg);
   border-radius: 10px;
+}
+
+#main .skew-block.active-form {
+  display: block;
 }
 
 #main .skew-block span {
@@ -484,12 +489,12 @@ body {
 }
 
 #main .skew-block .input-field i {
-  color: grey;
+  color: #bfbfbf;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 25px;
+  right: 15px;
 }
 
 #main .skew-block textarea {
@@ -497,24 +502,30 @@ body {
   margin-bottom: 5px;
 }
 
-#main .skew-block input, #main .skew-block textarea, #main .skew-block .button {
+#main .skew-block .button {
   width: 100%;
   border-radius: 5px;
-}
-
-#main .skew-block input:not(.button), #main .skew-block textarea:not(.button), #main .skew-block .button:not(.button) {
-  color: grey;
-  padding: 10px 45px 10px 10px;
-  border: 1px solid #ededed;
-}
-
-#main .skew-block input.button, #main .skew-block textarea.button, #main .skew-block .button.button {
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   background-color: #5086f2;
   border: 0;
   text-transform: uppercase;
   font-weight: 700;
+  color: white;
+}
+
+#main .skew-block select {
+  color: #bfbfbf;
+  background-color: #fff;
+  height: 44px;
+}
+
+#main .skew-block input, #main .skew-block textarea, #main .skew-block select {
+  width: 100%;
+  border-radius: 5px;
+  color: #bfbfbf;
+  padding: .625em 2.875em .625em .625em;
+  border: 1px solid #ededed;
 }
 
 #main .skew-block .final-text {
@@ -544,7 +555,7 @@ body {
 #footer h2 {
   position: relative;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding-bottom: .625em;
   font-family: exo;
   font-size: 1.5em;
   font-weight: 300;

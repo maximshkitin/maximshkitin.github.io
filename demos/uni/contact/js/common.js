@@ -12,6 +12,29 @@ $(document).ready(function () {
 	    }
 		return false;
 	});
+	var currentForm = 0;
+	var forms = $('.question');
+	$('.question form').submit(function(e){
+		e.preventDefault();
+		forms.map(function(i, el){
+			if($(this).hasClass('active-form')) {
+				currentForm = i;
+				return;
+			}
+		});
+		$('.active-form').removeClass('active-form');
+		forms.eq(currentForm + 1).addClass('active-form');
+		currentForm++;
+	});
+	$('.question button.button').click(function(){
+		$('.active-form').fadeOut('fast');
+	});
+	$('.go-back a').click(function(e){
+		e.preventDefault();
+		$('.active-form').removeClass('active-form');
+		forms.eq(currentForm - 1).addClass('active-form');
+		currentForm--;
+	});
 });
 $(window).bind('load', function(){
 	var scrollTop = $(window).scrollTop();
