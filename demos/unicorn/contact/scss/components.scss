@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+a, a:hover {
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	line-height: 1;
+}
+
+.left-offset {
+	margin-left: -30px;
+}
+.right-offset {
+	margin-right: -30px;
+}
+.fixed-deg {
+	-webkit-transform: skew(15deg);
+    -ms-transform: skew(15deg);
+    transform: skew(15deg);
+    text-align: center;
+    font-family: exo;
+}
+.skew-button {
+	-webkit-transform: skew(-15deg);
+    -ms-transform: skew(-15deg);
+    transform: skew(-15deg);
+    &.skew-button__blue {
+		background-color: $blue;
+    }
+}
+.fixed-deg-y {
+	-webkit-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    transform: skewY(2deg);
+    text-align: center;
+}
+.fa-mobile {
+	font-size: 1.5em;
+}
+.uppercase {
+	text-transform: uppercase;
+}

@@ -1,0 +1,327 @@
+body {
+	font-family: maven;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.top-navbar {
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: $top-navbar-bg-right;
+	background-image: url('../img/top-navbar.png');
+	background-repeat: no-repeat;
+	color: $blue-light;
+	.contact-info {
+		float: left;
+	}
+	.soc-networks {
+		float: right;
+		ul {
+			li {
+				float: left;
+				&:not(:first-child) {
+					margin-left: 15px;
+				}
+				a {
+					font-size: 1.125em;
+					color: $blue-light;
+					&:hover {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+#hero {
+	background-image: url('../img/hero.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+#main-nav {
+	margin-right: -20px;
+}
+.navbar {
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	ul {
+		float: right;
+		li {
+			float: left;
+			&:not(:first-child) {
+				margin-left: 20px;
+			}
+			a {
+				display: block;
+				padding-top: 47px;
+				padding-bottom: 45px;
+				font-family: exo;
+				font-size: 0.875em;
+				font-weight: 600;
+				color: white;
+				text-transform: uppercase;
+			}
+			&:not(.skew-button) {
+				padding-left: 3px;
+				padding-right: 3px;
+				border-bottom: 3px solid transparent;
+				&:hover {
+					border-bottom: 3px solid $blue;
+				}
+			}
+			&.skew-button {
+				margin-top: 33px;
+			    a {
+			    	display: block;
+					padding: 10px 25px;
+			    	font-size: 1.25em;
+			    	font-style: italic;
+					font-weight: 500;
+			    }
+			    &:hover {
+			    	background-color: $blue-hover;
+			    }
+			}
+			&.active {
+				border-bottom: 3px solid $blue;
+				a {
+					color: #bbd2ff;
+				}
+			}
+		}
+	}
+}
+#logo {
+	margin-left: -33px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	float: left;
+	width: 268px;
+	height: 33px;
+	background-image: url('../img/logo.png');
+	background-size: 268px 33px;
+}
+
+#main {
+	color: white;
+	padding-bottom: 80px;
+	.main-info {
+		margin-top: 45px;
+		.skew-button {
+			margin-left: 5px;
+			display: inline-block;
+			padding: 2px 15px 4px;
+			font-size: 1.5em;
+			line-height: 1;
+			font-weight: 800;
+			font-style: italic;
+			text-transform: uppercase;
+		}
+		h1 {
+			margin-top: 12px;
+			margin-bottom: 25px;
+			font-family: exo;
+			font-size: 3.125em;
+			text-transform: uppercase;
+			font-weight: 200;
+		}
+		address {
+			padding-left: 10px;
+			font-style: normal;
+			border-left: 7px solid $blue;
+			&:last-of-type {
+				margin-top: 45px;
+			}
+			p {
+				font-size: 1.125em;
+				line-height: 1.5;
+				font-weight: 400;
+				strong {
+					font-size: 1.125em;
+					font-weight: 700;
+					font-family: exo;
+				}
+				span {
+					margin-top: 5px;
+					display: block;
+					i {
+						&:before {
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+		.info-block {
+			margin-top: 30px;
+			position: relative;
+			padding: 20px 30px 20px 45px;
+			color: $dark;
+			background-color: white;
+			i {
+				position: absolute;
+				top: 23px;
+				left: 20px;
+				color: #ccc;
+			}
+		}
+	}
+	.config-block {
+    	padding-left: 35px;
+    }
+	.skew-block {
+		margin-right: -25px;
+		margin-top: 30px;
+		padding: 70px 50px;
+		background-color: $skew-block;
+		-webkit-transform: skewY(-2deg);
+	    -ms-transform: skewY(-2deg);
+	    transform: skewY(-2deg);
+	    border-radius: 10px;
+	    span {
+	    	padding-top: 20px;
+	    	width: 75px;
+	    	height: 75px;
+	    	display: inline-block;
+	    	border-radius: 50%;
+	    	background-color: rgba(0,0,0,.15);
+	    	i {
+	    		font-size: 2em;
+	    	}
+	    }
+	    h2 {
+	    	margin-top: 25px;
+	    	margin-bottom: 20px;
+	    	font-family: exo;
+	    	font-weight: 200;
+	    	font-size: 3em;
+	    	line-height: 1.3;
+	    }
+	    .input-field {
+	    	position: relative;
+	    	margin-bottom: 5px;
+	    	i {
+	    		color: grey;
+	    		position: absolute;
+	    		top: 50%;
+	    		-webkit-transform: translateY(-50%);
+	    		transform: translateY(-50%);
+	    		right: 25px;
+	    	}
+	    }
+	    textarea {
+	    	resize: none;
+	    	margin-bottom: 5px;
+	    }
+		input, textarea, .button {
+			width: 100%;
+			border-radius: 5px;
+			&:not(.button) {
+				color: grey;
+				padding: 10px 45px 10px 10px;
+				border: 1px solid #ededed;
+			}
+			&.button {
+				padding-top: 0.7em;
+				padding-bottom: 0.7em;
+				background-color: $blue;
+				border: 0;
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+		}
+		.final-text {
+			display: inline-block;
+			width: 75%;
+			margin-bottom: 25px;
+		}
+		.go-back {
+			margin-top: 5px;
+			text-align: left;
+			a {
+				color: white;
+				text-transform: uppercase;
+				i {
+					&:before{ 
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+#footer {
+	padding-top: 80px;
+	h2 {
+		position: relative;
+		text-transform: uppercase;
+		padding-bottom: 10px;
+		font-family: exo;
+		font-size: 1.5em;
+		font-weight: 300;
+		&:after {
+			content: "";
+		    width: 27px;
+		    height: 1px;
+		    position: absolute;
+		    left: 0;
+		    bottom: 0;
+		}
+		&.first {
+			&:after {
+				background-color: #5086f2;
+			}
+		}
+		&.second {
+			&:after {
+				background-color: #e2b23e;
+			}
+		}
+	}
+	.sponsor-logo {
+		margin-top: 15px;
+	}
+	.footer-nav {
+		margin-top: 15px;
+		li {
+			border-bottom: 1px solid #e5e5e5;
+			&:not(:first-child) {
+				padding-top: 5px;
+			}
+			padding-bottom: 5px;
+			a {
+				color: #808080;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	hr {
+		width: 80%;
+		margin-top: 100px;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #e5e5e5;
+	}
+	.copyright {
+		position: relative;
+		margin: 35px 0;
+		text-align: center;
+		font-weight: 700;
+		span {
+			font-weight: 400;
+		}
+		.to-top {
+			top: -5px;
+			right: 5px;
+			position: absolute;
+			font-size: 1.5em;
+			a {
+				color: #e5e5e5;
+			}
+		}
+	}
+}
