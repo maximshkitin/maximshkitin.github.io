@@ -783,7 +783,7 @@ header.shadow {
 header nav {
   position: absolute;
   top: 50%;
-  margin-top: -12px;
+  margin-top: -10px;
   right: 15px;
 }
 
@@ -801,7 +801,7 @@ header p {
 }
 
 #logo {
-  margin-top: 20px;
+  margin-top: 18px;
   display: inline-block;
 }
 
