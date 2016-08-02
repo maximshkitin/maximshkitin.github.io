@@ -140,12 +140,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-.left-offset {
-  margin-left: -30px;
-}
-
-.right-offset {
-  margin-right: -30px;
+.container-restricted {
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .fixed-deg {
@@ -227,6 +224,7 @@ h1, h2, h3, h4, h5, h6 {
 
 [data-animate="loaded"] {
   opacity: 0;
+  -webkit-transition: opacity 1.5s ease;
   transition: opacity 1.5s ease;
 }
 
@@ -235,10 +233,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fadeIn {
+  -webkit-animation: fadeIn 1.5s ease;
   animation: fadeIn 1.5s ease;
 }
 
 .fadeInUp {
+  -webkit-animation: fadeInUp 1s ease;
   animation: fadeInUp 1s ease;
 }
 
@@ -291,7 +291,7 @@ body {
 }
 
 #main-nav {
-  margin-right: -20px;
+  margin-right: 10px;
 }
 
 .navbar {
@@ -312,7 +312,7 @@ body {
 
 .navbar ul li a {
   display: block;
-  padding-top: 45px;
+  padding-top: 47px;
   padding-bottom: 45px;
   font-family: exo;
   font-size: 0.875em;
@@ -356,7 +356,7 @@ body {
 }
 
 #logo {
-  margin-left: -33px;
+  margin-left: -3px;
   margin-top: 40px;
   margin-bottom: 40px;
   float: left;
@@ -442,12 +442,11 @@ body {
 }
 
 #main .config-block {
-  padding-left: 35px;
+  padding-left: 50px;
 }
 
 #main .skew-block {
   display: none;
-  margin-right: -25px;
   margin-top: 45px;
   padding: 70px 50px;
   background-color: #4769b0;
@@ -475,7 +474,7 @@ body {
 }
 
 #main .skew-block h2 {
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: 20px;
   font-family: exo;
   font-weight: 200;
@@ -489,7 +488,7 @@ body {
 }
 
 #main .skew-block .input-field i {
-  color: #bfbfbf;
+  color: #aaa;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -507,6 +506,8 @@ body {
   border-radius: 5px;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
+  padding-left: 0;
+  padding-right: 0;
   background-color: #5086f2;
   border: 0;
   text-transform: uppercase;
@@ -514,8 +515,12 @@ body {
   color: white;
 }
 
+#main .skew-block .button.mb {
+  margin-bottom: 27px;
+}
+
 #main .skew-block select {
-  color: #bfbfbf;
+  color: #aaa;
   background-color: #fff;
   height: 44px;
 }
@@ -523,7 +528,7 @@ body {
 #main .skew-block input, #main .skew-block textarea, #main .skew-block select {
   width: 100%;
   border-radius: 5px;
-  color: #bfbfbf;
+  color: #aaa;
   padding: .625em 2.875em .625em .625em;
   border: 1px solid #ededed;
 }

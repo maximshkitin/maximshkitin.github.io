@@ -41,7 +41,7 @@ body {
 	background-position: center top;
 }
 #main-nav {
-	margin-right: -20px;
+	margin-right: 10px;
 }
 .navbar {
 	border-bottom: 1px solid rgba(255,255,255,.2);
@@ -54,7 +54,7 @@ body {
 			}
 			a {
 				display: block;
-				padding-top: 45px;
+				padding-top: 47px;
 				padding-bottom: 45px;
 				font-family: exo;
 				font-size: 0.875em;
@@ -93,7 +93,7 @@ body {
 	}
 }
 #logo {
-	margin-left: -33px;
+	margin-left: -3px;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	float: left;
@@ -168,11 +168,10 @@ body {
 		}
 	}
 	.config-block {
-    	padding-left: 35px;
+    	padding-left: 50px;
     }
 	.skew-block {
 		display: none;
-		margin-right: -25px;
 		margin-top: 45px;
 		padding: 70px 50px;
 		background-color: $skew-block;
@@ -195,7 +194,7 @@ body {
 	    	}
 	    }
 	    h2 {
-	    	margin-top: 25px;
+	    	margin-top: 5px;
 	    	margin-bottom: 20px;
 	    	font-family: exo;
 	    	font-weight: 200;
@@ -223,11 +222,16 @@ body {
 			border-radius: 5px;
 			padding-top: 0.8em;
 			padding-bottom: 0.8em;
+			padding-left: 0;
+			padding-right: 0;
 			background-color: $blue;
 			border: 0;
 			text-transform: uppercase;
 			font-weight: 700;
 			color: white;
+			&.mb {
+				margin-bottom: 27px;
+			}
 	    }
 	    select {
 	    	color: $grey;

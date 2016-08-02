@@ -46,14 +46,17 @@
 }
 [data-animate="loaded"] {
   opacity: 0;
+  -webkit-transition: opacity 1.5s ease;
   transition: opacity 1.5s ease;
 }
 .loaded {
   opacity: 1;
 }
 .fadeIn {
+  -webkit-animation: fadeIn 1.5s ease;
   animation: fadeIn 1.5s ease;
 }
 .fadeInUp {
+  -webkit-animation: fadeInUp 1s ease;
   animation: fadeInUp 1s ease;
 }
