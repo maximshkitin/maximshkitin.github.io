@@ -153,6 +153,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: exo;
 }
 
+.subtitle .skew-button {
+  margin-left: 5px;
+  display: inline-block;
+  padding: 2px 15px 4px;
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
 .skew-button {
   -webkit-transform: skew(-15deg);
   -ms-transform: skew(-15deg);
@@ -176,6 +187,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.main-heading {
+  margin-top: 12px;
+  margin-bottom: 25px;
+  font-family: exo;
+  font-size: 3.125em;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.info-box {
+  margin-top: 30px;
+  position: relative;
+  padding: 20px 30px 20px 2.875em;
+  color: #404040;
+  background-color: white;
+  text-align: left;
+}
+
+.info-box i {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  color: #ccc;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -204,6 +240,32 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@-webkit-keyframes fadeInUpLess {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpLess {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -222,24 +284,29 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-[data-animate="loaded"] {
+[data-animate="fadeInStart"] {
   opacity: 0;
-  -webkit-transition: opacity 1.5s ease;
-  transition: opacity 1.5s ease;
+  -webkit-transition: opacity 1.0s ease;
+  transition: opacity 1.0s ease;
 }
 
-.loaded {
+.fadeInStart {
   opacity: 1;
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 1.5s ease;
-  animation: fadeIn 1.5s ease;
+  -webkit-animation: fadeIn 1.0s ease;
+  animation: fadeIn 1.0s ease;
 }
 
 .fadeInUp {
-  -webkit-animation: fadeInUp 1s ease;
-  animation: fadeInUp 1s ease;
+  -webkit-animation: fadeInUp 1.0s ease;
+  animation: fadeInUp 1.0s ease;
+}
+
+.fadeInUpLess {
+  -webkit-animation: fadeInUpLess 1.0s ease;
+  animation: fadeInUpLess 1.0s ease;
 }
 
 body {
@@ -375,26 +442,6 @@ body {
   margin-top: 45px;
 }
 
-#main .main-info .skew-button {
-  margin-left: 5px;
-  display: inline-block;
-  padding: 2px 15px 4px;
-  font-size: 1.5em;
-  line-height: 1;
-  font-weight: 800;
-  font-style: italic;
-  text-transform: uppercase;
-}
-
-#main .main-info h1 {
-  margin-top: 12px;
-  margin-bottom: 25px;
-  font-family: exo;
-  font-size: 3.125em;
-  text-transform: uppercase;
-  font-weight: 200;
-}
-
 #main .main-info address {
   padding-left: 10px;
   font-style: normal;
@@ -424,21 +471,6 @@ body {
 
 #main .main-info address p span i:before {
   margin-right: 5px;
-}
-
-#main .main-info .info-block {
-  margin-top: 30px;
-  position: relative;
-  padding: 20px 30px 20px 2.875em;
-  color: #404040;
-  background-color: white;
-}
-
-#main .main-info .info-block i {
-  position: absolute;
-  top: 23px;
-  left: 20px;
-  color: #ccc;
 }
 
 #main .config-block {
@@ -557,16 +589,16 @@ body {
   padding-top: 80px;
 }
 
-#footer h2 {
+#footer p {
   position: relative;
   text-transform: uppercase;
-  padding-bottom: .625em;
+  padding-bottom: .4em;
   font-family: exo;
   font-size: 1.5em;
   font-weight: 300;
 }
 
-#footer h2:after {
+#footer p:after {
   content: "";
   width: 27px;
   height: 1px;
@@ -575,12 +607,20 @@ body {
   bottom: 0;
 }
 
-#footer h2.first:after {
+#footer p.first:after {
   background-color: #5086f2;
 }
 
-#footer h2.second:after {
+#footer p.second:after {
   background-color: #e2b23e;
+}
+
+#footer .six-margin {
+  margin-left: 29%;
+}
+
+#footer .unicorn-margin {
+  margin-left: 2%;
 }
 
 #footer .sponsor-logo {
@@ -610,7 +650,7 @@ body {
 
 #footer hr {
   width: 80%;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
@@ -620,6 +660,7 @@ body {
 #footer .copyright {
   position: relative;
   margin: 35px 0;
+  font-size: 0.9375em;
   text-align: center;
   font-weight: 700;
 }

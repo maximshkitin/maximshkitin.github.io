@@ -25,6 +25,33 @@
     transform: none;
   }
 }
+@-webkit-keyframes fadeInUpLess {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpLess {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -44,19 +71,23 @@
     opacity: 1;
   }
 }
-[data-animate="loaded"] {
+[data-animate="fadeInStart"] {
   opacity: 0;
-  -webkit-transition: opacity 1.5s ease;
-  transition: opacity 1.5s ease;
+  -webkit-transition: opacity 1.0s ease;
+  transition: opacity 1.0s ease;
 }
-.loaded {
+.fadeInStart {
   opacity: 1;
 }
 .fadeIn {
-  -webkit-animation: fadeIn 1.5s ease;
-  animation: fadeIn 1.5s ease;
+  -webkit-animation: fadeIn 1.0s ease;
+  animation: fadeIn 1.0s ease;
 }
 .fadeInUp {
-  -webkit-animation: fadeInUp 1s ease;
-  animation: fadeInUp 1s ease;
+  -webkit-animation: fadeInUp 1.0s ease;
+  animation: fadeInUp 1.0s ease;
+}
+.fadeInUpLess {
+  -webkit-animation: fadeInUpLess 1.0s ease;
+  animation: fadeInUpLess 1.0s ease;
 }

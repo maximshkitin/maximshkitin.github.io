@@ -8,7 +8,7 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class="top-navbar clearfix" data-animate="loaded">
+	<div class="top-navbar clearfix" data-animate="fadeInStart">
 		<div class="container">
 			<div class="container-restricted">
 				<div class="contact-info">
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="hero" data-animate="loaded">
+	<div id="hero" data-animate="fadeInStart">
 		<!-- HEADER -->
 		<header>
 			<!-- NAVBAR -->
@@ -54,20 +54,20 @@
 			</nav>
 		</header>
 		<!-- MAIN -->
-		<div class="section" id="main">
+		<main id="main">
 			<div class="container">
 				<div class="row">
 					<div class="container-restricted">
 						<div class="col-md-6">
 							<section class="main-info">
-								<div class="subtitle" data-animate="fadeInUp">
+								<div class="subtitle" data-animate="fadeInUpLess">
 									<div class="skew-button skew-button__blue">
 										<div class="fixed-deg">
 											Contact Us
 										</div>
 									</div>
 								</div>
-								<h1 data-animate="fadeInUp">Our Offices</h1>
+								<h1 class="main-heading" data-animate="fadeInUp">Our Offices</h1>
 								<address data-animate="fadeInUp">
 									<p><strong>Six Capital</strong> <br>
 									   2 Shenton Way <br>
@@ -78,7 +78,7 @@
 									   	</span>
 									</p>
 								</address>
-								<address data-animate="fadeInUp">
+								<address data-animate="fadeInUpLess">
 									<p><strong>Six Capital</strong> <br>
 									   2 Shenton Way <br>
 									   #01-01 Office Center <br>
@@ -88,7 +88,7 @@
 									   	</span>
 									</p>
 								</address>
-								<div class="info-block" data-animate="fadeInUp">
+								<div class="info-box" data-animate="fadeInUp">
 									<i class="fa fa-info-circle"></i>
 									<strong>INFO </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur necessitatibus odio voluptas numquam quod porro.
 								</div>
@@ -103,7 +103,7 @@
 											<i class="fa fa-envelope-o"></i>
 										</span>
 										<h2 data-animate="fadeInUp">What should we call you?</h2>
-										<form data-animate="fadeInUp">
+										<form data-animate="fadeInUpLess">
 											<div class="input-field">
 												<select name="" id="">
 													<option value="mr">Mr.</option>
@@ -114,7 +114,7 @@
 												</select>
 											</div>
 											<div class="input-field">
-												<input type="text" placeholder="Your full name..." required>
+												<input class="form-item" name="name" type="text" placeholder="Your full name..." required>
 												<i class="fa fa-user"></i>
 											</div>
 											<input class="button mb" type="submit" value="Next">
@@ -128,13 +128,13 @@
 											<i class="fa fa-envelope-o"></i>
 										</span>
 										<h2 data-animate="fadeInUp">How to contact you back?</h2>
-										<form data-animate="fadeInUp">
+										<form data-animate="fadeInUpLess">
 											<div class="input-field">
-												<input type="email" placeholder="Your email address..." required>
+												<input class="form-item" name="email" type="email" placeholder="Your email address..." required>
 												<i class="fa fa-envelope"></i>
 											</div>
 											<div class="input-field">
-												<input type="text" placeholder="Phone number..." required>
+												<input class="form-item" name="number" type="text" placeholder="Phone number..." required>
 												<i class="fa fa-mobile"></i>
 											</div>
 											<input class="button" type="submit" value="Next">
@@ -154,8 +154,8 @@
 											<i class="fa fa-envelope-o"></i>
 										</span>
 										<h2 data-animate="fadeInUp">How can we help you?</h2>
-										<form data-animate="fadeInUp">
-											<textarea placeholder="Type your message here..." rows="3"></textarea>
+										<form data-animate="fadeInUpLess">
+											<textarea class="form-item" name="message" placeholder="Type your message here..." rows="3"></textarea>
 											<input class="button" type="submit" value="Submit">
 										</form>
 										<div class="go-back" data-animate="fadeInUp">
@@ -184,26 +184,26 @@
 					</div>
 				</div>
 			</div>
-		</div> <!-- MAIN ENDED -->
+		</main> <!-- MAIN ENDED -->
 	</div> <!-- HERO ENDED -->
 	<footer id="footer">
 		<div class="container">
 			<div class="row" data-animate="fadeInUp">
-				<section class="col-md-2 col-md-offset-3">
-					<h2 class="first">Sixcapital</h2>
+				<div class="col-md-2 six-margin">
+					<p class="first">Sixcapital</p>
 					<div class="sponsor-logo">
 						<a href=""><img src="img/sponsor-logo.png" alt="Six Capital"></a>
 						
 					</div>
-				</section>
-				<section class="col-md-4">
-					<h2 class="second">Unicorn Award</h2>
+				</div>
+				<div class="col-md-4 unicorn-margin">
+					<p class="second">Unicorn Award</p>
 					<ul class="footer-nav">
 						<li><a href="">About</a></li>
 						<li><a href="">Terms & Conditions</a></li>
 						<li><a href="">Contact</a></li>
 					</ul>
-				</section>
+				</div>
 			</div>
 			<hr>
 			<div class="copyright">

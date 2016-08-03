@@ -24,6 +24,18 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-family: exo;
 }
+.subtitle {
+	.skew-button {
+		margin-left: 5px;
+		display: inline-block;
+		padding: 2px 15px 4px;
+		font-size: 1.5em;
+		line-height: 1;
+		font-weight: 800;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+}
 .skew-button {
 	-webkit-transform: skew(-15deg);
     -ms-transform: skew(-15deg);
@@ -43,4 +55,26 @@ h1,h2,h3,h4,h5,h6 {
 }
 .uppercase {
 	text-transform: uppercase;
+}
+.main-heading {
+	margin-top: 12px;
+	margin-bottom: 25px;
+	font-family: exo;
+	font-size: 3.125em;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+.info-box {
+	margin-top: 30px;
+	position: relative;
+	padding: 20px 30px 20px 2.875em;
+	color: $dark;
+	background-color: white;
+	text-align: left;
+	i {
+		position: absolute;
+		top: 23px;
+		left: 20px;
+		color: #ccc;
+	}
 }
