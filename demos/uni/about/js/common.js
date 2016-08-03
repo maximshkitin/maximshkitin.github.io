@@ -25,7 +25,7 @@ $(window).scroll(function(){
 	if (needToAnimate > $('[class*="fadeIn"]').length) {
 		var scrollTop = $(window).scrollTop();
 		list.map(function() {
-			if (scrollTop >= $(this).offset().top - $(window).height() + 50) {
+			if (scrollTop >= $(this).offset().top - $(window).height() + 30) {
 				var cls = $(this).data('animate');
 				if (!$(this).hasClass(cls)) {
 					$(this).addClass(cls);

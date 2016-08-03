@@ -310,7 +310,7 @@ body {
 }
 
 #hero {
-  background-image: url("../img/hero-cut.jpg");
+  background-image: url("../img/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -404,7 +404,7 @@ body {
 }
 
 #story {
-  margin-top: -1.65%;
+  margin-top: -1.8%;
 }
 
 #story .skew-section {
