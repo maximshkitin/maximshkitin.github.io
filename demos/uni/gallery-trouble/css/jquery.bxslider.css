@@ -104,12 +104,20 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 10px;
+	position: absolute;
+	left: -40px;
+	top: 50%;
+	margin-top: -12px;
+	font-size: 1.5em;
 	background: url(images/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
-	right: 10px;
+	position: absolute;
+	right: -40px;
+	top: 50%;
+	margin-top: -12px;
+	font-size: 1.5em;
 	background: url(images/controls.png) no-repeat -43px -32px;
 }
 
