@@ -431,6 +431,10 @@ body {
 }
 
 #log-in .wrapper .log-in-button {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  outline: 0;
   display: block;
   padding: 15px 20px;
   color: white;
@@ -545,7 +549,7 @@ body {
 }
 
 #log-in .wrapper .info-box a:hover {
-  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 #log-in .wrapper .go-back {

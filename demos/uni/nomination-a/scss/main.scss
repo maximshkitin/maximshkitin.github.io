@@ -65,6 +65,10 @@ body {
 			margin-bottom: 15px;
 		}
 		.log-in-button {
+			width: 100%;
+			text-align: left;
+			border: 0;
+			outline: 0;
 			display: block;
 			padding: 15px 20px;
 			color: white;
@@ -161,7 +165,7 @@ body {
 			a {
 				color: $blue;
 				&:hover {
-					text-transform: uppercase;
+					text-decoration: underline;
 				}
 			}
 		}
