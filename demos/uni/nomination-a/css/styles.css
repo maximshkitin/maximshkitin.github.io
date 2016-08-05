@@ -540,6 +540,14 @@ body {
   margin-bottom: 15px;
 }
 
+#log-in .wrapper .info-box a {
+  color: #5086f2;
+}
+
+#log-in .wrapper .info-box a:hover {
+  text-transform: uppercase;
+}
+
 #log-in .wrapper .go-back {
   font-size: 1.125em;
   color: #404040;

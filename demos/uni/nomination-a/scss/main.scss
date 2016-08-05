@@ -158,6 +158,12 @@ body {
 		.info-box {
 			margin-top: 0;
 			margin-bottom: 15px;
+			a {
+				color: $blue;
+				&:hover {
+					text-transform: uppercase;
+				}
+			}
 		}
 		.go-back {
 			font-size: 1.125em;
