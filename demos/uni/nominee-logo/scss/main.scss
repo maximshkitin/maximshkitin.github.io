@@ -274,8 +274,12 @@ body {
 				color: #eee;
 				font-size: 1.125em;
 				font-style: normal;
+				&:hover {
+					background-color: #404040;
+				}
 			}
 			p {
+				margin-top: 5px;
 				text-align: center;
 				font-size: .875em;
 				font-weight: 300;
@@ -359,6 +363,9 @@ body {
 					}
 					a {
 						color: $blue;
+						&:hover {
+							text-decoration: underline;
+						}
 					}
 				}
 			}

@@ -633,6 +633,10 @@ body {
   font-style: normal;
 }
 
+#main-info .content .subtitle .skew-button:hover {
+  background-color: #404040;
+}
+
 #main-info .content .subtitle p {
   text-align: center;
   font-size: .875em;
@@ -721,6 +725,10 @@ body {
 
 #main-info .content table.cols-2 td:nth-child(2) a {
   color: #5086f2;
+}
+
+#main-info .content table.cols-2 td:nth-child(2) a:hover {
+  text-decoration: underline;
 }
 
 #main-info .content table.cols-3 caption {
