@@ -744,6 +744,10 @@ body {
   margin-bottom: 15px;
 }
 
+#jud-criteria .jud-info .main-heading p {
+  font-size: 1.125em;
+}
+
 #jud-criteria .jud-info .main-heading:after {
   content: "";
   width: 27px;
