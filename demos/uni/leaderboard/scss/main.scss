@@ -344,9 +344,6 @@ body {
 			padding-bottom: 15px;
     		line-height: 1.15;
     		margin-bottom: 15px;
-    		p {
-    			font-size: 1.125em;
-    		}
     		&:after {
     			content: "";
 			    width: 27px;
@@ -356,6 +353,9 @@ body {
 			    bottom: 0;
 			    background-color: #e2b23e;
     		}
+		}
+		p {
+			font-size: 1.125em;
 		}
 	}
 	.criteria {
