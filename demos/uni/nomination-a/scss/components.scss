@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+a, a:hover {
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	line-height: 1;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.container-restricted {
+	padding-left: 55px;
+	padding-right: 55px;
+}
+.fixed-deg {
+	-webkit-transform: skew(15deg);
+    -ms-transform: skew(15deg);
+    transform: skew(15deg);
+}
+.subtitle {
+	.skew-button {
+		margin-left: 5px;
+		display: inline-block;
+		padding: 2px 25px 4px;
+		font-size: 1.5em;
+		font-family: exo;
+		line-height: 1;
+		font-weight: 800;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.skew-button {
+	-webkit-transform: skew(-15deg);
+    -ms-transform: skew(-15deg);
+    transform: skew(-15deg);
+    &.skew-button__blue {
+		background-color: $blue;
+		color: white;
+    }
+    &.skew-button__white {
+		background-color: white;
+		color: $blue;
+    }
+}
+.pl0 {
+	padding-left: 0;
+}
+.pr0 {
+	padding-right: 0;
+}
+.skew-section {
+	padding: 140px 0 90px;
+	-webkit-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    background-size: cover;
+	background-position: center;
+}
+.fixed-deg-y {
+	-webkit-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    transform: skewY(2deg);
+}
+.fa-mobile {
+	font-size: 1.5em;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.main-heading {
+	letter-spacing: -1px;
+	margin-top: 10px;
+	font-family: exo;
+	font-size: 3.125em;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+.info-box {
+	margin-top: 40px;
+	position: relative;
+	padding: 20px 30px 20px 2.875em;
+	color: $dark;
+	background-color: white;
+	box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.05);
+	text-align: left;
+	font-size: 1.0625em;
+	i {
+		position: absolute;
+		top: 21px;
+		left: 20px;
+		color: #ccc;
+		font-size: 1.25em;
+	}
+}
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+}
+.criteria .item-1 > div { background-position: -0px -0px; width: 115px; height: 109px; }
+.criteria .item-2 > div { background-position: -0px -109px; width: 115px; height: 109px; }
+.criteria .item-3 > div { background-position: -0px -218px; width: 114px; height: 113px; }
+.criteria .item-4 > div { background-position: -0px -331px; width: 114px; height: 113px; }
+.criteria .item-5 > div { background-position: -0px -444px; width: 112px; height: 114px; }
+.criteria .item-6 > div { background-position: -0px -558px; width: 111px; height: 115px; }
+.criteria .item-7 > div { background-position: -0px -673px; width: 111px; height: 115px; }
+.criteria .item-8 > div { background-position: -0px -788px; width: 111px; height: 115px; }

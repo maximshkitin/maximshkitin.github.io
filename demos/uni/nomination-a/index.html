@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="clearfix" id="main">
+		<div id="hero">
+			<section class="heading-wrapper">
+				<h1>Suggest a company</h1>
+				<div class="subtitle">
+					<div class="skew-button skew-button__blue">
+						<div class="fixed-deg">
+							To be nominated
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="log-in">
+			<section class="wrapper">
+				<h2 class="main-heading" data-animate="fadeInUp">
+					Please login to continue:
+				</h2>
+				<div class="soc-buttons" data-animate="fadeInUpLess">
+					<a class="log-in-button fac" href="">
+						<i class="fa fa-facebook"></i>
+						Login with Facebook
+					</a>
+					<a class="log-in-button link" href="">
+						<i class="fa fa-linkedin"></i>
+						Login with LinkedIn
+					</a>
+					<a class="log-in-button goo" href="">
+						<i class="fa fa-google-plus"></i>
+						Login with Google
+					</a>
+				</div>
+				<div class="or" data-animate="fadeInUp">
+					or
+				</div>
+				<form action="">
+					<div class="input-field"  data-animate="fadeInUp">
+						<i class="fa fa-user"></i>
+						<input type="text" placeholder="Full Name ..." required>
+					</div>
+					<div class="input-field"  data-animate="fadeInUp">
+						<i class="fa fa-envelope"></i>
+						<input type="email" placeholder="Your email address ..." required>
+					</div>
+					<div class="input-field"  data-animate="fadeInUp">
+						<i class="fa fa-lock"></i>
+						<input type="password" placeholder="Password ..." required>
+					</div>
+					<div class="input-field"  data-animate="fadeInUp">
+						<i class="fa fa-lock"></i>
+						<input type="password" placeholder="Type password again ..." required>
+					</div>
+					<input type="submit" value="Create account"  data-animate="fadeInUp">
+				</form>
+				<hr>
+				<div class="info-box" data-animate="fadeInUpLess">
+					<i class="fa fa-info-circle"></i>
+					<p>
+						By logging-in you agree with <br>
+						<a href="">terms and conditions</a> / 
+						<a href="">our policy</a>
+					</p>
+				</div>
+				<div data-animate="fadeInUp">
+					<a class="go-back" href="">
+						<i class="fa fa-arrow-left">
+						</i>
+						Cancel
+					</a>
+				</div>
+				
+			</section>
+		</div>
+	</div>
+		
+	<footer id="footer">
+		<div class="container">
+			<div class="container-restricted">
+				<div class="sponsors-logo" data-animate="fadeInUpLess">
+					<p>
+						<span>Unicornaward</span><br>
+						is proudly sponsored by<br>
+						<b></b>
+					</p>
+					<figure>
+						<img src="img/sponsor-logo.png" alt="SixCap">
+						<figcaption>
+							Sixcapital
+						</figcaption>
+					</figure>
+					<ul>
+						<li><a href="">About</a></li>
+						<li><a href="">Terms & Conditions</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div class="copyright">
+					<span>© 2016</span> SIX CAPITAL Pte Ltd. All Rights Reserved
+					<div class="to-top">
+						<a href="">
+							<i class="fa fa-arrow-up"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal"></div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('.slider4').bxSlider({
+		    slideWidth: 223,
+		    minSlides: 2,
+		    maxSlides: 4,
+		    moveSlides: 1,
+		    pager: false,
+		    slideMargin: 25,
+		    prevText: '<i class="fa fa-chevron-left"></i>',
+		    nextText: '<i class="fa fa-chevron-right"></i>'
+		  });
+		});
+	</script>
+	<script src="js/common.js"></script>
+</body>
+</html>
