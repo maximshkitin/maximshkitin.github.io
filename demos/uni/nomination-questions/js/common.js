@@ -38,18 +38,28 @@ $(document).ready(function () {
 		}
 		else {
 			$('#check-code').removeClass('active');
-			$('#refer').addClass('active');
+			$('.modal').fadeIn(500);
+			setTimeout(function(){
+				window.location.replace('https://maximshkitin.github.io/demos/uni/wheel');
+				// $('#forms').removeClass('active');
+				// $('#wheel').addClass('active');
+				// $('#refer').addClass('active');
+			},500);
 		}
 		
+	});
+	$('[name="send-ref"]').submit(function(e){
+		e.preventDefault();
+		window.location.replace('https://maximshkitin.github.io/demos/uni/wheel');
 	});
 	$('#skip').click(function(){
 		$('.modal').fadeIn(500);
 		setTimeout(function(){
-			$('#hero')[0].className = 'img-3';
+			$('#hero')[0].className = "img-3";
 			$('#refer').removeClass('active');
 			$('#done').addClass('active');
 			$('.modal').fadeOut(1000);
-		}, 600);
+		}, 500);
 		return false;
 	});
 	// questionaire

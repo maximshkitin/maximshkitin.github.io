@@ -21,12 +21,22 @@ header {
 	-webkit-animation: fadeEffect 1.2s ease;
 		animation: fadeEffect 1.2s ease;
 	display: none;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 	&.active {
 		display: block;
+	}
+	.main-heading {
+		margin-top: 0;
 	}
 }
 .right-side {
 	height: 940px;
+	position: relative;
 }
 #forms {
 	-webkit-animation: fadeEffect 1.2s ease;
@@ -37,8 +47,8 @@ header {
 	}
 }
 #hero {
-	width: 56.25%;
 	height: 940px;
+	width: 56.25%;
 	background-size: cover;
 	background-position: center;
 	text-align: right;
@@ -93,6 +103,12 @@ header {
 		}
 	}
 }
+#wheel {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
 #check-code {
 	.subtitle.top {
 		.skew-button {
@@ -120,36 +136,6 @@ header {
 				span {
 					color: #999;
 				}
-			}
-		}
-		.log-in-button {
-			width: 100%;
-			text-align: left;
-			border: 0;
-			outline: 0;
-			display: block;
-			padding: 15px 20px;
-			color: white;
-			font-weight: 900;
-			font-size: 1.125em;
-			text-transform: uppercase;
-			&:not(:last-of-type) {
-				margin-bottom: 7px;
-			}
-			
-			border-radius: 5px;
-			i {
-				width: 30px;
-				font-size: 1.125em;
-			}
-			&.fac {
-				background-color: #4c51a6;
-			}
-			&.link {
-				background-color: #0a6da6;
-			}
-			&.goo {
-				background-color: #da5738;
 			}
 		}
 		.input-field {
@@ -522,7 +508,7 @@ header {
 			&.fac {
 				background-color: #4c51a6;
 			}
-			&.link {
+			&.linked {
 				background-color: #0a6da6;
 			}
 			&.goo {

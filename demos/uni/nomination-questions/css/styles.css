@@ -356,14 +356,25 @@ header {
   -webkit-animation: fadeEffect 1.2s ease;
   animation: fadeEffect 1.2s ease;
   display: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .form-block.active {
   display: block;
 }
 
+.form-block .main-heading {
+  margin-top: 0;
+}
+
 .right-side {
   height: 940px;
+  position: relative;
 }
 
 #forms {
@@ -377,8 +388,8 @@ header {
 }
 
 #hero {
-  width: 56.25%;
   height: 940px;
+  width: 56.25%;
   background-size: cover;
   background-position: center;
   text-align: right;
@@ -451,6 +462,14 @@ header {
   font-family: exo;
 }
 
+#wheel {
+  display: none;
+}
+
+#wheel.active {
+  display: block;
+}
+
 #check-code {
   padding-top: 190px;
   padding-bottom: 55px;
@@ -481,41 +500,6 @@ header {
 
 #check-code .wrapper h2 + p span {
   color: #999;
-}
-
-#check-code .wrapper .log-in-button {
-  width: 100%;
-  text-align: left;
-  border: 0;
-  outline: 0;
-  display: block;
-  padding: 15px 20px;
-  color: white;
-  font-weight: 900;
-  font-size: 1.125em;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-#check-code .wrapper .log-in-button:not(:last-of-type) {
-  margin-bottom: 7px;
-}
-
-#check-code .wrapper .log-in-button i {
-  width: 30px;
-  font-size: 1.125em;
-}
-
-#check-code .wrapper .log-in-button.fac {
-  background-color: #4c51a6;
-}
-
-#check-code .wrapper .log-in-button.link {
-  background-color: #0a6da6;
-}
-
-#check-code .wrapper .log-in-button.goo {
-  background-color: #da5738;
 }
 
 #check-code .wrapper .input-field {
@@ -938,7 +922,7 @@ header {
   background-color: #4c51a6;
 }
 
-#log-in .wrapper .log-in-button.link {
+#log-in .wrapper .log-in-button.linked {
   background-color: #0a6da6;
 }
 
