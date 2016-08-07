@@ -20,6 +20,7 @@ $(window).bind('load', function(){
 			$(this).addClass(cls);
 		}
 	});
+	$('.modal').fadeOut(1200);
 });
 $(window).scroll(function(){
 	if (needToAnimate > $('[class*="fadeIn"]').length) {

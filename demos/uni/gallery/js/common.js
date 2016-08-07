@@ -12,6 +12,7 @@ $(window).bind('load', function(){
 			$(this).addClass(cls);
 		}
 	});
+	$('.modal').fadeOut(1200);
 });
 
 
@@ -23,8 +24,10 @@ $(document).ready(function () {
 		var className = item.classList[2];
 		if (numberOfImgs > 6) {
 			createPages($(this), imgItems, className, numberOfImgs);
-			// var height = $(this).height();
-			// $(this).css('height', height);
+			var height = $(this).height();
+			$(this).css('height', height);
+			$(this).css('position', 'relative');
+			$(this).css('margin-bottom', '80px');
 		}
 	});
 	list = $('[data-animate]');

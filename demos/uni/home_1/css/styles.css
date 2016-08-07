@@ -1418,11 +1418,28 @@ body {
 }
 
 #gallery {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-image: url("../img/gallery.jpg");
   text-align: center;
   color: white;
+  position: relative;
+}
+
+#gallery .gallery-title {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#gallery .gallery-title .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #nominating {

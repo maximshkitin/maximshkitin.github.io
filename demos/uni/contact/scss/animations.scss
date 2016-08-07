@@ -71,14 +71,6 @@
     opacity: 1;
   }
 }
-[data-animate="fadeInStart"] {
-  opacity: 0;
-  -webkit-transition: opacity 1.0s ease;
-  transition: opacity 1.0s ease;
-}
-.fadeInStart {
-  opacity: 1;
-}
 .fadeIn {
   -webkit-animation: fadeIn 1.0s ease;
   animation: fadeIn 1.0s ease;

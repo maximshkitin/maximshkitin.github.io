@@ -20,22 +20,21 @@ $(document).ready(function () {
 	var currentForm = 0;
 	var forms = $('.question');
 	$('.question form').submit(function(e){
-		console.log(currentForm);
 		e.preventDefault();
-		$('.active-form').removeClass('active-form');
-		forms.eq(currentForm + 1).addClass('active-form');
+		$('.question.active').removeClass('active');
+		forms.eq(currentForm + 1).addClass('active');
 		currentForm++;
 	});
 	$('.question button.button').click(function(){
-		$('.active-form').removeClass('active-form');
+		$('.active-form').removeClass('active');
 		resetForms();
-		forms.eq(0).addClass('active-form');
+		forms.eq(0).addClass('active');
 		currentForm = 0;
 	});
 	$('.go-back a').click(function(e){
 		e.preventDefault();
-		$('.active-form').removeClass('active-form');
-		forms.eq(currentForm - 1).addClass('active-form');
+		$('.active-form').removeClass('active');
+		forms.eq(currentForm - 1).addClass('active');
 		currentForm--;
 	});
 });
@@ -47,6 +46,7 @@ $(window).bind('load', function(){
 			$(this).addClass(cls);
 		}
 	});
+	$('.modal').fadeOut(1200);
 });
 $(window).scroll(function(){
 	if (needToAnimate > $('[class*="fadeIn"]').length) {
