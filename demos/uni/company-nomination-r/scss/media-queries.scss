@@ -199,6 +199,10 @@ $lg: 1200px;
 	    display: -ms-flexbox;      
 	    display: -webkit-flex;     
 	    display: flex; 
+	    -moz-box-orient: vertical;
+	    -webkit-box-orient: vertical;
+	    -ms-box-orient: vertical;
+	    -webkit-flex-direction: column;
 	    flex-direction: column;
 	    .left-col, .right-col {
 	    	width: 100%;

@@ -1355,6 +1355,10 @@ header {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
   #content .flex .left-col, #content .flex .right-col {
