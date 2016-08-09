@@ -1,0 +1,275 @@
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@media only screen and (min-width: 1200px) {
+	#main-info {
+		.content {
+			width: 57.5%;
+			background-color: #f0f1f5;
+		}
+		aside {
+			width: 27%;
+			background-color: #f7f8fa;
+			padding-bottom: 150px;
+			.table-wrapper {
+				margin-left: 15px;
+			}
+			table {
+
+			}
+		}
+		.fixed-deg-y {
+			background-image: url('../img/content-bg.jpg');
+		}
+	}
+}
+@media only screen and (max-width: 1199px){
+	.container-restricted {
+		padding: 0;
+	}
+	#logo {
+		float: none;
+		margin: 0 auto;
+	}
+	#main-nav {
+		margin: 0;
+		overflow: scroll;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 85px;
+		padding-top: 0;
+		max-height: 0;
+		z-index: 99999;
+		opacity: 0;
+		background-color: rgba(68,105,179,.93);
+		-webkit-transition: max-height .5s ease, padding-top .5s ease, opacity .5s;
+		transition: max-height .5s ease, padding-top .5s ease, opacity .5s;
+		&.open {
+			max-height: 300px;
+			padding-top: 10px;
+			opacity: 1;
+		}
+		.skew-button, .fixed-deg {
+			-webkit-transform: none;
+		    -ms-transform: none;
+		    transform: none;
+		}
+		.skew-button {
+			background-color: #4469b3;
+		}
+		li {
+			margin: 0 !important;
+			display: block;
+			float: none;
+			text-align: center;
+			&.active {
+				background-color: rgba(255,255,255,.1);
+				border-bottom: 0;
+			}
+			a {
+				display: inline-block;
+				padding: 10px;
+			}
+		}
+		&.open {
+			display: block;
+		}
+	}
+	.navbar {
+		position: relative;
+		padding-top: 27px;
+		height: 85px;
+		-webkit-transition: background-color .5s ease;
+		transition: background-color .5s ease;
+		&.sticky {
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 100000;
+			position: fixed;
+			background-color: rgba(68,105,179,.93);
+			#logo {
+				margin-bottom: 0;
+			}
+		}
+		&.menu-open {
+			background-color: rgba(68,105,179,.93);
+		}
+	}
+
+	#main {
+		&.has-sticky {
+			padding-top: 84px;
+		}
+	}
+	.company-logo {
+		margin-top: 0;
+		text-align: center;
+		left: 0;
+	}
+
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+	.container-restricted {
+		padding: 0;
+	}
+	.top-navbar {
+		&:before {
+			right: calc(50% + 115px);
+		}
+		&:after {
+			left: calc(50% - 115px);
+		}
+	}
+}
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+	.main-heading {
+		font-size: 2.5em;
+	}
+}
+@media only screen and (min-width: 992px) {
+	#main {
+		.main-info {
+			margin-top: 45px;
+			address {
+				&:last-of-type {
+					margin-top: 45px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 991px) {
+	.main-heading {
+		text-align: center !important;
+	}
+	#footer {
+		padding-top: 30px;
+		text-align: center;
+	}
+	#main .main-info {
+		text-align: center;
+		address {
+			&:first-child {
+				border-left: 0;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.top-navbar {
+		&:before {
+			right: 50%;
+		}
+		&:after {
+			left: 50%;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		font-size: 15px;
+	}
+	#hero {
+		background-image: url('../img/hero-md.jpg');
+	}
+	.top-navbar {
+		height: 83px;
+		&:before {
+			display: none;
+		}
+		&:after {
+			display: none;
+		}
+		.contact-info {
+			float: none;
+			text-align: center;
+		}
+		.soc-networks {
+			margin-top: 10px;
+			float: none;
+			text-align: center;
+			ul {
+				display: inline-block;
+				li {
+					&:not(:first-child) {
+						margin-left: 25px;
+					}
+					a {
+						font-size: 1.6em;
+					}
+				}
+			}
+		}
+	}
+	.navbar {
+		padding-top: 32px;
+	}
+	#logo {
+		width: 176px;
+		height: 25px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+@media only screen and (max-width: 599px){
+	#main .config-block {
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	#logo {
+		width: 215px;
+		height: 30px;
+	}
+}
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 13px;
+	}
+	.col-xs-6 {
+		width: 100%;
+	}
+	#footer .sponsors-logo ul li:not(:first-child) {
+		margin-left: 0;
+	}
+	#footer .sponsors-logo ul li {
+		float: none;
+		margin-top: 10px;
+	}
+	#footer {
+		.copyright {
+			margin: 30px 0 50px;
+		}
+	}
+	#footer .copyright .to-top {
+		top: 25px;
+	}
+
+	#main .main-info {
+		address {
+			&:first-child {
+				margin-bottom: 20px;
+			}
+			&:last-child {
+				border-left: 0;
+			}
+		}
+	}
+	#main .skew-block {
+		padding: 70px 25px;
+		h2 {
+			font-size: 2.75em;
+		}
+	}
+
+}
+@media only screen and (max-width: 991px) and (min-width: 599px) {
+	#main .config-block {
+		padding-right: 50px;
+	}
+}

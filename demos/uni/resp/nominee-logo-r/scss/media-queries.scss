@@ -1,0 +1,384 @@
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@media only screen and (min-width: 1200px) {
+	#main-info {
+		.content {
+			width: 57.5%;
+			background-color: #f0f1f5;
+		}
+		aside {
+			width: 27%;
+			background-color: #f7f8fa;
+			padding-bottom: 150px;
+			.table-wrapper {
+				margin-left: 15px;
+			}
+			table {
+
+			}
+		}
+		.fixed-deg-y {
+			background-image: url('../img/content-bg.jpg');
+		}
+	}
+}
+@media only screen and (max-width: 1199px){
+	.container-restricted {
+		padding: 0;
+	}
+	#logo {
+		float: none;
+		margin: 0 auto;
+	}
+	#main-nav {
+		margin: 0;
+		overflow: scroll;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 85px;
+		padding-top: 0;
+		max-height: 0;
+		z-index: 99999;
+		opacity: 0;
+		background-color: rgba(68,105,179,.93);
+		-webkit-transition: max-height .5s ease, padding-top .5s ease, opacity .5s;
+		transition: max-height .5s ease, padding-top .5s ease, opacity .5s;
+		&.open {
+			max-height: 300px;
+			padding-top: 10px;
+			opacity: 1;
+		}
+		.skew-button, .fixed-deg {
+			-webkit-transform: none;
+		    -ms-transform: none;
+		    transform: none;
+		}
+		.skew-button {
+			background-color: $heading-color;
+		}
+		li {
+			margin: 0 !important;
+			display: block;
+			float: none;
+			text-align: center;
+			&.active {
+				background-color: rgba(255,255,255,.1);
+				border-bottom: 0;
+			}
+			a {
+				display: inline-block;
+				padding: 10px;
+			}
+		}
+		&.open {
+			display: block;
+		}
+	}
+	.navbar {
+		position: relative;
+		padding-top: 27px;
+		height: 85px;
+		-webkit-transition: background-color .5s ease;
+		transition: background-color .5s ease;
+		&.sticky {
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 100000;
+			position: fixed;
+			background-color: rgba(68,105,179,.93);
+			#logo {
+				margin-bottom: 0;
+			}
+		}
+		&.menu-open {
+			background-color: rgba(68,105,179,.93);
+		}
+	}
+
+	.overlay-shapes{
+		&.has-sticky {
+			padding-top: 84px;
+		}
+	}
+	.company-logo {
+		margin-top: 0;
+		text-align: center;
+		left: 0;
+	}
+	#main-info {
+		.skew-section {
+			background-color: #f7f8fa;
+		}
+		aside {
+			margin-left: 0;
+			padding-right: 15px;
+			table {
+				width: 60%;
+				margin: 0 auto;
+			}
+		}
+		.content {
+			margin-left: 0;
+    		padding-left: 15px;
+		}
+	}
+
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+	.container-restricted {
+		padding: 0;
+	}
+	.top-navbar {
+		&:before {
+			right: calc(50% + 115px);
+		}
+		&:after {
+			left: calc(50% - 115px);
+		}
+	}
+	#main-info aside table td:first-child {
+		width: 79%;
+	}
+	#main-info aside table td:last-child {
+		width: 21%;
+	}
+}
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+	.main-heading {
+		font-size: 2.5em;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.pl0 {
+		padding-left: 0;
+	}
+	.pr0 {
+		padding-right: 0;
+	}
+	.mt {
+			margin-top: 30px;
+		}
+}
+@media only screen and (max-width: 991px) {
+	.main-heading {
+		text-align: center !important;
+	}
+	#footer {
+		padding-top: 30px;
+		text-align: center;
+	}
+	#main-info aside table td:first-child {
+		width: 72%;
+	}
+	#main-info aside table td:last-child {
+		width: 28%;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.top-navbar {
+		&:before {
+			right: 50%;
+		}
+		&:after {
+			left: 50%;
+		}
+	}
+	.mt-section {
+		margin-top: -3.5%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		font-size: 15px;
+	}
+	#hero {
+		background-image: url('../img/hero-md.jpg');
+	}
+	.top-navbar {
+		height: 83px;
+		&:before {
+			display: none;
+		}
+		&:after {
+			display: none;
+		}
+		.contact-info {
+			float: none;
+			text-align: center;
+		}
+		.soc-networks {
+			margin-top: 10px;
+			float: none;
+			text-align: center;
+			ul {
+				display: inline-block;
+				li {
+					&:not(:first-child) {
+						margin-left: 25px;
+					}
+					a {
+						font-size: 1.6em;
+					}
+				}
+			}
+		}
+	}
+	.navbar {
+		padding-top: 32px;
+	}
+	#logo {
+		width: 176px;
+		height: 25px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	.subtitle .skew-button {
+		font-size: 1.125em;
+	}
+	.main-heading {
+		font-size: 2.25em;
+	}
+	.skew-section {
+		padding-top: 80px !important;
+	}
+	
+	.main-container {
+		padding: 0;
+	}
+	#main-info aside {
+		padding-top: 20px;
+		table {
+			td {
+				&:last-child {
+					text-align: right;
+				}
+			}
+			i {
+				&:not(:first-child) {
+					display: none;
+				}
+			}
+		}
+	}
+	#quote .skew-section {
+		padding-bottom: 80px;
+	}
+	.nav-links {
+		.row > div:not(.text-right) {
+			margin-bottom: 25px;
+		}
+		.text-right {
+			text-align: center;
+		}
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+	.mt-section {
+		margin-top: -4%;
+	}
+}
+@media only screen and (max-width: 599px) {
+	#main-info .content .rank-info {
+		text-align: center;
+		.subtitle {
+			display: block;
+			float: none;
+			margin-top: 25px;
+		}
+	}
+}
+@media only screen and (max-width: 599px) and (min-width: 480px) {
+	.mt-section {
+		margin-top: -5.5%;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	#logo {
+		width: 215px;
+		height: 30px;
+	}
+	#main-info .content table.cols-2 td:first-child {
+		width: 40%;
+	}
+	#main-info .content table.cols-2 td:last-child {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 13px;
+	}
+	.col-xs-6 {
+		width: 100%;
+	}
+	.mt-section {
+		margin-top: -10%;
+	}
+	#footer .sponsors-logo ul li:not(:first-child) {
+		margin-left: 0;
+	}
+	#footer .sponsors-logo ul li {
+		float: none;
+		margin-top: 10px;
+	}
+	#footer {
+		.copyright {
+			margin: 30px 0 50px;
+		}
+	}
+	#footer .copyright .to-top {
+		top: 25px;
+	}
+	#main-info aside table td {
+		font-size: 1em;
+	}
+	#main-info .content table.cols-2 td i {
+		margin-right: 3px;
+		text-align: center;
+	}
+	#main-info .content table.cols-2 td{
+		 	width: 50%;
+		 	&:first-child {
+		 		padding-left: 10px;
+		 	}
+		 	&:last-child {
+		 		padding-right: 10px;
+		 	}
+	}
+	#main-info .content table.cols-3 td:first-child {
+		padding-left: 10px;
+		width: 40%;
+	}
+	#main-info .content table.cols-3 td:nth-child(2) {
+		width: 25%;
+	}
+	#main-info .content table.cols-3 td:nth-child(3) {
+		width: 35%;
+		text-align: center;
+		padding-left: 10px;
+		i {
+			margin-left: 15%;
+			margin-right: 15%;
+			margin-bottom: 10px;
+		}
+	}
+	#main-info aside {
+		table {
+			width: 100%;
+		}
+	}
+	#quote blockquote {
+		font-size: 11px;
+	}
+}
+@media only screen and (max-width: 399px) {
+	.rank-info .subtitle {
+		font-size: 12px;
+	}
+}

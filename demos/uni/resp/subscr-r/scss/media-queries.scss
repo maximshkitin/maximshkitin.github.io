@@ -1,0 +1,238 @@
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+}
+@media only screen and (min-width: 1200px) {
+	.pl0 {
+		padding-left: 0;
+	}
+	.pr0 {
+		padding-right: 0;
+	}
+	#content {
+		.info-area {
+			width: 30%;
+		}
+		.question-area {
+			width: 70%;
+		}
+	}
+	.form-block .wrapper {
+		width: 370px;
+	}
+}
+@media only screen and (max-width: 1199px){
+	.container-restricted {
+		padding: 0;
+	}
+
+	.heading {
+		&.has-sticky {
+			margin-top: 84px;
+		}
+	}
+	#step-5 label input {
+		float: none;
+		width: 100%;
+	}
+	#content {
+		.custom-row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.quest-wrapper {
+		margin: 0;
+		width: 100%;
+	}
+	.question .step-number {
+		margin-bottom: 5px;
+	}
+
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+	.container-restricted {
+		padding: 0;
+	}
+	.info-area {
+		width: 40%;
+	}
+}
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+	.main-heading.main-heading__blue,
+	.main-heading, .question h1 {
+		font-size: 2.25em!important;
+	}
+	#header-title {
+		font-size: 14px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.pl0 {
+		padding-left: 0;
+	}
+	.pr0 {
+		padding-right: 0;
+	}
+	#check-number {
+		padding-top: 240px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.info-box {
+		font-size: .93em;
+		i {
+			top: 22px;
+			left: 18px;
+		}
+	}
+	#hero {
+		width: 100%;
+		height: 200px;
+		padding-top: 50px;
+		float: none;
+		padding-right: 0;
+		text-align: center;
+		position: relative;
+		.heading-wrapper {
+			padding-right: 0;
+			border-right: 0;
+			h1 {
+				position: static;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	#forms .skew-button {
+		margin-left: 0 !important;
+	}
+	#forms {
+		.submit-button {
+			margin-top: 30px;
+		}
+	}
+	#content .question-area {
+		padding-bottom: 50px;
+	}
+	.right-side {
+		height: auto;
+		margin: 0;
+		.form-block {
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 50px!important;
+			margin-bottom: 40px;
+			width: 100%;
+			margin: 0;
+			float: none;
+			text-align: center;
+			position: static;
+			-webkit-transform: none;
+    		-ms-transform: none;
+			transform: none; 
+			.wrapper {
+				display: inline-block;
+				width: 100%;
+				.main-heading {
+					margin-bottom: 20px;
+				}
+				.log-in-button {
+					position: relative;
+					text-align: center!important;
+					i {
+						position: absolute;
+						font-size: 1.125em;
+					    left: 15px;
+					    text-align: left;
+					    top: 17px;
+					}
+				}
+			}
+		}
+	}
+	#footer {
+		padding-top: 30px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.mt-section {
+		margin-top: -2.5%;
+	}
+	.right-side {
+		width: 700px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		font-size: 15px;
+	}
+	.subtitle .skew-button {
+		font-size: 1.125em;
+	}
+	.skew-section {
+		padding-top: 80px !important;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+	.mt-section {
+		margin-top: -3%;
+	}
+}
+@media only screen and (max-width: 599px) {
+
+
+}
+@media only screen and (max-width: 599px) and (min-width: 480px) {
+	.mt-section {
+		margin-top: -4.5%;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	.main-heading.main-heading__blue,
+	.main-heading {
+		font-size: 2.25em!important;
+	}
+	.main-heading.main-heading__blue,
+	.main-heading, .question h1 {
+		font-size: 2em!important;
+	}
+}
+@media only screen and (max-width: 479px) {
+	#hero .heading-wrapper {
+		font-size: 10px;
+	}
+	.main-heading.main-heading__blue,
+	.main-heading {
+		font-size: 1.75em!important;
+	}
+	.main-heading.main-heading__blue,
+	.main-heading, .question h1 {
+		font-size: 1.75em!important;
+	}
+	#footer .sponsors-logo ul li:not(:first-child) {
+		margin-left: 0;
+	}
+	#footer .sponsors-logo ul li {
+		float: none;
+		margin-top: 10px;
+	}
+	#footer {
+		.copyright {
+			margin: 30px 0 50px;
+		}
+	}
+	#footer .copyright .to-top {
+		top: 25px;
+	}
+}
+@media only screen and (max-width: 1669px) and (min-width: 992px) {
+	#hero {
+		background-position: right;
+	}
+}

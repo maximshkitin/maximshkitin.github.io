@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+a, a:hover {
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	line-height: 1;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+// ---------- MENU ------------
+
+.hamburger-menu {
+  display: none;
+  width: 30px;
+  height: 21px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+  .hamburger-menu {
+    display: inline-block;
+  }
+}
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+}
+.hamburger-menu span:nth-child(1) {
+  top: 0px;
+}
+.hamburger-menu span:nth-child(2) {
+  top: 8px;
+}
+.hamburger-menu span:nth-child(3) {
+  top: 16px;
+}
+
+
+
+
+
+
+.container-restricted {
+	padding-left: 55px;
+	padding-right: 55px;
+}
+.fixed-deg {
+	-webkit-transform: skew(15deg);
+    -ms-transform: skew(15deg);
+    transform: skew(15deg);
+}
+.subtitle {
+	.skew-button {
+		margin-left: 5px;
+		display: inline-block;
+		padding: 2px 25px 4px;
+		font-size: 1.5em;
+		font-family: exo;
+		line-height: 1;
+		font-weight: 800;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+}
+.mt-section {
+	margin-top: -1.8%;
+}
+.skew-button {
+	-webkit-transform: skew(-15deg);
+    -ms-transform: skew(-15deg);
+    transform: skew(-15deg);
+    &.skew-button__blue {
+		background-color: $blue;
+		color: white;
+    }
+    &.skew-button__white {
+		background-color: white;
+		color: $blue;
+    }
+}
+.skew-section {
+	padding: 140px 0 90px;
+	-webkit-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    background-size: cover;
+	background-position: center;
+}
+.fixed-deg-y {
+	-webkit-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    transform: skewY(2deg);
+}
+.fa-mobile {
+	font-size: 1.5em;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.main-heading {
+	letter-spacing: -1px;
+	line-height: 1.2;
+	margin-top: 10px;
+	font-family: exo;
+	font-size: 3.125em;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+.info-box {
+	margin-top: 40px;
+	position: relative;
+	padding: 20px 30px 20px 2.875em;
+	color: $dark;
+	background-color: white;
+	text-align: left;
+	font-size: 1.0625em;
+	i {
+		position: absolute;
+		top: 21px;
+		left: 20px;
+		color: #ccc;
+		font-size: 1.25em;
+	}
+}
+.modal {
+	position: fixed;
+	z-index: 1000000;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #fff;
+}
