@@ -1,0 +1,587 @@
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@media only screen and (max-width: 1199px){
+	.container-restricted {
+		padding: 0;
+	}
+	#logo {
+		float: none;
+		margin: 0 auto;
+	}
+	#main-nav {
+		margin: 0;
+		overflow: scroll;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 85px;
+		padding-top: 0;
+		max-height: 0;
+		z-index: 99999;
+		opacity: 0;
+		background-color: rgba(68,105,179,.93);
+		-webkit-transition: max-height .5s ease, padding-top .5s ease, opacity .5s;
+		transition: max-height .5s ease, padding-top .5s ease, opacity .5s;
+		&.open {
+			max-height: 300px;
+			padding-top: 10px;
+			opacity: 1;
+		}
+		.skew-button, .fixed-deg {
+			-webkit-transform: none;
+		    -ms-transform: none;
+		    transform: none;
+		}
+		.skew-button {
+			background-color: $heading-color;
+		}
+		li {
+			margin: 0 !important;
+			display: block;
+			float: none;
+			text-align: center;
+			&.active {
+				background-color: rgba(255,255,255,.1);
+				border-bottom: 0;
+			}
+			a {
+				display: inline-block;
+				padding: 10px;
+			}
+		}
+		&.open {
+			display: block;
+		}
+	}
+	.navbar {
+		position: relative;
+		padding-top: 27px;
+		height: 85px;
+		-webkit-transition: background-color .5s ease;
+		transition: background-color .5s ease;
+		&.sticky {
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 100000;
+			position: fixed;
+			background-color: rgba(68,105,179,.93);
+			#logo {
+				margin-bottom: 0;
+			}
+		}
+		&.menu-open {
+			background-color: rgba(68,105,179,.93);
+		}
+	}
+
+	.overlay-shapes {
+		&.has-sticky {
+			padding-top: 84px;
+		}
+	}
+
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+	.container-restricted {
+		padding: 0;
+	}
+	.top-navbar {
+		&:before {
+			right: calc(50% + 115px);
+		}
+		&:after {
+			left: calc(50% - 115px);
+		}
+	}
+	#nominating {
+		.nominate-button {
+			margin: 0;
+			float: right;
+		}
+	}
+	#third .items .skew-item {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#leaderboard article .company-img {
+		width: 240px;
+		background-position: right;
+		font-size: 14px;
+	}
+	#instagram .img-item .hover {
+		font-size: 14px;
+	}
+	#fourth .row-circle i {
+		top: 35px;
+	}
+}
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+	.main-heading {
+		font-size: 2.5em;
+	}
+	#easy .item-list .item:nth-of-type(1) .item-img:before {
+		left: 100%;
+	}
+	#easy .item-list .item:nth-of-type(2) .item-img:before {
+		left: 100%;
+	}
+	#easy .item-list .item .item-descr p {
+		font-size: 16px;
+	}
+	#leaderboard .skew-block {
+		font-size: 14px;
+	}
+	#leaderboard article .company-img {
+		background-position: right;
+		font-size: 14px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.pl0 {
+		padding-left: 0;
+	}
+	.pr0 {
+		padding-right: 0;
+	}
+}
+@media only screen and (max-width: 991px) {
+	#nominating {
+		text-align: center;
+		.italic-heading {
+			float: none;
+			line-height: 1.2;
+			margin-bottom: 20px;
+		}
+		.nominate-button {
+			margin: 0;
+		}
+	}
+	#footer {
+		padding-top: 30px;
+		text-align: center;
+	}
+	.watch-us {
+		text-align: center;
+		padding-top: 100px;
+	}
+
+	#fourth .row-circle.first, #fourth .row-circle.second {
+		margin-top: 60px;
+		text-align: center;
+		.circle {
+			margin: 30px auto;
+			width: 160px;
+		}
+	}
+	#fourth .row-circle.second {
+		margin-top: 0;
+		> div {
+				margin-top: 140px;
+		}
+	}
+	#fourth .separator {
+		display: none;
+	}
+	#jud-criteria .jud-info .main-heading:after {
+		left: 50%;
+		margin-left: -14px;
+	}
+	#jud-criteria .jud-info {
+		padding-left: 15px;
+		text-align: center;
+	}
+	#instagram .insta-title {
+		float: none;
+		text-align: center;
+	}
+	#instagram .follow-us {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	#third .items .skew-item {
+		margin: 10px auto;
+		p {
+			height: 150px;
+		}
+	}
+	#jud-criteria .skew-section {
+		padding-bottom: 120px;
+	}
+	.preview {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#easy h2 {
+		width: 100%;
+		display: block;
+	}
+	.preview {
+		h1 {
+			margin-bottom: 20px;
+			+ p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.top-navbar {
+		&:before {
+			right: 50%;
+		}
+		&:after {
+			left: 50%;
+		}
+	}
+	.mt-section {
+		margin-top: -2.5%;
+	}
+	#jud-criteria .jud-info {
+		p {
+			font-size: 0.935em;
+		}
+	}
+	#jud-criteria .criteria {
+		section {
+				margin-top: 40px;
+			
+		}
+	}
+	#instagram {
+		.img-item {
+			width: 25%;
+			.hover {
+				p {
+					font-size: 12px;
+				}
+				.like-comment {
+					font-size: 13px;
+				}
+			}
+			&.reserve {
+				display: block;
+			}
+		}
+	}
+	#leaderboard .list-company {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#leaderboard .skew-block {
+		font-size: 12px;
+	}
+	#leaderboard article .company-img {
+		width: 260px;
+		background-position: right;
+	}
+	#leaderboard article .rank-info {
+		margin-left: 15px;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 480px) {
+	
+	#second {
+		.items {
+			.item {
+				padding-left: 30px;
+				padding-right: 30px;
+				margin-bottom: 30px;
+				// &:nth-child(1), &:nth-child(2) {
+				// 	margin-bottom: 30px;
+				// }
+			}
+		}
+	}
+	#third .items .skew-item {
+		width: 430px;
+	}
+	#third .items > div:nth-of-type(3) > div {
+		margin-top: 15px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	body {
+		font-size: 15px;
+	}
+	.top-navbar {
+		height: 83px;
+		&:before {
+			display: none;
+		}
+		&:after {
+			display: none;
+		}
+		.contact-info {
+			float: none;
+			text-align: center;
+		}
+		.soc-networks {
+			margin-top: 10px;
+			float: none;
+			text-align: center;
+			ul {
+				display: inline-block;
+				li {
+					&:not(:first-child) {
+						margin-left: 25px;
+					}
+					a {
+						font-size: 1.6em;
+					}
+				}
+			}
+		}
+	}
+	.navbar {
+		padding-top: 32px;
+	}
+	#logo {
+		width: 176px;
+		height: 25px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	.subtitle .skew-button {
+		font-size: 1em;
+	}
+	.main-heading {
+		font-size: 2.25em;
+	}
+	.skew-section {
+		padding-top: 80px !important;
+	}
+	.row.m0 {
+		margin: 0;
+	}
+	#jud-criteria {
+		padding-top: 70px;
+	}
+	#jud-criteria .criteria {
+		section {
+				margin-top: 40px;
+			
+		}
+	}
+	#easy .item-list .item {
+		width: 100%;
+		margin: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 40px;
+	}
+	#easy .item-list .item:nth-of-type(1) .item-img:before,
+	#easy .item-list .item:nth-of-type(2) .item-img:before {
+		display: none;
+	}
+	#leaderboard .list-company {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#leaderboard article .rank-info {
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+	#leaderboard article {
+		padding-right: 0;
+		margin-bottom: 30px;
+		&.company-1 {
+			.company-img {
+				background-color: #208cba;
+				background-image: none;
+			}
+		}
+		&.company-2 {
+			.company-img {
+				background-color: #6477f7;
+				background-image: none;
+			}
+		}
+		&.company-3 {
+			.company-img {
+				background-color: #756ff7;
+				background-image: none;
+			}
+		}
+		&.company-4 {
+			.company-img {
+				background-color: #8b69fb;
+				background-image: none;
+			}
+		}
+		&.company-5 {
+			.company-img {
+				background-color: #a160fc;
+				background-image: none;
+			}
+		}
+		&.company-6 {
+			.company-img {
+				background-color: #b047fb;
+				background-image: none;
+			}
+		}
+	}
+	#leaderboard article .company-img {
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+		background-position: center;
+		text-align: center;
+	}
+	#leaderboard article .rank-info {
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+	#leaderboard article .details {
+		margin-top: 15px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	#leaderboard .skew-block {
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 12px;
+	}
+	#leaderboard .skew-block p {
+		text-align: center;
+		float: none;
+	}
+	#leaderboard .skew-block .skew-buttons {
+		margin-top: 15px;
+		text-align: center;
+		float: none;
+		.skew-button {
+			margin-top: 10px;
+		}
+	}
+	#leaderboard .skew-block a:first-of-type {
+		margin: 0;
+	}
+	#instagram {
+		padding-top: 100px;
+	}
+	#fourth .skew-section {
+		padding-bottom: 150px;
+	}
+	#fourth .main-heading {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#second .items .item {
+		margin-top: 30px;
+	}
+	#third .skew-section {
+		padding-bottom: 100px;
+	}
+	#third .items .skew-item {
+		padding-bottom: 60px!important;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+	.mt-section {
+		margin-top: -3%;
+	}
+}
+@media only screen and (max-width: 599px) {
+	#hero {
+		background-image: url('../img/hero-sm.jpg');
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	#logo {
+		width: 215px;
+		height: 30px;
+	}
+	#instagram {
+		.img-item {
+			width: 33.33%;
+			.hover {
+				p {
+					font-size: 2vw;
+				}
+				.like-comment span {
+					font-size: 2.5vw;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 479px) {
+	.col-xs-6 {
+		width: 100%;
+	}
+	.preview {
+		font-size: 11px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.header-content {
+		margin-top: 70px;
+	}
+	.preview table td.cur-phase {
+		width: 50%;
+		+ td {
+			width: 50%;
+		}
+	}
+	.preview table .title {
+		padding-left: 0;
+		width: auto;
+	}
+	#instagram {
+		.img-item {
+			width: 50%;
+			.hover {
+				p, span {
+					font-size: 3vw;
+				}
+				.like-comment {
+					span {
+						font-size: 4vw;
+					}
+				}
+			}
+			&.reserve {
+				display: block;
+			}
+		}
+	}
+	#third .items .skew-item {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#footer .sponsors-logo ul li:not(:first-child) {
+		margin-left: 0;
+	}
+	#footer .sponsors-logo ul li {
+		float: none;
+		margin-top: 10px;
+	}
+	#footer {
+		.copyright {
+			margin: 30px 0 50px;
+		}
+	}
+	#footer .copyright .to-top {
+		top: 25px;
+	}
+	#third .items .skew-item {
+		padding-left: 30px;
+		padding-right: 30px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 399px) {
+	#third .items .skew-item {
+		font-size: 14px;
+	}
+}
