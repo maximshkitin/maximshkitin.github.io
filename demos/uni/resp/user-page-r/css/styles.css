@@ -27,13 +27,6 @@
 }
 
 @font-face {
-  font-family: maven;
-  src: url("../fonts/maven-pro/maven_ex/maven_ex.eot");
-  src: url("../fonts/maven-pro/maven_ex/maven_ex.svg") format("svg"), url("../fonts/maven-pro/maven_ex/maven_ex.woff") format("woff"), url("../fonts/maven-pro/maven_ex/maven_ex.ttf") format("truetype");
-  font-weight: 900;
-}
-
-@font-face {
   font-family: exo;
   src: url("../fonts/exo-2/Exo2-Regular/Exo2-Regular.eot");
   src: url("../fonts/exo-2/Exo2-Regular/Exo2-Regular.svg") format("svg"), url("../fonts/exo-2/Exo2-Regular/Exo2-Regular.woff") format("woff"), url("../fonts/exo-2/Exo2-Regular/Exo2-Regular.ttf") format("truetype");
@@ -47,6 +40,14 @@
   src: url("../fonts/exo-2/Exo2-Medium/Exo2-Medium.svg") format("svg"), url("../fonts/exo-2/Exo2-Medium/Exo2-Medium.woff") format("woff"), url("../fonts/exo-2/Exo2-Medium/Exo2-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+}
+
+@font-face {
+  font-family: exo;
+  src: url("../fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.eot");
+  src: url("../fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.svg") format("svg"), url("../fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.woff") format("woff"), url("../fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
@@ -67,66 +68,10 @@
 
 @font-face {
   font-family: exo;
-  src: url("../fonts/exo-2/Exo2-ExtraBold/Exo2-ExtraBold.eot");
-  src: url("../fonts/exo-2/Exo2-ExtraBold/Exo2-ExtraBold.svg") format("svg"), url("../fonts/exo-2/Exo2-ExtraBold/Exo2-ExtraBold.woff") format("woff"), url("../fonts/exo-2/Exo2-ExtraBold/Exo2-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: exo;
-  src: url("../fonts/exo-2/Exo2-ExtraBoldItalic/Exo2-ExtraBoldItalic.eot");
-  src: url("../fonts/exo-2/Exo2-ExtraBoldItalic/Exo2-ExtraBoldItalic.svg") format("svg"), url("../fonts/exo-2/Exo2-ExtraBoldItalic/Exo2-ExtraBoldItalic.woff") format("woff"), url("../fonts/exo-2/Exo2-ExtraBoldItalic/Exo2-ExtraBoldItalic.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: exo;
-  src: url("../fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.eot");
-  src: url("../fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.svg") format("svg"), url("../fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.woff") format("woff"), url("../fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: exo;
   src: url("../fonts/exo-2/Exo2-Light/Exo2-Light.eot");
   src: url("../fonts/exo-2/Exo2-Light/Exo2-Light.svg") format("svg"), url("../fonts/exo-2/Exo2-Light/Exo2-Light.woff") format("woff"), url("../fonts/exo-2/Exo2-Light/Exo2-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
-}
-
-@font-face {
-  font-family: exo;
-  src: url("../fonts/exo-2/Exo2-LightItalic/Exo2-LightItalic.eot");
-  src: url("../fonts/exo-2/Exo2-LightItalic/Exo2-LightItalic.svg") format("svg"), url("../fonts/exo-2/Exo2-LightItalic/Exo2-LightItalic.woff") format("woff"), url("../fonts/exo-2/Exo2-LightItalic/Exo2-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: exo;
-  src: url("../fonts/exo-2/Exo2-ExtraLight/Exo2-ExtraLight.eot");
-  src: url("../fonts/exo-2/Exo2-ExtraLight/Exo2-ExtraLight.svg") format("svg"), url("../fonts/exo-2/Exo2-ExtraLight/Exo2-ExtraLight.woff") format("woff"), url("../fonts/exo-2/Exo2-ExtraLight/Exo2-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: exo;
-  src: url("../fonts/exo-2/Exo2-Thin/Exo2-Thin.eot");
-  src: url("../fonts/exo-2/Exo2-Thin/Exo2-Thin.svg") format("svg"), url("../fonts/exo-2/Exo2-Thin/Exo2-Thin.woff") format("woff"), url("../fonts/exo-2/Exo2-Thin/Exo2-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: exo;
-  src: url("../fonts/exo-2/Exo2-ThinItalic/Exo2-ThinItalic.eot");
-  src: url("../fonts/exo-2/Exo2-ThinItalic/Exo2-ThinItalic.svg") format("svg"), url("../fonts/exo-2/Exo2-ThinItalic/Exo2-ThinItalic.woff") format("woff"), url("../fonts/exo-2/Exo2-ThinItalic/Exo2-ThinItalic.ttf") format("truetype");
-  font-weight: 100;
-  font-style: italic;
 }
 
 * {
@@ -551,6 +496,7 @@ button {
   border-radius: 50%;
   line-height: 50px;
   text-align: center;
+  font-size: 18px;
   background-color: rgba(0, 0, 0, 0.15);
   color: white;
 }
@@ -701,11 +647,11 @@ button {
   margin-left: 2px;
 }
 
-#content table.cols-2 caption {
+#content table.type-2 caption {
   background-color: #4769b0;
 }
 
-#content table.cols-3 caption {
+#content table.type-3 caption {
   background-color: #38507e;
 }
 
@@ -715,7 +661,7 @@ button {
   text-align: left;
   font-family: exo;
   font-weight: 700;
-  background-color: #5086f2;
+  background-color: #4769b0;
   text-transform: uppercase;
   font-size: 1em;
 }
@@ -923,7 +869,7 @@ button {
 
 #content table.endorsements .load-more {
   padding-top: 35px;
-  padding-bottom: 110px;
+  padding-bottom: 50px;
 }
 
 #content .general-info, #content .table-invite-wrapper, #content .endorsements {

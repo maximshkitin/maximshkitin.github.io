@@ -188,6 +188,7 @@ button {
     	border-radius: 50%;
     	line-height: 50px;
     	text-align: center;
+    	font-size: 18px;
     	background-color: rgba(0,0,0,.15);
     	color: white;
     }
@@ -312,12 +313,12 @@ button {
 		.fa-building:before {
 			margin-left: 2px;
 		}
-		&.cols-2 {
+		&.type-2 {
 			caption {
 				background-color: #4769b0;
 			}
 		}
-		&.cols-3 {
+		&.type-3 {
 			caption {
 				background-color: #38507e;
 			}
@@ -331,7 +332,7 @@ button {
 		text-align: left;
 		font-family: exo;
 		font-weight: 700;
-		background-color: $blue;
+		background-color: #4769b0;
 		text-transform: uppercase;
 		font-size: 1em;
 		h2 {
@@ -522,7 +523,7 @@ button {
 			}
 			.load-more {
 				padding-top: 35px;
-				padding-bottom: 110px;
+				padding-bottom: 50px;
 			}
 		}
 	}
