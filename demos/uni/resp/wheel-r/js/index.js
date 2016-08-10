@@ -42,16 +42,19 @@ function myGameEnd(e) {
   var btn = $('.click-button');
   var descrTitle = $('.description p strong');
   var prizeContainer = $('.prize-title');
+  var skip = $('.right-side .skip-link span');
   $('.prize-section').addClass('result');
   if (result) {
     descrTitle.addClass('win');
     descrTitle[0].innerText = 'Congratulations';
+    skip[0].innerHTML = "i don't want to spin more. Show me how to redeem.";
   }
   else {
     descrTitle[0].innerText = 'Maybe next time';
     $('i.win').css('display', 'none');
     $('i.lose').css('display', 'inline-block');
     descrTitle.addClass('lose');
+    skip[0].innerHTML = "i don't want to spin more. Close this wheel.";
   }
   prizeContainer[0].innerText = e.results[0].msg;
   btn.addClass('disabled');

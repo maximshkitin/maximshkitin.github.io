@@ -19,12 +19,15 @@ body {
 		float: right;
 		margin-right: 70px;
 		margin-top: 30px;
-		margin-bottom: 100px;
+		margin-bottom: 60px;
 		// position: absolute;
 		// top: 50px;
 		// bottom: 50px;
 		// right: 90px;
 		width: 400px;
+		background-image: url('../img/lines.png');
+		background-size: cover;
+		background-position: right bottom;
 		background-color: #182f4c;
 		.heading {
 			padding-top: 20px;
@@ -142,14 +145,17 @@ body {
 	z-index: 100000001;
 	text-align: center;
 	background-color: rgba(65,121,229, .85);
+	-webkit-animation: fadeEffect .5s ease;
+	animation: fadeEffect .5s ease;
 	&.active {
-		display: block;
+		display: block!important;
+	}
+	p {
+		color: #404040;
 	}
 	&.share-link {
 		.title {
-			+ p {
-				color: #404040;
-			}
+			margin-bottom: 10px;
 		}
 		.input-field {
 			margin-top: 10px;
@@ -173,22 +179,67 @@ body {
 		hr {
 			border-top: 1px solid #aaa;
 		}
+		.buttons {
+			.go-back {
+				float: left;
+				position: relative;
+				top: 10px;
+			}
+			.done {
+				float: right;
+				.skew-button {
+					color: white;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					background-color: black;
+					font-weight: 500;
+					font-style: italic;
+				}
+			}
+		}
 	}
 	&.share-networks {
 		ul {
+			margin-top: 15px;
 			li {
-				float: left;
-				&:not(:first-child) {
-					margin-left: 25px;
-				}
+				
+				text-align: center;
+				display: inline-block;
+				margin-left: 13px;
+				margin-right: 13px;
 				a {
+					width: 75px;
+					height: 75px;
 					display: inline-block;
+					border-radius: 5px;
+					&:hover {
+						background-color: rgba(0,0,0,.05);
+					}
 					i {
+						line-height: 75px;
 						font-size: 3em;
 						color: #000;
+						&.fa-facebook {
+							color: #304a7e;
+						}
+						&.fa-linkedin {
+							color: #4888f7;
+						}
+						&.fa-envelope {
+							color: #35a7d4;
+						}
 					}
 				}
 			}
+		}
+		.skip-link {
+			position: absolute;
+		    bottom: -35px;
+		    left: 0;
+		    right: 0;
+		    a {
+		    	color: white;
+		    }
 		}
 	}
 	.title {
@@ -199,13 +250,34 @@ body {
 	}
 	.wrapper {
 		position: absolute;
-		background-color: white;
 		border-radius: 3px;
-		padding: 25px 20px;
 		border: 8px solid rgba(255,255,255, .25);
 		width: 380px;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
+		> div {
+			background-color: white;
+    		padding: 25px 20px;
+		}
+	}
+}
+
+.fullscreen {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	#content .right-side {
+		position: absolute;
+		right: 70px;
+		margin: 0;
+		top: 50px;
+		bottom: 50px;
+	}
+	.click-button {
+		position: absolute;
+		left: 25px;
+		right: 25px;
+		bottom: 50px;
 	}
 }
