@@ -4,26 +4,11 @@ $md: 992px;
 $lg: 1200px;
 
 @media only screen and (min-width: 1800px) {
-	#quote {
-		.skew-section {
-			padding-top: 250px;
-			padding-bottom: 200px;
-			background-position: 0 0;
-			background-image: url('../img/portrait-retina.jpg');
-		}
-	}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1799px) {
-	#quote {
-		.skew-section {
-			background-image: url('../img/portrait-lg.jpg');
-		}
-	}
 }
 @media only screen and (min-width: 1200px) {
-	#list .list-items .item table td:last-child {
-		width: 50%;
-	}
+	
 }
 @media only screen and (max-width: 1199px){
 	.container-restricted {
@@ -58,7 +43,7 @@ $lg: 1200px;
 		    transform: none;
 		}
 		.skew-button {
-			background-color: $heading-color;
+			background-color: #364b74;
 		}
 		li {
 			margin: 0 !important;
@@ -100,12 +85,19 @@ $lg: 1200px;
 		}
 	}
 
-	.heading {
-		&.has-sticky {
-			margin-top: 84px;
+	#content table td.load-more {
+		padding-left: 0;
+	}
+	#content .circles-row {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		.info-circle {
+			margin-top: 40px;
 		}
 	}
-
+	#content table.endorsements .load-more {
+		padding-top: 30px;
+	}
 }
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
 	.container-restricted {
@@ -119,64 +111,125 @@ $lg: 1200px;
 			left: calc(50% - 115px);
 		}
 	}
-	#list .list-items .item .item-descr {
-		width: 420px;
+	#content .circles-row a {
+		width: 82%;
 	}
-}
-@media only screen and (max-width: 1199px) and (min-width: 768px) {
-	.main-heading {
-		font-size: 2.5em;
+	#content .eval-1, #content .eval-2 {
+		width: calc(50% - 135px);
+    	margin-top: 50px;
+    	font-size: 13px;
 	}
-	#list .list-items .item .item-table {
-		width: 60px;
+	#content table td.user-name span {
+		font-size: 1.5em;
 	}
-	#list .list-items .item table td:first-child {
-		display: none;
-	}
-	#list .list-items .item table td:last-child {
-		text-align: center;
-		i {
-			margin-left: 0 !important;
-		}
+	#content .eval-1 table td:last-child i, #content .eval-2 table td:last-child i {
+		width: 17px;
 	}
 }
 @media only screen and (min-width: 992px) {
-	.pl0 {
-		padding-left: 0;
+	.pop-up-window.notification {
+		width: 640px;
 	}
-	.pr0 {
-		padding-right: 0;
-	}
-	.mt {
-			margin-top: 30px;
-		}
+	
 }
 @media only screen and (max-width: 991px) {
-	#nominating {
+	#content table.endorsements tr:first-child td {
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	#content table.endorsements td:first-child {
+		width: 28%;
+	}
+	#content table.endorsements tbody {
+		padding-top: 25px;
+		display: block;
+		
+	}
+	#content .table-invite-wrapper {
+		margin-bottom: 50px;
+	}
+	#content table.endorsements .load-more {
+		padding-bottom: 20px;
+	}
+	#content .pop-up-buttons {
 		text-align: center;
-		.italic-heading {
-			float: none;
-			line-height: 1.2;
-			margin-bottom: 20px;
-		}
-		.nominate-button {
-			margin: 0;
+		.pop-up-window {
+			text-align: left;
 		}
 	}
-	.main-heading {
-		text-align: center !important;
+	#content .circles-row a {
+		width: 100%;
 	}
-	#jud-criteria .jud-info .main-heading:after {
-		left: 50%;
-		margin-left: -14px;
+	.pop-up-window.notification {
+		font-size: 10px;
+	    padding: 60px 45px;
+	    position: fixed;
+	    top: calc(50% + 40px);
+	    left: 100px;
+	    right: 100px;
+	    z-index: 5000;
+	    transform: translateY(-50%);
 	}
-	#jud-criteria .jud-info {
-		padding-left: 15px;
-		text-align: center;
+	#content {
+		.move-top {
+			text-align: center;
+			figure {
+				display: inline-block;
+				margin: 0;
+			}
+		}
+		.table-content {
+			text-align: center;
+			.image {
+				margin-top: 50px;
+				margin-right: 0;
+			}
+		}
+		.company-name {
+			display: block;
+			padding-right: 0;
+		}
+		.eval-1, .eval-2 {
+			margin-left: 0;
+			width: 100%;
+			text-align: left;
+			table {
+				margin: 0 auto;
+				td {
+					font-size: .875em;
+					&:last-child {
+						i {
+							width: 13px;
+						}
+					}
+				}
+			}
+		}
+	}
+	#content table.endorsements td.user-name img {
+	    position: absolute;
+	    display: inline-block;
+	    left: 15px;
+	    bottom: 7px;
+	    float: none;
+	    width: 45px;
+	    height: 45px;
+	    margin-right: 0;
+	}
+	#content table.endorsements td.user-name {
+		position: relative;
+		vertical-align: middle;
+		span {
+			display: block;
+			padding-left: 35px;
+			padding-right: 35px;
+			text-align: center;
+		}
 	}
 	#footer {
-		padding-top: 30px;
-		text-align: center;
+		.copyright {
+			text-align: center;
+		}
 	}
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
@@ -188,44 +241,37 @@ $lg: 1200px;
 			left: 50%;
 		}
 	}
-	#jud-criteria .jud-info {
-		p {
-			font-size: 0.935em;
-		}
-	}
-	#jud-criteria .criteria {
-		section {
-				margin-top: 40px;
+	#content {
+		.eval-1, .eval-2 {
+			table {
+				width: 240px;
+			}
 			
 		}
 	}
-	#list .list-items .item .item-descr {
-		width: 220px;
-		position: relative;
-		.restrict {
-			padding: 0 15px;
-			> p, > a {
-				font-size: 13px;
-			}
+	#content table td.user-name {
+		span {
+			font-size: 1.25em;
 		}
-
-	}
-	.mt-section {
-		margin-top: -3.5%;
-	}
-	#positions .position-item .text-bg .text-block {
-		bottom: 15px;
-		left: 20px;
+		
 	}
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (max-width: 991px) and (min-width: 480px) {
+	#content .circles-row .info-circle {
+		font-size: 1.25em;
+	}
+	#content table td.user-name {
+		height: 57px;
+		
+	}
 }
 @media only screen and (max-width: 767px) {
 	body {
 		font-size: 15px;
 	}
 	#hero {
-		padding-bottom: 120px;
+		height: 300px;
 		background-image: url('../img/hero-md.jpg');
 	}
 	.top-navbar {
@@ -257,73 +303,19 @@ $lg: 1200px;
 			}
 		}
 	}
-	#list .list-wrapper {
-		top: -150px;
-		padding-bottom: 0px;
+	.pop-up-window.notification {
+		font-size: 10px;
+	    padding: 60px 15px;
+	    position: fixed;
+	    top: calc(50% + 40px);
+	    left: 15px;
+	    right: 15px;
+	    z-index: 5000;
+	    transform: translateY(-50%);
 	}
-	#jud-criteria {
-		padding-top: 70px;
-	}
-	#jud-criteria .criteria {
-		section {
-				margin-top: 40px;
-			
-		}
-	}
-
 	.p0 {
 		padding-left: 0;
 		padding-right: 0;
-	}
-	#list .list-items {
-		padding-top: 30px;
-		padding-right: 25px;
-		padding-left: 55px;
-		.gradient {
-			width: 30px;
-		}
-	}
-	#list .list-items .item {
-		padding: 40px 15px 0;
-		text-align: center;
-		height: auto;
-		font-size: 13px;
-	}
-	#list .list-items .item .item-img {
-		display: inline-block;
-		width: 250px;
-		height: 250px;
-		padding: 15px;
-		.info {
-			left: 50%;
-			transform: translateX(-50%);
-			bottom: 15px;
-		}
-	}
-	#list .list-items .item .item-descr {
-		width: 100%;
-		float: right;
-		.restrict {
-			padding: 0;
-			border-right: 0;
-		}
-	}
-	#list .list-items .item .item-descr .subtitle {
-		position: static;
-		margin-top: 15px;
-	}
-	#list .list-items .item .item-table {
-		width: 100%;
-	}
-	#list .list-items .item .item-table {
-		width: 80%;
-	}
-	#list .list-items .item table td:first-child {
-		width: 65%;
-		text-align: left;
-	}
-	#list .list-items .item table td:last-child {
-		width: 35%;
 	}
 	.navbar {
 		padding-top: 32px;
@@ -343,15 +335,13 @@ $lg: 1200px;
 	.skew-section {
 		padding-top: 80px !important;
 	}
-}
-@media only screen and (max-width: 767px) and (min-width: 600px) {
-	.mt-section {
-		margin-top: -4%;
-	}
-}
-@media only screen and (max-width: 599px) and (min-width: 480px) {
-	.mt-section {
-		margin-top: -5.5%;
+	#content {
+		.eval-1, .eval-2 {
+			table {
+				width: 230px;
+			}
+			
+		}
 	}
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -359,18 +349,23 @@ $lg: 1200px;
 		width: 215px;
 		height: 30px;
 	}
+	#content .rank-info {
+		.rank, .score {
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+	#content table td.user-name {
+		img {
+			top: 2px;
+		}
+		span {
+			font-size: 1em;
+		}
+		
+	}
 }
 @media only screen and (max-width: 479px) {
-	.col-xs-6 {
-		width: 100%;
-	}
-	.mt-section {
-		margin-top: -10%;
-	}
-	#list .list-items .item .item-img {
-		width: 150px;
-		height: 150px;
-	}
 	#footer .sponsors-logo ul li:not(:first-child) {
 		margin-left: 0;
 	}
@@ -386,9 +381,90 @@ $lg: 1200px;
 	#footer .copyright .to-top {
 		top: 25px;
 	}
-}
-@media only screen and (max-width: 399px) {
-	.mt-section {
-		margin-top: -14%;
+
+
+	#content table.endorsements td.user-name img {
+		width: 25px;
+		height: 25px;
 	}
+	#content {
+		margin-top: -5%;
+	}
+	#content table td.user-name span {
+		font-size: 1em;
+		vertical-align: top;
+	}
+	#content table td.user-name {
+		width: 45%;
+		padding-left: 15px;
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			float: left;
+			width: 25px;
+			height: 25px;
+			margin-right: 5px;
+		}
+	}
+	#content table.friends-invited tr:first-child td {
+		font-size: 8px;
+	}
+	#content table.friends-invited tr td {
+		&:not(:first-child) {
+			width: 17.5%;
+		}
+	}
+	#content .pop-up-buttons > div:last-child {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	.pop-up-window.bubble {
+		left: -15px;
+		right: -15px;
+		min-width: 2px;
+		.list-items {
+			text-align: left;
+		}
+	}
+	#content .circles-row {
+		> div {
+			width: 100%;
+		}
+	}
+	#content .table-heading, #content caption {
+		font-size: 13px;
+	}
+	#content table td.user-name .img-wrapper {
+		vertical-align: middle;
+		margin-right: 0;
+	}
+	#content table td.user-name .name-wrapper {
+		margin-top: 3px;
+	}
+	.left-pop-up-area, .right-pop-up-area {
+		width: 100%;
+		text-align: center;
+	}
+	#content {
+		.move-top {
+			text-align: center;
+			figure {
+				display: inline-block;
+				margin: 0;
+			}
+		}
+		.table-content {
+			.image {
+				margin-top: 50px;
+				margin-right: 0;
+			}
+			.rank-info .rank {
+				margin-bottom: 20px;
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+
 }
