@@ -88,10 +88,10 @@ $lg: 1200px;
 	#content table td.load-more {
 		padding-left: 0;
 	}
-	#content .circles-row {
+	#content .rectangles-row {
 		margin-top: 50px;
 		margin-bottom: 100px;
-		.info-circle {
+		.info-rectangle {
 			margin-top: 40px;
 		}
 	}
@@ -111,7 +111,7 @@ $lg: 1200px;
 			left: calc(50% - 115px);
 		}
 	}
-	#content .circles-row a {
+	#content .rectangles-row a {
 		width: 82%;
 	}
 	#content .eval-1, #content .eval-2 {
@@ -157,7 +157,7 @@ $lg: 1200px;
 			text-align: left;
 		}
 	}
-	#content .circles-row a {
+	#content .rectangles-row a {
 		width: 100%;
 	}
 	.pop-up-window.notification {
@@ -258,7 +258,7 @@ $lg: 1200px;
 }
 
 @media only screen and (max-width: 991px) and (min-width: 480px) {
-	#content .circles-row .info-circle {
+	#content .rectangles-row .info-rectangle {
 		font-size: 1.25em;
 	}
 	#content table td.user-name {
@@ -426,7 +426,7 @@ $lg: 1200px;
 			text-align: left;
 		}
 	}
-	#content .circles-row {
+	#content .rectangles-row {
 		> div {
 			width: 100%;
 		}

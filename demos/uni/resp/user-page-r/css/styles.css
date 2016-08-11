@@ -353,12 +353,12 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 380px;
 }
 
 .overlay-shapes {
   background-image: url("../img/shapes.png");
   background-size: cover;
+  height: 380px;
 }
 
 #main-nav {
@@ -445,6 +445,7 @@ button {
 
 #content .skew-section {
   background-color: #f5f5f5;
+  background-image: url("../img/lines-grey.png");
 }
 
 #content .move-top {
@@ -893,17 +894,16 @@ button {
   position: relative;
 }
 
-#content .circles-row {
+#content .rectangles-row {
   margin-top: 130px;
-  margin-bottom: 470px;
+  margin-bottom: 70px;
 }
 
-#content .circles-row a {
+#content .rectangles-row a {
   display: inline-block;
-  width: 66%;
 }
 
-#content .info-circle {
+#content .info-rectangle {
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -914,7 +914,7 @@ button {
   text-transform: uppercase;
 }
 
-#content .info-circle .img {
+#content .info-rectangle .img {
   position: relative;
   height: 0;
   line-height: 215px;
@@ -922,10 +922,9 @@ button {
   padding: 50% 10px;
   color: white;
   background-color: #38507e;
-  border-radius: 50%;
 }
 
-#content .info-circle .img div {
+#content .info-rectangle .img div {
   width: 95%;
   position: absolute;
   top: 50%;
@@ -933,7 +932,7 @@ button {
   transform: translate(-50%, -50%);
 }
 
-#content .info-circle .img div:before, #content .info-circle .img div:after {
+#content .info-rectangle .img div:before, #content .info-rectangle .img div:after {
   content: '';
   height: 2px;
   position: absolute;
@@ -943,24 +942,76 @@ button {
   background-color: #fff;
 }
 
-#content .info-circle .img div:before {
+#content .info-rectangle .img div:before {
   top: 70px;
 }
 
-#content .info-circle .img div:after {
+#content .info-rectangle .img div:after {
   bottom: 70px;
 }
 
-#content .info-circle p {
+#content .info-rectangle p {
   font-weight: 400;
   color: #5086f2;
 }
 
-#content .info-circle.with-bg .img {
+#content .info-rectangle.with-bg .img {
   background-image: url("../img/ornaments.png");
   background-size: 150%;
   background-color: #52ba9b;
   background-position: center;
+}
+
+#content .faq-row .faq-caption, #content .faq-row .faq h3 {
+  padding: 25px 60px;
+  color: #fff;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: exo;
+  font-weight: 400;
+}
+
+#content .faq-row .faq-caption {
+  background-color: #e0e0e0;
+  border-color: #e1e3e3;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+#content .faq-row .faq {
+  position: relative;
+  margin-top: 13px;
+  background-color: #fff;
+  border-color: #e1e3e3;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#content .faq-row .faq i {
+  top: 30px;
+  font-size: 2em;
+  right: 50px;
+  position: absolute;
+}
+
+#content .faq-row .faq h3 {
+  color: #5086f2;
+}
+
+#content .faq-row .faq .faq-content {
+  max-height: 0;
+  color: #404040;
+  font-size: 1.25em;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-transition: max-height .5s ease, padding .5s ease;
+  transition: max-height .5s ease, padding .5s ease;
+}
+
+#content .faq-row .faq .faq-content.active {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-height: 500px;
 }
 
 .pop-up-window {
@@ -1354,11 +1405,11 @@ button {
   #content table td.load-more {
     padding-left: 0;
   }
-  #content .circles-row {
+  #content .rectangles-row {
     margin-top: 50px;
     margin-bottom: 100px;
   }
-  #content .circles-row .info-circle {
+  #content .rectangles-row .info-rectangle {
     margin-top: 40px;
   }
   #content table.endorsements .load-more {
@@ -1376,7 +1427,7 @@ button {
   .top-navbar:after {
     left: calc(50% - 115px);
   }
-  #content .circles-row a {
+  #content .rectangles-row a {
     width: 82%;
   }
   #content .eval-1, #content .eval-2 {
@@ -1422,7 +1473,7 @@ button {
   #content .pop-up-buttons .pop-up-window {
     text-align: left;
   }
-  #content .circles-row a {
+  #content .rectangles-row a {
     width: 100%;
   }
   .pop-up-window.notification {
@@ -1508,7 +1559,7 @@ button {
 }
 
 @media only screen and (max-width: 991px) and (min-width: 480px) {
-  #content .circles-row .info-circle {
+  #content .rectangles-row .info-rectangle {
     font-size: 1.25em;
   }
   #content table td.user-name {
@@ -1660,7 +1711,7 @@ button {
   .pop-up-window.bubble .list-items {
     text-align: left;
   }
-  #content .circles-row > div {
+  #content .rectangles-row > div {
     width: 100%;
   }
   #content .table-heading, #content caption {

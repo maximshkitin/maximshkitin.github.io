@@ -2,6 +2,7 @@ var list = $('[data-animate]');
 var needToAnimate = $('[data-animate]').length;
 var deviceWidth = $(window).width();
 var topHeight = $('.top-navbar').outerHeight();
+// var flag = false;
 $(document).ready(function () {
 	var contentHeight = $('.content').outerHeight();
 	$('aside').css('height', contentHeight);
@@ -28,6 +29,10 @@ $(document).ready(function () {
 	$('#cancel-button').click(function(){
 		$('.notification.pop-up-window').removeClass('active');
 	});
+	$('.faq').click(function(){
+		// if ($(this).find('.faq-content').hasClass(''))
+		$(this).find('.faq-content').toggleClass('active');
+	});
 });
 $(window).bind('load', function(){
 	var scrollTop = $(window).scrollTop();
@@ -39,6 +44,8 @@ $(window).bind('load', function(){
 	});
 	$('.modal').fadeOut(1200);
 });
+
+
 $(window).scroll(function(){
 	var scrollTop = $(window).scrollTop();
 	if (needToAnimate > $('[class*="fadeIn"]').length) {
