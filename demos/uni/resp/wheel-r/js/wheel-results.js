@@ -41,20 +41,32 @@ function myGameEnd(e) {
   var result = e.results[0].win;
   var btn = $('.click-button');
   var descrTitle = $('.description p strong');
+  var descrText = $('.description p + p');
   var prizeContainer = $('.prize-title');
   var skip = $('.right-side .skip-link span');
   $('.prize-section').addClass('result');
   if (result) {
     descrTitle.addClass('win');
+    descrText[0].innerText = "Some text after win. Lorem ipsum dolor sit amet, int, ut! Voluptas error quis magnam officiis, porro eveniet ipsam vel obcaecati, sed libero placeat voluptatum in est natus rerum doloribus nobis voluptatibus, alias reiciendis cumque expedita. Sed, aperiam! Omnis quidem nemo ad repudiandae voluptatibus, quibusdam fugit eveniet non, deserunt unde odio."
     descrTitle[0].innerText = 'Congratulations';
     skip[0].innerHTML = "i don't want to spin more. Show me how to redeem.";
   }
   else {
     descrTitle[0].innerText = 'Maybe next time';
+    descrText[0].innerText = "Some text after lose. Lorem ipsum dolor sit amet, int, ut! Voluptas error quis magnam officiis, porro eveniet ipsam vel obcaecati, sed libero placeat voluptatum in est natus rerum doloribus nobis voluptatibus, alias reiciendis cumque expedita. Sed, aperiam! Omnis quidem nemo ad repudiandae voluptatibus, quibusdam fugit eveniet non, deserunt unde odio."
     $('i.win').css('display', 'none');
     $('i.lose').css('display', 'inline-block');
     descrTitle.addClass('lose');
     skip[0].innerHTML = "i don't want to spin more. Close this wheel.";
+  }
+  if ($(window).height() < 850 && $(window).width() <= 1240) {
+    var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
+    if (isSafari) {
+      $('body').animate({ scrollTop: 0 }, 500);
+    } 
+    else {
+      $('html').animate({ scrollTop: 0 }, 500);
+    }
   }
   prizeContainer[0].innerText = e.results[0].msg;
   btn.addClass('disabled');
