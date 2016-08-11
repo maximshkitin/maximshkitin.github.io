@@ -111,8 +111,14 @@ $lg: 1200px;
 			left: calc(50% - 115px);
 		}
 	}
-	#content .rectangles-row a {
-		width: 82%;
+	#content .info-rectangle {
+		font-size: 1.25em;
+		.img {
+			line-height: 190px;
+		}
+		p {
+			height: 55px;
+		}
 	}
 	#content .eval-1, #content .eval-2 {
 		width: calc(50% - 135px);
@@ -362,7 +368,9 @@ $lg: 1200px;
 		span {
 			font-size: 1em;
 		}
-		
+	}
+	#content .rectangles-row .info-rectangle {
+		font-size: 3.5vw;
 	}
 }
 @media only screen and (max-width: 479px) {
@@ -381,7 +389,6 @@ $lg: 1200px;
 	#footer .copyright .to-top {
 		top: 25px;
 	}
-
 
 	#content table.endorsements td.user-name img {
 		width: 25px;
@@ -431,6 +438,16 @@ $lg: 1200px;
 			width: 100%;
 		}
 	}
+	#content .faq-row .faq-caption, #content .faq-row .faq h3 {
+		font-size: 1em;
+	}
+	#content .faq-row .faq i {
+		top: 20px;
+	}
+
+	#content .rectangles-row .info-rectangle {
+		font-size: 7vw;
+	}
 	#content .table-heading, #content caption {
 		font-size: 13px;
 	}
@@ -438,8 +455,9 @@ $lg: 1200px;
 		vertical-align: middle;
 		margin-right: 0;
 	}
-	#content table td.user-name .name-wrapper {
+	#content table.endorsements td.user-name .name-wrapper {
 		margin-top: 3px;
+		width: calc(100% - 25px);
 	}
 	.left-pop-up-area, .right-pop-up-area {
 		width: 100%;

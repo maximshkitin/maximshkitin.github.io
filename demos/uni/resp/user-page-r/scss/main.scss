@@ -545,30 +545,40 @@ button {
 		position: relative;
 	}
 	.rectangles-row {
-		margin-top: 130px;
+		margin-top: 50px;
 		margin-bottom:70px;
-		a {
-			display: inline-block;
-		}
 	}
 	.info-rectangle {
 		display: inline-block;
 		text-align: center;
 		width: 100%;
-		font-size: 1.875em;
+		font-size: 1.5em;
 		line-height: 1;
 		font-family: exo;
 		font-weight: 700;
 		text-transform: uppercase;
+		box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, .1);
+		background-color: white;
 		.img {
 			position: relative;
 			height: 0;
 			line-height: 215px;
-			margin-bottom: 20px;
 			padding: 50% 10px;
 			color: white;
 			background-color: #38507e;
-			div {
+			.top {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				line-height: 1;
+				background-color: $blue-hover;
+				font-weight: 700;
+				color: white;
+				padding: 10px;
+
+			}
+			.centered {
 				width: 95%;
 				position: absolute;
 			    top: 50%;
@@ -591,9 +601,17 @@ button {
 				}
 			}
 		}
-		p {
-			font-weight: 400;
-			color: $blue;
+		.table-cell {
+			display: table;
+			width: 100%;
+			height: 70px;
+			padding: 8px;
+			p {
+				display: table-cell;
+				vertical-align: middle;
+				font-weight: 400;
+				color: $blue;
+			}
 		}
 		&.with-bg .img {
 			background-image: url('../img/ornaments.png');
@@ -604,15 +622,16 @@ button {
 	}
 	.faq-row {
 		.faq-caption, .faq h3 {
-			padding: 25px 60px;
+			padding: 1.25em 25px;
+			padding-right: 2.55em;
 			color: #fff;
-			font-size: 3em;
+			font-size: 1.375em;
 			text-transform: uppercase;
 			font-family: exo;
 			font-weight: 400;
 		}
 		.faq-caption {
-			background-color: #e0e0e0;
+			background-color: #ccc;
 			border-color: rgb(225, 227, 227);
   			box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, .1);
 		}
@@ -626,8 +645,8 @@ button {
   			cursor: pointer;
   			i {
   				top: 30px;
-  				font-size: 2em;
-  				right: 50px;
+  				font-size: 1em;
+  				right: 30px;
   				position: absolute;
   			}
   			h3 {
@@ -636,19 +655,17 @@ button {
   			.faq-content {
   				max-height: 0;
   				color: #404040;
-  				font-size: 1.25em;
-  				padding-left: 40px;
-  				padding-right: 40px;
+  				font-size: 1em;
+  				padding-left: 25px;
+  				padding-right: 25px;
   				-webkit-transition: max-height .5s ease, padding .5s ease;
   				transition: max-height .5s ease, padding .5s ease;
   				&.active {
-  					padding-top: 25px;
-  					padding-bottom: 25px;
+  					padding: 1.25em 25px;
   					max-height: 500px;
   				}
   			}
 		}
-
 	}
 }
 .pop-up-window {

@@ -895,36 +895,45 @@ button {
 }
 
 #content .rectangles-row {
-  margin-top: 130px;
+  margin-top: 50px;
   margin-bottom: 70px;
-}
-
-#content .rectangles-row a {
-  display: inline-block;
 }
 
 #content .info-rectangle {
   display: inline-block;
   text-align: center;
   width: 100%;
-  font-size: 1.875em;
+  font-size: 1.5em;
   line-height: 1;
   font-family: exo;
   font-weight: 700;
   text-transform: uppercase;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 #content .info-rectangle .img {
   position: relative;
   height: 0;
   line-height: 215px;
-  margin-bottom: 20px;
   padding: 50% 10px;
   color: white;
   background-color: #38507e;
 }
 
-#content .info-rectangle .img div {
+#content .info-rectangle .img .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 1;
+  background-color: #4469b3;
+  font-weight: 700;
+  color: white;
+  padding: 10px;
+}
+
+#content .info-rectangle .img .centered {
   width: 95%;
   position: absolute;
   top: 50%;
@@ -932,7 +941,7 @@ button {
   transform: translate(-50%, -50%);
 }
 
-#content .info-rectangle .img div:before, #content .info-rectangle .img div:after {
+#content .info-rectangle .img .centered:before, #content .info-rectangle .img .centered:after {
   content: '';
   height: 2px;
   position: absolute;
@@ -942,15 +951,24 @@ button {
   background-color: #fff;
 }
 
-#content .info-rectangle .img div:before {
+#content .info-rectangle .img .centered:before {
   top: 70px;
 }
 
-#content .info-rectangle .img div:after {
+#content .info-rectangle .img .centered:after {
   bottom: 70px;
 }
 
-#content .info-rectangle p {
+#content .info-rectangle .table-cell {
+  display: table;
+  width: 100%;
+  height: 70px;
+  padding: 8px;
+}
+
+#content .info-rectangle .table-cell p {
+  display: table-cell;
+  vertical-align: middle;
   font-weight: 400;
   color: #5086f2;
 }
@@ -963,16 +981,17 @@ button {
 }
 
 #content .faq-row .faq-caption, #content .faq-row .faq h3 {
-  padding: 25px 60px;
+  padding: 1.25em 25px;
+  padding-right: 2.55em;
   color: #fff;
-  font-size: 3em;
+  font-size: 1.375em;
   text-transform: uppercase;
   font-family: exo;
   font-weight: 400;
 }
 
 #content .faq-row .faq-caption {
-  background-color: #e0e0e0;
+  background-color: #ccc;
   border-color: #e1e3e3;
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
 }
@@ -989,8 +1008,8 @@ button {
 
 #content .faq-row .faq i {
   top: 30px;
-  font-size: 2em;
-  right: 50px;
+  font-size: 1em;
+  right: 30px;
   position: absolute;
 }
 
@@ -1001,16 +1020,15 @@ button {
 #content .faq-row .faq .faq-content {
   max-height: 0;
   color: #404040;
-  font-size: 1.25em;
-  padding-left: 40px;
-  padding-right: 40px;
+  font-size: 1em;
+  padding-left: 25px;
+  padding-right: 25px;
   -webkit-transition: max-height .5s ease, padding .5s ease;
   transition: max-height .5s ease, padding .5s ease;
 }
 
 #content .faq-row .faq .faq-content.active {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 1.25em 25px;
   max-height: 500px;
 }
 
@@ -1427,8 +1445,14 @@ button {
   .top-navbar:after {
     left: calc(50% - 115px);
   }
-  #content .rectangles-row a {
-    width: 82%;
+  #content .info-rectangle {
+    font-size: 1.25em;
+  }
+  #content .info-rectangle .img {
+    line-height: 190px;
+  }
+  #content .info-rectangle p {
+    height: 55px;
   }
   #content .eval-1, #content .eval-2 {
     width: calc(50% - 135px);
@@ -1654,6 +1678,9 @@ button {
   #content table td.user-name span {
     font-size: 1em;
   }
+  #content .rectangles-row .info-rectangle {
+    font-size: 3.5vw;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -1714,6 +1741,15 @@ button {
   #content .rectangles-row > div {
     width: 100%;
   }
+  #content .faq-row .faq-caption, #content .faq-row .faq h3 {
+    font-size: 1em;
+  }
+  #content .faq-row .faq i {
+    top: 20px;
+  }
+  #content .rectangles-row .info-rectangle {
+    font-size: 7vw;
+  }
   #content .table-heading, #content caption {
     font-size: 13px;
   }
@@ -1721,8 +1757,9 @@ button {
     vertical-align: middle;
     margin-right: 0;
   }
-  #content table td.user-name .name-wrapper {
+  #content table.endorsements td.user-name .name-wrapper {
     margin-top: 3px;
+    width: calc(100% - 25px);
   }
   .left-pop-up-area, .right-pop-up-area {
     width: 100%;
