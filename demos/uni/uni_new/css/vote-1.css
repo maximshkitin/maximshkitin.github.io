@@ -434,8 +434,8 @@ header {
 }
 
 .form-block {
-  padding-top: 100px;
-  padding-bottom: 55px;
+  padding-top: 65px;
+  padding-bottom: 65px;
   float: left;
   width: calc(43.75% - 60px);
   margin-left: 60px;
@@ -589,7 +589,12 @@ header {
   color: #999;
   text-transform: uppercase;
 }
-
+form + p {
+  margin-top: 10px;
+}
+form + p a {
+  color: #5086f2;
+}
 #log-in .or:before, #log-in .or:after {
   content: '';
   display: block;
