@@ -1997,6 +1997,9 @@ body {
   .mt-section {
     margin-top: -2.5%;
   }
+  #jud-criteria .criteria [class*="item-"] {
+    height: 210px;
+  }
   #jud-criteria .jud-info p {
     font-size: 0.935em;
   }
