@@ -1235,7 +1235,11 @@ body {
     width: 420px;
   }
 }
-
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  #jud-criteria .criteria [class*="item-"] {
+    height: 210px;
+  }
+}
 @media only screen and (max-width: 1199px) and (min-width: 768px) {
   .main-heading {
     font-size: 2.5em;

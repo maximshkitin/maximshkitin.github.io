@@ -927,7 +927,15 @@ body {
   font-family: exo;
   font-weight: 500;
 }
+.subtitle-text {
+  font-size: 1.5em;
+  color: #364b74;
+  margin-bottom: 40px;
 
+}
+.subtitle-text p {
+  margin-bottom: 10px;
+}
 #third .items .skew-item p {
   margin-top: 10px;
 }
