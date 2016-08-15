@@ -53,22 +53,22 @@
               <button class="btn btn-default" ng-click="editUser(user)">Edit</button>
               <button class="btn btn-danger" ng-click="deleteUser($index)">Delete</button>
           </td>
-      </script>
-      <script type="text/ng-template" id="edit">
-          <td><input class="form-control" type="text" ng-model="selected.name"></td>
-          <td><input class="form-control" type="text" ng-model="selected.surname"></td>
-          <td><input class="form-control" type="number" min="1" max="100" ng-model="selected.age" required></td>
-          <td>
-            <select class="form-control" name="gender" id="gender" ng-model="selected.gender">
-              <option value="male">male</option>
-              <option value="female">female</option>
-            </select>
-          </td>
-          <td>
-              <button class="btn btn-success" ng-click="saveUser($index)">Save</button>
-              <button class="btn btn-danger" ng-click="reset()">Cancel</button>
-          </td>
-      </script>
+    </script>
+    <script type="text/ng-template" id="edit">
+        <td><input class="form-control" type="text" ng-model="selected.name"></td>
+        <td><input class="form-control" type="text" ng-model="selected.surname"></td>
+        <td><input class="form-control" type="number" min="1" max="100" ng-model="selected.age" required></td>
+        <td>
+          <select class="form-control" name="gender" id="gender" ng-model="selected.gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+        </td>
+        <td>
+            <button class="btn btn-success" ng-click="saveUser($index)">Save</button>
+            <button class="btn btn-danger" ng-click="reset()">Cancel</button>
+        </td>
+    </script>
     
   </div>
 </body>

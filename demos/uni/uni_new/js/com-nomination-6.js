@@ -27,7 +27,54 @@ $(document).ready(function () {
 		$(this).parent().parent().find('.hint').toggleClass('active');
 	});
 
-
+	// editable table
+	var newValue;
+	var input, currentValue, previousValue;
+	$('td .display').click(function(){
+		$(this).removeClass('active');
+		if ($('td .edit.active').length > 0) {
+			var editted = $('td .edit.active');
+			editted.removeClass('active');
+			editted.parent().find('.display').addClass('active');
+			newValue = '';
+		}
+		
+		input = $(this).parent().find('.edit').find('input');
+		var text = $(this).find('span').text();
+		$(this).parent().find('.edit').find('input').attr('value', text);
+		$(this).parent().find('.edit').addClass('active');
+	});
+	$('td .edit .save').click(function(){
+		currentValue = newValue;
+		if ((currentValue != previousValue && newValue != '') || 
+			(previousValue === undefined && newValue != '')) {
+			input = $(this).parent().find('.edit').find('input');
+			var text = $(this).find('span').text();
+			$(this).parent().find('.edit').find('input').prop('value', text);
+			$(this).parent().parent().find('.display').find('span').html(newValue);
+			previousValue = currentValue;
+		}
+		$(this).parent().removeClass('active');
+		$(this).parent().parent().find('.display').addClass('active');
+	});
+	$('td .edit .cncl').click(function(){
+		if ($(this).parent().find('select').length > 0) {
+			var select = $(this).parent().find('select');
+			var val = select.val();
+			var oldText = $(this).parent().parent().find('.display').find('span').text();
+			select.val(oldText);
+		} else if ($(this).parent().find('input').length > 0) {
+			previousValue = newValue;
+			var oldText = $(this).parent().parent().find('.display').find('span').text();
+			$(this).parent().find('input').prop('value', oldText);
+		}
+		$(this).parent().removeClass('active');
+		$(this).parent().parent().find('.display').addClass('active');
+	});
+	$('.change-data').on('input propertychange paste', function(e){
+		newValue = e.target.value;
+	});
+	// end of editable table
 
 	$('#last').click(function(){
 		$('.modal').fadeIn(700);

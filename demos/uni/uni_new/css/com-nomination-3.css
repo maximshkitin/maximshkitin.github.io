@@ -588,7 +588,7 @@ header {
   background-color: #fafafa;
   margin-top: 5px;
   padding: 20px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 #step-6 .table-wrapper table {
@@ -621,11 +621,11 @@ header {
   cursor: pointer;
 }
 
-#step-6 .table-wrapper table tr td:last-child:hover {
+#step-6 .table-wrapper table tr td:last-child:hover .display {
   color: #5086f2;
 }
 
-#step-6 .table-wrapper table tr td:last-child:hover i {
+#step-6 .table-wrapper table tr td:last-child:hover .display i {
   color: #5086f2;
 }
 
@@ -786,6 +786,34 @@ select {
   border: 1px solid #ededed;
   height: 45px;
   background-color: #fff;
+}
+#step-6 td select {
+    float: none;
+    height: 30px;
+    width: 50%;
+    margin-right: 5px;
+  }
+#step-6 td button {
+  padding: .25em .5em;
+  background-color: black;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+}
+#step-6 td input {
+  width: 50%;
+  margin-right: 5px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+#step-6 td button.save {
+  background-color: #449d44;
+}
+#step-6 td button.cncl {
+  background-color: #c9302c;
 }
 .step .input-field input:not([type="radio"]) {
   height: 45px;
@@ -1228,10 +1256,18 @@ select {
     border-bottom: 1px solid #e5e5e5;
     cursor: pointer;
   }
-  #step-6 .table-wrapper table tr td:last-child:hover {
+  #step-6 td input, #step-6 td select {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #step-6 td input, #step-6 td input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #step-6 .table-wrapper table tr td:last-child:hover .display {
     color: #5086f2;
   }
-  #step-6 .table-wrapper table tr td:last-child:hover i {
+  #step-6 .table-wrapper table tr td:last-child:hover .display i {
     color: #5086f2;
   }
   #step-6 .table-wrapper table tr td:last-child i {
@@ -1424,6 +1460,10 @@ select {
   #step-6 .table-wrapper table tr td:last-child {
     width: 50%;
   }
+  #step-6 td input, #step-6 td select {
+    width: 100%;
+    margin-bottom: 5px;
+  }
   #content .info-container {
     text-align: center;
     padding: 30px;
@@ -1447,4 +1487,11 @@ select {
   #footer .copyright .to-top {
     top: 25px;
   }
+}
+
+td .display, td .edit {
+  display: none;
+}
+td .display.active, td .edit.active {
+  display: block;
 }
