@@ -792,6 +792,8 @@ select {
     height: 30px;
     width: 50%;
     margin-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 #step-6 td button {
   padding: .25em .5em;
