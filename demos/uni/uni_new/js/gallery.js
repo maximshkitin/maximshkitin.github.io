@@ -26,8 +26,8 @@ $(document).ready(function () {
 		var className = item.classList[2];
 		if (numberOfImgs > 6) {
 			createPages($(this), imgItems, className, numberOfImgs);
-			var height = $(this).height();
-			$(this).css('height', height);
+			// var height = $(this).height();
+			// $(this).css('height', height);
 			$(this).css('position', 'relative');
 			$(this).css('margin-bottom', '80px');
 		}
@@ -76,6 +76,15 @@ $(document).ready(function () {
 			thisTab.find('.page.active').removeClass('active');
 			thisTab.find('.page-' + i).addClass('active');
 		}
+		var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
+		var topPosition = $(this).closest('.tab-item').offset().top;
+		if (isSafari) {
+	 		$('body').animate({ scrollTop: topPosition - 100 }, 500);
+		} 
+	    else {
+	     	$('html').animate({ scrollTop: topPosition - 100 }, 500);
+	    }
+		return false;
 	});
 	$('.pagination-ul .arrow:not([disabled])').click(function(){
 		var thisTab = $(this).parent().parent().parent().parent();
@@ -112,6 +121,15 @@ $(document).ready(function () {
 				}
 			}
 		}
+		var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
+		var topPosition = $(this).closest('.tab-item').offset().top;
+		if (isSafari) {
+	 		$('body').animate({ scrollTop: topPosition - 100 }, 500);
+		} 
+	    else {
+	     	$('html').animate({ scrollTop: topPosition - 100 }, 500);
+	    }
+		return false;
 	});
 
 	$('.hamburger-menu').click(function(){
