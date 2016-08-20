@@ -487,7 +487,10 @@ hr {
 .help {
   margin-top: 15px;
 }
-
+.soc-buttons a {
+  display: block;
+  margin-bottom: 7px;
+}
 #content .log-in-button {
   width: 100%;
   text-align: left;
