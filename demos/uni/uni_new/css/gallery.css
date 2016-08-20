@@ -1448,7 +1448,11 @@ body {
     margin-top: -3%;
   }
 }
-
+@media only screen and (max-width: 599px) {
+  iframe {
+    width: 100% !important;
+  }
+}
 @media only screen and (max-width: 599px) and (min-width: 480px) {
   .mt-section {
     margin-top: -4.5%;
