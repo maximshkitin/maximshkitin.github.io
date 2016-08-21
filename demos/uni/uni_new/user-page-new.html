@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/user-page-new.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="top-navbar clearfix">
+		<div class="container">
+			<div class="container-restricted">
+				<div class="contact-info">
+					<i class="fa fa-comment"></i>
+					<span>+33688888 | info@yourdomain.com</span>
+				</div>
+				<div class="soc-networks">
+					<ul>
+						<li><a class="fa fa-facebook" href=""></a></li>
+						<li><a class="fa fa-twitter" href=""></a></li>
+						<li><a class="fa fa-linkedin" href=""></a></li>
+						<li><a class="fa fa-youtube" href=""></a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div id="hero">
+		<div class="overlay-shapes">
+			<header>
+				<!-- NAVBAR -->
+				<nav class="navbar clearfix">
+					<div class="container">
+						<div class="container-restricted">
+							<div class="hamburger-menu">
+								<span></span>
+							    <span></span>
+							    <span></span>
+							</div>
+							<a href="">
+								<div id="logo"></div>
+							</a>
+							
+							<ul id="main-nav">
+								<li class="active"><a href="">Home.</a></li>
+								<li><a href="">About.</a></li>
+								<li><a href="">Gallery.</a></li>
+								<li><a href="">Contact.</a></li>
+								<li><a href="">Nominees.</a></li>
+								<li class="dropdown">
+									<a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									    My account
+									    <span class="caret"></span>
+									  </a>
+
+									  <ul class="dropdown-menu" aria-labelledby="dLabel">
+									    <li><a href="">Dashboard</a></li>
+									    <li>
+									    	<span>Badges</span>
+											<ul id="badge-submenu">
+												<li><a href="">
+													Your Badges
+												</a></li>
+												<li><a href="">
+													Available Badges
+												</a></li>
+											</ul>
+									    </li>
+									    <li><a href="">Spin & Win</a></li>
+									    <li class="log-out"><a href="">Log out</a></li>
+									  </ul>
+								</li>
+								<li class="skew-button skew-button__blue">
+									<div class="fixed-deg">
+										<a href="">Vote now</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+		</div>
+		<!-- HEADER -->
+	</div> <!-- HERO ENDED -->
+	<div id="page">
+		<div class="skew-section">
+			<div class="container">
+				<div class="row">
+					<aside class="col-md-offset-1 col-md-3">
+						<div class="fixed-deg-y wrapper">
+							<figure>
+								<div class="img">
+									<img src="img/avatar.jpg" alt="">
+										<div class="hover">
+											<button id="upload-avatar">
+												<span class="full">
+													<span class="center">
+														<i class="fa fa-camera"></i><br>
+														change photo
+													</span>
+												</span>
+											</button>
+											<input id="get-photo" type="file">
+										</div>
+								</div>
+								<figcaption>
+									<h1>
+										Jonathan Doe
+									</h1>
+								</figcaption>
+							</figure>
+							<!-- <div class="nominated" data-animate="fadeInUpLess">
+								<div class="img">
+									<img src="img/badges/badges-bg-fourth-1.png" alt="">
+								</div><div class="text">
+									<p>
+										Nominated:
+									</p>
+									<a href="">
+										Zalorium
+										<i class="fa fa-external-link"></i>
+									</a>
+								</div>
+							</div> -->
+							<p class="nominate-comp" data-animate="fadeInUpLess">
+								<i class="fa fa-flag"></i>
+								Nominate a company
+							</p>
+							<div class="table-wrapper" data-animate="fadeInUpLess">
+								<table>
+									<caption>
+										Quick Stats	
+									</caption>
+									<tr>
+										<td>
+											<i class="fa fa-magnet"></i>
+											Unlocked Badges
+										</td>
+										<td>
+											4/24
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-street-view"></i>
+											Endorsement
+										</td>
+										<td>
+											-
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-users"></i>
+											Referral (Signups)
+										</td>
+										<td>
+											608
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-bullhorn"></i>
+											Invited Friends
+										</td>
+										<td>
+											9280
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-user"></i>
+											Status
+										</td>
+										<td>
+											<div class="text status">
+												Rookie
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-flash"></i>
+											Rank
+										</td>
+										<td>
+											<div class="text">
+												chief
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-refresh"></i>
+											Spin opportunity
+										</td>
+										<td>
+											0/1
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="progress-info" data-animate="fadeInUp">
+								<div class="completion-rate">
+									Completion Rate
+								</div>
+								<div class="progress-line">
+									<div class="progress-wrap">
+										<div class="progress"></div>
+									</div><div class="progress-num">
+										16%
+									</div>
+								</div>
+							</div>
+							<div class="info-box-progress" data-animate="fadeInUpLess">
+								<span class="low">
+									<i class="fa fa-exclamation-circle"></i>
+									It's moderately low!
+								</span>
+								<p>
+									Increase your rate. Support your selected company to make sure that they’ll win by inviting friends to support your champion. Get badges, points and as many prizes as possible lorem ipsum.
+								</p>
+							</div>
+						</div>
+					</aside>
+					<div class="col-md-7" id="main-content">
+						<div class="fixed-deg-y">
+							<div class="nomination-case company-info clearfix">
+								<div class="text false">
+									<p>
+										<i class="fa fa-exclamation-circle"></i>
+										You have not nominate any company yet!
+									</p>
+								</div><!-- <div class="text true">
+									<p>
+										<i class="fa fa-check-circle"></i>
+										You have nominated company <strong>Zalozium</strong>!
+									</p>
+								</div> --><div class="subtitle">
+									<a href="">
+										<div class="skew-button skew-button__black">
+											<div class="fixed-deg">
+												nominate a company
+											</div>
+										</div>
+									</a>
+									<p>vote and get a chance to win prizes</p>
+								</div>
+							</div>
+							<!-- <div class="vote-case company-info">
+								<div class="rank">
+									<p><i class="fa fa-bookmark-o"></i>4</p>
+									<p>current rank</p>
+								</div>
+								<div class="score">
+									<p><i class="fa fa-star-o"></i>4808</p>
+									<p>total score</p>
+								</div>
+								<div class="subtitle">
+									<a href="">
+										<div class="skew-button">
+											<div class="fixed-deg">
+												Vote for this company
+											</div>
+										</div>
+									</a>
+									<p>vote and get a chance to win prizes</p>
+								</div>
+							</div> -->
+
+
+							<div class="current-badges" data-animate="fadeInUpLess">
+								<ul>
+									<li>
+										<div class="item">
+											<img src="img/badges/badge-magnet-1.png" alt="">
+											<p>
+												Rookie Unicorn
+											</p>
+										</div>
+									</li><li>
+										<div class="item">
+											<img src="img/badges/badge-flash-2.png" alt="">
+											<p>
+												Skilled Unicorn Finder
+											</p>
+										</div>
+									</li><li>
+										<div class="item">
+											<img src="img/badges/badge-2.png" alt="">
+											<p>
+												Rookie Unicorn
+											</p>
+										</div>
+									</li><li>
+										<div class="item">
+											<img src="img/badges/badge-3.png" alt="">
+											<p>
+												Rookie Unicorn
+											</p>
+										</div>
+									</li><li>
+										<div class="item">
+											<img src="img/badges/badge-flash-1.png" alt="">
+											<p>
+												Rookie Unicorn
+											</p>
+										</div>
+									</li><li>
+										<div class="item">
+											<img src="img/badges/badge-hidden.png" alt="">
+											<p>
+												Hidden Badge
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="unlock-more" data-animate="fadeInUpLess">
+								<div class="content-box-title">
+									<div class="text">
+										<i class="special"></i>
+										Unlock more badges
+									</div><div class="corner">
+										<div class="num">
+											4
+										</div><div>
+											badges<br> unlocked
+										</div>
+									</div>
+								</div>
+								<div class="content">
+									<p>
+										Many prizes waiting to be unlocked! This is a quick summary of what you could do now to get the most out of this site and get more and more lorem ipsum prizes.
+									</p>
+									<ul>
+										<li>
+											<div class="award">
+												<div class="img">
+													<img src="img/badges/badge-1.png" alt="">
+												</div><div class="text">
+													<p class="title">
+														Expert 'Unicorn Hunter'
+													</p>
+													<p>
+														Make 200 more friends registered to this site
+													</p>
+												</div>
+											</div>
+											<span>
+												Invite
+											</span>
+										</li>
+										<li class="completed">
+											<div class="award">
+												<div class="img">
+													<img src="img/badges/badge-complete.png" alt="">
+												</div><div class="text">
+													<p class="title">
+														Expert 'Unicorn Hunter'
+													</p>
+													<p>
+														Make 200 more friends registered to this site
+													</p>
+												</div>
+											</div>
+											<span>
+												Completed
+											</span>
+										</li>
+										<li>
+											<div class="award">
+												<div class="img">
+													<img src="img/badges/badge-flash-3.png" alt="">
+												</div><div class="text">
+													<p class="title">
+														Expert 'Unicorn Hunter'
+													</p>
+													<p>
+														Make 200 more friends registered to this site
+													</p>
+												</div>
+											</div>
+											<span>
+												Connect
+											</span>
+										</li>
+										<li class="unknown-type">
+											<div class="award">
+												<div class="img">
+													<img src="img/badges/badge-3.png" alt="">
+												</div><div class="text">
+													<p class="title">
+														Expert 'Unicorn Hunter'
+													</p>
+													<p>
+														Make 200 more friends registered to this site
+													</p>
+												</div>
+											</div>
+											<span>
+												N/A
+											</span>
+										</li>
+										<li>
+											<div class="award">
+												<div class="img">
+													<img src="img/badges/badge-magnet-2.png" alt="">
+												</div><div class="text">
+													<p class="title">
+														Expert 'Unicorn Hunter'
+													</p>
+													<p>
+														Make 200 more friends registered to this site
+													</p>
+												</div>
+											</div>
+											<span>
+												Invite
+											</span>
+										</li>
+										<li class="hidden_">
+											<div class="award">
+												<div class="img">
+													<img src="img/badges/badge-hidden.png" alt="">
+												</div><div class="text">
+													<p class="title">
+														Expert 'Unicorn Hunter'
+													</p>
+													<p>
+														Make 200 more friends registered to this site
+													</p>
+												</div>
+											</div>
+											<span>
+												Stay tune!
+											</span>
+										</li>
+									</ul>
+									<div class="info-box">
+										<i class="fa fa-info-circle"></i>
+										<p>
+											Collection of badges will increase your chances to win more prizes. Add more badges to increase your completion rate.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="referred-friends" data-animate="fadeInUpLess">
+								<div class="content-box-title">
+									<div class="text">
+										<i class="fa fa-users"></i>
+										Your referred friends
+									</div><div class="corner">
+										<div class="num">
+											608
+										</div><div>
+											referred<br> users
+										</div>
+									</div>
+								</div>
+								<table>
+									<thead>
+										<tr>
+											<th>
+												Name
+											</th>
+											<th>
+												Clicked
+												<i class="fa fa-question-circle"></i>
+											</th>
+											<th>
+												Nominated
+												<i class="fa fa-question-circle"></i>
+											</th>
+											<th>
+												Endorsed
+												<i class="fa fa-question-circle"></i>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="img">
+													<img src="img/avatar.jpg" alt="">
+												</div><div class="name">
+													<span>Joe Doe</span>
+												</div>
+											</td>
+											<td><i class="fa fa-check-circle-o"></i></td>
+											<td><i class="fa fa-times-circle-o"></i></td>
+											<td><i class="fa fa-times-circle-o"></i></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="img">
+													<img src="img/avatar.jpg" alt="">
+												</div><div class="name">
+													<span>Joe Doe</span>
+												</div>
+											</td>
+											<td><i class="fa fa-check-circle-o"></i></td>
+											<td><i class="fa fa-times-circle-o"></i></td>
+											<td><i class="fa fa-times-circle-o"></i></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="img">
+													<img src="img/avatar.jpg" alt="">
+												</div><div class="name">
+													<span>Joe Doe</span>
+												</div>
+											</td>
+											<td><i class="fa fa-check-circle-o"></i></td>
+											<td><i class="fa fa-times-circle-o"></i></td>
+											<td><i class="fa fa-times-circle-o"></i></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="img">
+													<img src="img/avatar.jpg" alt="">
+												</div><div class="name">
+													<span>Joe Doe</span>
+												</div>
+											</td>
+											<td><i class="fa fa-check-circle-o"></i></td>
+											<td><i class="fa fa-times-circle-o"></i></td>
+											<td><i class="fa fa-times-circle-o"></i></td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td>
+												<a href="">
+													<strong>
+														view all
+													</strong>
+													<span>
+														(608)
+													</span>
+												</a>
+											</td>
+											<td>
+												<span>
+													300
+												</span>
+												clickthrough
+											</td>
+											<td>
+												<span>
+													300
+												</span>
+												users
+											</td>
+											<td>
+												<span>
+													300
+												</span>
+												users
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+								<div class="table-footer">
+									<div class="skew-button label">
+										<div class="fixed-deg label-in">
+											<div>
+												<span>
+													3
+												</span>
+											</div>
+											<div>
+												more
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="">
+											<strong>
+												3 more signups
+											</strong>
+										</a>
+										needed to get next
+											chance to
+										<a href="">
+											<strong>
+												spin the wheel
+											</strong>
+										</a>
+										for lucky draw
+									</div><div class="buttons">
+										<a href="">
+											<div class="skew-button skew-button__black">
+												<div class="fixed-deg">
+													Remind
+												</div>
+											</div>
+										</a>
+										<a href="">
+											<div class="skew-button skew-button__blue">
+												<div class="fixed-deg">
+													Invite
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="endorsements">
+								<div class="content-box-title">
+									<div class="text">
+										<i class="fa fa-street-view"></i>
+										Your endorsements
+									</div><div class="corner">
+										<div class="num">
+											0
+										</div><div>
+											referred<br> users
+										</div>
+									</div>
+								</div>
+								<div class="first-content">
+									<p>
+										<strong>
+											Currently you don’t have any lorem ipsum company.
+										</strong><br>
+										You need to nominate lorem ipsum before enjoy dolor sit amet benefits.<br>
+										<a href="">
+											Nominate now
+										</a>
+									</p>
+								</div>
+								<div class="table-footer">
+									<div class="text">
+										<i class="fa fa-repeat"></i><p><a href="">
+											<strong>
+												Nominate
+											</strong>
+										</a>
+										a company in order to get points
+										for chance to
+										<a href="">
+											<strong>
+												spin the wheel
+											</strong>
+										</a>
+										of fortune</p>
+									</div><div class="buttons">
+										<a href="">
+											<div class="skew-button skew-button__black">
+												<div class="fixed-deg">
+													Nominate
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div> -->
+							<div class="endorsements" data-animate="fadeInUpLess">
+								<div class="content-box-title">
+									<div class="text">
+										<i class="fa fa-street-view"></i>
+										Your endorsements
+									</div><div class="corner">
+										<div class="num">
+											0
+										</div><div>
+											referred<br> users
+										</div>
+									</div>
+								</div>
+								<div class="existed-content">
+									<div class="table-wrapper clearfix">
+										<div class="col">
+											<div class="item"><span>Joe Doe</span></div>
+											<div class="item"><span>Joe Doe</span></div>
+											<div class="item"><span>Joe Doe</span></div>
+											<div class="item"><span>Joe Doe</span></div>
+										</div>
+										<div class="col">
+											<div class="item"><span>Joe Doe</span></div>
+											<div class="item"><span>Joe Doe</span></div>
+											<div class="item"><span>Joe Doe</span></div>
+											<div class="item"><span>Joe Doe</span></div>
+										</div>
+										<div class="col">
+											<div class="item"><span>Joe Doe</span></div>
+											<div class="item"><span>Joe Doe</span></div>
+											<div class="item"><span>Joe Doe</span></div>
+											<div class="item last">
+												<a href="">
+													<strong>
+														view all
+													</strong>
+													<span>
+														(388)
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table-footer">
+									<div class="skew-button label">
+										<div class="fixed-deg label-in">
+											<div>
+												<span>
+													3
+												</span>
+											</div>
+											<div>
+												more
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="">
+											<strong>
+												3 more signups
+											</strong>
+										</a>
+										needed to get next
+											chance to
+										<a href="">
+											<strong>
+												spin the wheel
+											</strong>
+										</a>
+										for lucky draw
+									</div><div class="buttons">
+										<a href="">
+											<div class="skew-button skew-button__black">
+												<div class="fixed-deg">
+													Remind
+												</div>
+											</div>
+										</a>
+										<a href="">
+											<div class="skew-button skew-button__blue">
+												<div class="fixed-deg">
+													Invite
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="info-box" data-animate="fadeInUpLess">
+								<i class="fa fa-info-circle"></i>
+								<p>
+									In order to spin the wheel for lucky draw you need to have either 3 signups or 3 endorsement. It’s so lorem ipsum dolor sit amet.
+								</p>
+							</div>
+							<div class="faq-box">
+								<div class="faq-title" data-animate="fadeInUp">
+									<i class="fa fa-comments-o"></i>
+									Frequently Asked Questions
+								</div>
+								<div class="faq" data-animate="fadeInUpLess">
+									<div class="ques">
+										<p>
+											My friends are interested but most of them don’t want to lorem ipsum dolor sit amet. What should I do?
+										</p>
+										<i class="fa fa-plus-square-o"></i>
+										<i class="fa fa-minus-square-o"></i>
+									</div>
+									<div class="faq-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptas, voluptate, vel aperiam nisi dicta doloremque minima ducimus, tenetur dolores voluptatem et! Animi optio at tempore doloribus nostrum ullam, nobis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsam accusamus facere, minima vitae perferendis distinctio, soluta cum fuga debitis architecto iste. Non sit, animi dolore adipisci assumenda nemo id!
+										</p>
+									</div>
+								</div>
+								<div class="faq" data-animate="fadeInUpLess">
+									<div class="ques">
+										<p>
+											My friends are interested but most of them don’t want to lorem ipsum dolor sit amet. What should I do?
+										</p>
+										<i class="fa fa-plus-square-o"></i>
+										<i class="fa fa-minus-square-o"></i>
+									</div>
+									<div class="faq-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi quam laborum similique obcaecati dolores facere consequuntur et non minima deserunt modi illum reiciendis ad, excepturi, neque consectetur praesentium voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta esse eum ut numquam atque sit reiciendis sunt veritatis, delectus dolorem nemo cumque, voluptas amet. Repellat consectetur quasi perspiciatis, sed?
+										</p>
+									</div>
+								</div>
+								<div class="faq" data-animate="fadeInUpLess">
+									<div class="ques">
+										<p>
+											My friends are interested but most of them don’t want to lorem ipsum dolor sit amet. What should I do?
+										</p>
+										<i class="fa fa-plus-square-o"></i>
+										<i class="fa fa-minus-square-o"></i>
+									</div>
+									
+									<div class="faq-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est atque ducimus ad voluptatem. Voluptatum maxime aspernatur nobis, animi dolor minus! Delectus excepturi, dignissimos fugit omnis porro sit tenetur minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique soluta, beatae quam sunt officia. Dolor exercitationem, consequuntur quis molestiae! Totam sit ipsum, doloremque culpa voluptates pariatur? Odio ipsam molestiae facere?
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		</div>
+	</div>
+	<div class="modal"></div>
+	<footer id="footer">
+		<div class="container">
+			<div class="container-restricted">
+				<div class="sponsors-logo" data-animate="fadeInUpLess">
+					<p>
+						<span>Unicornaward</span><br>
+						is proudly sponsored by<br>
+						<b></b>
+					</p>
+					<figure>
+						<img src="img/sponsor-logo.png" alt="SixCap">
+						<figcaption>
+							Sixcapital
+						</figcaption>
+					</figure>
+					<ul>
+						<li><a href="">About</a></li>
+						<li><a href="">Terms & Conditions</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div class="copyright">
+					<span>© 2016</span> SIX CAPITAL Pte Ltd. All Rights Reserved
+					<div class="to-top">
+						<a href="">
+							<i class="fa fa-arrow-up"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/user-page-new.js"></script>
+</body>
+</html>
