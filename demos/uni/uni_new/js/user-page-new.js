@@ -25,6 +25,49 @@ $(document).ready(function () {
 	$('.faq').click(function(){
 		$(this).toggleClass('active');
 	});
+
+
+
+	// popups
+
+	var invitationsAmount = $('#live-filter-list li').length;
+	$('.invite-friends .title span').html('(' + invitationsAmount + ')');
+	$('.view-all-friends span').html('(' + invitationsAmount + ')');
+	$('.invite-friends .close').click(function(){
+		$('.invite-friends').fadeOut('fast');
+		return false;
+	});
+	$('.view-all-friends').click(function(){
+		$('.invite-friends').fadeIn('fast');
+		return false;
+	});
+	$('.share-networks .close').click(function(){
+		$('.share-networks').fadeOut('fast');
+		return false;
+	});
+	$('.share-btn').click(function(){
+		$('.share-networks').fadeIn('fast');
+		return false;
+	});
+	$('.invite-friends .input-field .fa-times').click(function(){
+		$('#live-filter-input').val('');
+		$('#live-filter-list li').css('display', 'list-item');
+		$('.invite-friends .input-field .fa-times').css('display', 'none');
+		$('.invite-friends .input-field .fa-search').css('display', 'inline-block');
+	});
+	$('#live-filter-input').on('input paste propertychange',function(){
+		if ($(this).val() != '') {
+			// if ($('.input-field .fa-search').is(':visible')) {
+
+			// }
+			$('.invite-friends .input-field .fa-search').css('display', 'none');
+			$('.invite-friends .input-field .fa-times').css('display', 'inline-block');
+		}
+		else {
+			$('.invite-friends .input-field .fa-times').css('display', 'none');
+			$('.invite-friends .input-field .fa-search').css('display', 'inline-block');
+		}
+	});
 });
 $(window).bind('load', function(){
 	var scrollTop = $(window).scrollTop();
