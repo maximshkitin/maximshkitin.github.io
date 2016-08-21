@@ -525,6 +525,10 @@ a {
   color: #5086f2;
 }
 
+html.overflow {
+  overflow: hidden;
+}
+
 body {
   font-family: maven;
   font-weight: 400;
@@ -724,7 +728,7 @@ body {
 }
 
 header {
-  height: 400px;
+  padding-bottom: 300px;
 }
 
 #logo {
@@ -1232,6 +1236,7 @@ header {
   color: white;
   background-color: #4769b0;
   position: relative;
+  overflow: hidden;
 }
 
 #main-content .content-box-title > div {
@@ -1646,6 +1651,7 @@ header {
 }
 
 .pop-up.invite-friends .wrapper {
+  overflow: scroll;
   position: absolute;
   width: 700px;
   left: 50%;
@@ -1753,6 +1759,7 @@ header {
 
 .pop-up.invite-friends .footer {
   padding: 30px 25px;
+  background-color: #fff;
 }
 
 .pop-up.invite-friends .footer a {
@@ -1761,14 +1768,18 @@ header {
   text-transform: uppercase;
 }
 
-.pop-up.share-networks .wrapper {
+.pop-up.share-networks > div {
   position: absolute;
-  border-radius: 3px;
-  border: 8px solid rgba(255, 255, 255, 0.25);
-  width: 550px;
   left: 50%;
   top: 48%;
   transform: translate(-50%, -50%);
+}
+
+.pop-up.share-networks .wrapper {
+  border-radius: 3px;
+  border: 8px solid rgba(255, 255, 255, 0.25);
+  width: 550px;
+  overflow: scroll;
 }
 
 .pop-up.share-networks .wrapper > div {
@@ -2013,18 +2024,37 @@ header {
   color: #ccc;
 }
 
-@media only screen and (min-width: 2200px) {
-  #hero .heading {
-    padding-bottom: 180px;
+#main-content .referred-friends table td:not(:first-child), #main-content .referred-friends table th:not(:first-child) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media only screen and (max-height: 599px) {
+  .pop-up.invite-friends .wrapper {
+    transform: translateX(-50%);
+    top: 15px;
+    bottom: 15px;
   }
-  #second .skew-section {
-    padding-bottom: 8%;
+}
+
+@media only screen and (max-height: 499px) {
+  .pop-up.share-networks > div {
+    position: absolute;
+    top: 15px;
+    bottom: 40px;
+    right: 15px;
+    left: 15px;
+    transform: none;
   }
-  #fifth .skew-section {
-    padding-bottom: 8%;
-  }
-  #sixth .skew-section {
-    padding-bottom: 5%;
+  .pop-up.share-networks .wrapper {
+    position: absolute;
+    width: auto;
+    transform: none !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    background-color: #fff;
   }
 }
 
@@ -2039,6 +2069,8 @@ header {
   .navbar .dropdown-menu {
     float: none;
     position: static;
+    box-shadow: none;
+    border: 0;
   }
   .navbar .dropdown-menu > li {
     text-align: center;
@@ -2134,7 +2166,7 @@ header {
     border-bottom: 0;
   }
   #main-nav li a {
-    display: inline-block;
+    display: block;
     padding: 10px;
   }
   #main-nav.open {
@@ -2167,18 +2199,86 @@ header {
   .mobile-row {
     margin: 0;
   }
-  #fourth .current-advocation .img {
-    width: 25%;
+  #page .skew-section aside {
+    background-color: transparent;
   }
-  #fourth .current-advocation .text {
-    width: 75%;
+  #page .skew-section aside:before {
+    display: none;
   }
-  #fourth .current-advocation .button {
-    position: static;
-    width: 100%;
-    transform: none;
+  #page .skew-section aside figure {
+    width: auto;
+  }
+  #page .skew-section aside .wrapper {
+    padding: 0;
     text-align: center;
-    margin-top: 40px;
+  }
+  #page .skew-section aside .wrapper .completion-rate {
+    text-align: center;
+  }
+  #page .skew-section aside .wrapper .table-wrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #page .skew-section aside .wrapper .table-wrapper table caption {
+    text-align: center;
+  }
+  #page .skew-section aside .wrapper .table-wrapper table td:first-child {
+    text-align: left;
+  }
+  #page .skew-section aside .progress-wrap {
+    width: calc(100% - 50px);
+  }
+  #page .skew-section aside .progress-num {
+    width: 50px;
+  }
+  #page .table-footer .label {
+    left: 0;
+  }
+  #page .table-footer .label:after {
+    width: 7px;
+  }
+  #page aside .nominated .text {
+    width: auto;
+  }
+  #main-content .vote-case .subtitle {
+    margin-top: 20px;
+  }
+  #main-content {
+    margin-top: 80px;
+    padding-left: 15px;
+  }
+  #main-content .company-info {
+    margin-top: 0;
+    text-align: center;
+  }
+  #main-content .company-info .subtitle, #main-content .company-info .text {
+    width: auto;
+    float: none;
+    display: block;
+  }
+  #main-content .company-info .text {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #main-content .content-box-title .text {
+    font-size: 1em;
+  }
+  #main-content .content-box-title .text i.special {
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+  }
+  #main-content .content-box-title .corner .num {
+    font-size: 1.5em;
+    vertical-align: top;
+  }
+  #main-content .content-box-title .corner > div:not(.num) {
+    font-size: 10px;
+  }
+  #main-content .faq-box .faq-title {
+    text-align: center;
   }
 }
 
@@ -2228,52 +2328,6 @@ header {
   #footer {
     padding-top: 30px;
     text-align: center;
-  }
-  #hero .heading-descr {
-    font-size: 1em;
-  }
-  .badge-info-section .badge-info {
-    padding-left: 15px;
-  }
-  #first .badge-info ul li {
-    display: inline-block;
-    width: 49%;
-  }
-  #first .badge-info ul li:nth-child(1), #first .badge-info ul li:nth-child(3) {
-    padding-right: 10px;
-  }
-  #first .badge-info ul li:nth-child(2), #first .badge-info ul li:nth-child(4) {
-    padding-left: 10px;
-  }
-  #first .badge-info ul li:nth-child(3) div {
-    background-color: #5086f2;
-  }
-  #first .badge-info ul li:nth-child(2) div {
-    background-color: #a860f0;
-  }
-  .unicorn-info .left30 {
-    margin: 0;
-  }
-  .unicorn-info .badge-item {
-    text-align: center;
-  }
-  .unicorn-info .title_ {
-    text-align: center;
-  }
-  .unicorn-info .descr_ {
-    margin-top: 50px;
-  }
-  .unicorn-info .descr_ .list {
-    text-align: center;
-  }
-  #fourth .current-advocation .button a {
-    margin: 0;
-  }
-  #fifth .skew-section {
-    background-image: none;
-  }
-  #nominating .nominate-button {
-    float: none;
   }
 }
 
@@ -2338,16 +2392,89 @@ header {
   .main-heading {
     font-size: 2.25em;
   }
-  .skew-section {
-    padding-top: 80px !important;
-  }
   .row.m0 {
     margin: 0;
   }
-  #hero .heading {
-    padding-top: 50px;
+  #page .table-footer .text {
+    width: auto;
+    text-align: center;
+    display: block;
+    padding-left: 100px;
+    padding-right: 20px;
   }
-  #hero .heading-descr {
+  #page .table-footer .buttons {
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  #main-content .current-badges ul li {
+    width: 33.333%;
+  }
+  #main-content .current-badges ul li:nth-child(n+4) {
+    margin-top: 15px;
+  }
+  #main-content .current-badges ul li > div p {
+    font-size: .75em;
+  }
+  .pop-up.invite-friends .wrapper {
+    width: auto;
+    left: 0;
+    right: 0;
+    top: 15px;
+    bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
+    transform: none;
+  }
+  .pop-up.invite-friends .list-friends {
+    padding: 20px;
+  }
+  .pop-up.invite-friends .list-friends li {
+    margin: 0;
+    margin-top: 3px;
+    width: 100%;
+  }
+  .pop-up.invite-friends .title {
+    padding: 20px;
+  }
+  .pop-up.invite-friends .title p {
+    width: 100%;
+    text-align: center;
+  }
+  .pop-up.invite-friends .descr {
+    padding: 20px;
+  }
+  .pop-up.invite-friends .input-field {
+    float: none;
+    margin-top: 10px;
+  }
+  .pop-up.invite-friends .input-field input {
+    width: 100%;
+  }
+  .pop-up.share-networks > div {
+    position: absolute;
+    top: 15px;
+    bottom: 40px;
+    right: 15px;
+    left: 15px;
+    transform: none;
+  }
+  .pop-up.share-networks .wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  .pop-up.share-networks ul li {
+    float: none;
+    margin-right: 0 !important;
+  }
+  .pop-up.share-networks ul li a {
+    text-align: center;
     width: 100%;
   }
 }
@@ -2365,39 +2492,65 @@ header {
   }
 }
 
+@media only screen and (max-width: 599px) {
+  #main-content .endorsements .existed-content .col {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  #main-content .endorsements .existed-content .col .item.view-all-friends {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 479px) {
   .col-xs-6 {
     width: 100%;
     margin-bottom: 50px;
   }
-  .unicorn-info .badge-item:first-of-type {
-    margin-left: 0;
-  }
-  .unicorn-info .badge-item {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .current-advocation .img, .current-advocation .text, .current-advocation .button, .level-box .img, .level-box .text, .level-box .button {
-    padding: 0 !important;
+  #main-content .content-box-title .text {
     text-align: center;
-    width: 100% !important;
   }
-  .current-advocation .text, .level-box .text {
-    margin-top: 25px;
+  #main-content .content-box-title > div {
+    display: block;
   }
-  .current-advocation .text p, .level-box .text p {
-    padding: 0 !important;
+  #main-content .content-box-title > div:last-child {
+    position: static;
   }
-  .current-advocation .button a, .level-box .button a {
-    float: none;
+  #main-content .content-box-title .corner:before {
+    display: none;
   }
-  .current-level .level-box .text hr + a {
-    float: none;
+  #main-content .unlock-more .content .award {
+    padding: 0;
   }
-  .preview {
-    font-size: 11px;
-    padding-left: 15px;
-    padding-right: 15px;
+  #page .skew-section aside .wrapper .table-wrapper {
+    width: 100%;
+  }
+  #main-content .unlock-more .content ul li span {
+    position: static;
+    transform: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #main-content .unlock-more .content .award .text {
+    font-size: 12px;
+  }
+  #main-content .referred-friends table th {
+    font-size: 8px;
+  }
+  #main-content .referred-friends table td {
+    font-size: 10px;
+  }
+  #main-content .referred-friends table tfoot td {
+    font-size: 10px;
+  }
+  #main-content .referred-friends table td:first-child, #main-content .referred-friends table th:first-child {
+    width: 50%;
+  }
+  #main-content .referred-friends table td:not(:first-child), #main-content .referred-friends table th:not(:first-child) {
+    width: 16%;
   }
   .header-content {
     margin-top: 70px;
