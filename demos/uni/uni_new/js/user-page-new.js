@@ -30,9 +30,10 @@ $(document).ready(function () {
 
 	// popups
 
-	var invitationsAmount = $('#live-filter-list li').length;
-	$('.invite-friends .title span').html('(' + invitationsAmount + ')');
-	$('.view-all-friends span').html('(' + invitationsAmount + ')');
+	var reffersAmount = $('#live-filter-list li').length;
+	$('.referred-friends .corner .num').html(reffersAmount);
+	$('.invite-friends .title span').html('(' + reffersAmount + ')');
+	$('.view-all-friends span').html('(' + reffersAmount + ')');
 	$('.invite-friends .close').click(function(){
 		$('.invite-friends').fadeOut('fast');
 		return false;
