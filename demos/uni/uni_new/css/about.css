@@ -89,6 +89,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: exo;
+  src: url("../fonts/exo-2/Exo2-ThinItalic/Exo2-ThinItalic.eot");
+  src: url("../fonts/exo-2/Exo2-ThinItalic/Exo2-ThinItalic.svg") format("svg"), url("../fonts/exo-2/Exo2-ThinItalic/Exo2-ThinItalic.woff") format("woff"), url("../fonts/exo-2/Exo2-ThinItalic/Exo2-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1081,6 +1089,9 @@ body {
   }
   .pr0 {
     padding-right: 0;
+  }
+  #positions .position-item:nth-child(n+5) {
+    margin-top: 20px;
   }
 }
 
