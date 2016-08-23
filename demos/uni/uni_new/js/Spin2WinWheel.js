@@ -643,7 +643,7 @@ function Spin2WinWheel() {
 
         showToast(resultStr2);
         //create a result object 
-        resultObj = {target:thisWheel, type:'result', spinCount:spinCount, win:segmentValuesArray[e].win, msg:segmentValuesArray[e].resultText, gameId:gameId};
+        resultObj = {target:thisWheel, type:'result', spinCount:spinCount, win:segmentValuesArray[e].win, msg:segmentValuesArray[e].resultText, gameId:gameId, id: segmentValuesArray[e].prizeId};
         
         //fire the result event
         onResult(resultObj);
