@@ -102,7 +102,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html.overflow {
+  overflow: hidden;
+}
 ul {
   list-style: none;
 }
@@ -183,7 +185,14 @@ img {
   font-style: italic;
   text-transform: uppercase;
 }
-
+.skew-button.skew-button__black {
+  padding: 3px 15px 3px;
+  background-color: black;
+  font-weight: 500;
+  color: #eee;
+  font-size: 1.125em;
+  font-style: normal;
+}
 .mt-section {
   margin-top: -1.8%;
 }
@@ -642,6 +651,7 @@ body {
 
 #positions .position-item {
   position: relative;
+  cursor: pointer;
 }
 
 #positions .position-item .text-bg {
@@ -670,16 +680,122 @@ body {
 }
 
 #positions .position-item .text-bg .text-block p:first-of-type {
-  font-size: 1.375em;
+  font-size: 1.125em;
   font-weight: 700;
 }
 
 #positions .position-item .text-bg .text-block p:last-of-type {
-  font-size: 1em;
+  font-size: .75em;
 }
-
+.judge-pop-up .bg {
+  background-color: #fff;
+}
 #positions .after-positions {
   font-size: 1.125em;
+}
+.judge-pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000001;
+  text-align: center;
+  background-color: rgba(65, 121, 229, 0.85);
+  -webkit-animation: fadeEffect .5s ease;
+  animation: fadeEffect .5s ease;
+}
+.judge-pop-up.small-device .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.judge-pop-up.active {
+  display: block !important;
+}
+@media only screen and (max-height: 500px) {
+  .judge-pop-up img {
+    min-width: auto;
+    width: 50%;
+  }
+}
+@media only screen and (min-height: 667px) {
+  .judge-pop-up.small-device .buttons {
+      position: absolute;
+      margin-top: 20px;
+      bottom: 20px;
+      left: 15px;
+      right: 15px;
+  }
+}
+.judge-pop-up p {
+  color: #404040;
+}
+.judge-pop-up .info-wrapper {
+  padding: 15px;
+  background-color: #fff;
+}
+.judge-pop-up .title {
+  margin-top: 10px;
+}
+
+.judge-pop-up hr {
+  border-top: 1px solid #aaa;
+}
+
+.judge-pop-up .buttons .go-back {
+  float: left;
+  position: relative;
+  top: 10px;
+}
+.judge-pop-up .buttons {
+  margin-top: 20px;
+}
+.judge-pop-up.small-device .descr {
+  max-height: 90px;
+  overflow: scroll;
+}
+.judge-pop-up.small-device .wrapper {
+  width: auto;
+  transform: none;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  overflow: scroll;
+}
+.judge-pop-up .buttons .okay {
+  float: right;
+  margin-right: 5px;
+}
+
+.judge-pop-up .buttons .okay .skew-button {
+  font-family: exo;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+.judge-pop-up .title {
+  font-family: exo;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.375em;
+}
+
+.judge-pop-up .wrapper {
+  position: absolute;
+  border-radius: 3px;
+  border: 8px solid rgba(255, 255, 255, 0.25);
+  width: 380px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #about .skew-section {
@@ -1070,6 +1186,9 @@ body {
   #nominating .nominate-button {
     margin: 0;
     float: right;
+  }
+  #positions .position-item .text-bg .text-block p:first-of-type {
+    font-size: 1em;
   }
   #quote .skew-section {
     background-image: url("../img/portrait-md.jpg");

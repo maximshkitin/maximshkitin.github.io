@@ -2,6 +2,14 @@ var list = $('[data-animate]');
 var needToAnimate = $('[data-animate]').length;
 var deviceWidth = $(window).width();
 var topHeight = $('.top-navbar').outerHeight();
+var judgeDescriptions = ['Professor of Business Administration, Ross School of Business, University of Michigan & Chairman of Global Advisory Board, Six Capital',
+						 'Dean of Business School, SIM University', 
+						 'Rektor, Universitas Gadjah Mada',
+						 'Chair of Investment and Divestment Committee, Heliconia Capital Management Pte Ltd Board',
+						 'Commissioner at PT Metropolitan Kentjana Tbk',
+						 'Fintech & Data Science Specialist Founder of Hippo Data & Scheduit',
+						 'Chairman 4J Studios',
+						 'Chairman of Truscott Group'];
 $(document).ready(function () {
 	$('.to-top a').click(function(){
 		var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
@@ -17,6 +25,25 @@ $(document).ready(function () {
 		$('#main-nav').toggleClass('open');
 		$('.navbar').toggleClass('menu-open');
 	});
+	$('.position-item').click(function(){
+		var img = $(this).find('img').attr('src');
+		var title = $(this).find('p.title').text();
+		var i = $(this).index();
+		var popUp = '.judge-pop-up';
+		$(popUp + ' .title').html(title);
+		$(popUp + ' .descr').html(judgeDescriptions[i]);
+		$(popUp + ' img').attr('src', img);
+		$('.judge-pop-up').fadeIn(300);
+		$('html').addClass('overflow');
+	});
+	$('.judge-pop-up .okay').click(function(){
+		$('.judge-pop-up').fadeOut(300);
+		$('html').removeClass('overflow');
+		return false;
+	});
+	if (deviceWidth < 768) {
+		$('.judge-pop-up').addClass('small-device');
+	}
 });
 $(window).on('resize', function(){
 	deviceWidth = $(window).width();
