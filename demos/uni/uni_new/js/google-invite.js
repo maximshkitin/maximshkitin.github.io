@@ -41,6 +41,7 @@ $(document).ready(function () {
 	});
 	$('.invite-friends .close').click(function(){
 		$('.invite-friends').fadeOut(300);
+		return false;
 	});
 	$('.invite-friends .input-field .fa-times').click(function(){
 		$('#live-filter-input').val('');
