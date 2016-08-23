@@ -31,10 +31,13 @@ $(document).ready(function () {
 
 
 	// popups
-	$('.invite-friends .item').click(function(){
-		var prop = $(this).find('input').prop('checked');
-		prop = !prop;
-		$(this).find('input').prop('checked', prop);
+	$('.invite-friends .item').click(function(e){
+		if (e.target.localName != 'input') {
+			var prop = $(this).find('input').prop('checked');
+			prop = !prop;
+			$(this).find('input').prop('checked', prop);
+		}
+		
 	});
 	$('.invite-friends .close').click(function(){
 		$('.invite-friends').fadeOut(300);
