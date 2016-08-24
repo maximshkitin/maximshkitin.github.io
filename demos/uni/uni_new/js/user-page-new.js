@@ -46,13 +46,18 @@ $(document).ready(function () {
 		$('html').addClass('overflow');
 		return false;
 	});
-	$('.share-networks .close').click(function(){
-		$('.share-networks').fadeOut('fast');
+	$('.pop-up .close').click(function(){
+		$(this).closest('.pop-up').fadeOut('fast');
 		$('html').removeClass('overflow');
 		return false;
 	});
 	$('.share-btn').click(function(){
 		$('.share-networks').fadeIn('fast');
+		$('html').addClass('overflow');
+		return false;
+	});
+	$('.remind-btn').click(function(){
+		$('.remind-pop-up').fadeIn('fast');
 		$('html').addClass('overflow');
 		return false;
 	});

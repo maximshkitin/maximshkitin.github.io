@@ -1785,26 +1785,26 @@ header {
   text-transform: uppercase;
 }
 
-.pop-up.share-networks > div {
+.pop-up.remind-invite > div {
   position: absolute;
   left: 50%;
   top: 48%;
   transform: translate(-50%, -50%);
 }
 
-.pop-up.share-networks .wrapper {
+.pop-up.remind-invite .wrapper {
   border-radius: 3px;
   border: 8px solid rgba(255, 255, 255, 0.25);
   width: 550px;
   overflow: scroll;
 }
 
-.pop-up.share-networks .wrapper > div {
+.pop-up.remind-invite .wrapper > div {
   background-color: white;
   padding: 25px 30px;
 }
 
-.pop-up.share-networks .title {
+.pop-up.remind-invite .title {
   font-family: exo;
   color: #ccc;
   text-transform: uppercase;
@@ -1812,19 +1812,32 @@ header {
   font-weight: 700;
 }
 
-.pop-up.share-networks .input-field {
+.pop-up.remind-invite .input-field {
   position: relative;
   margin-top: 15px;
 }
 
-.pop-up.share-networks .input-field i {
+.pop-up.remind-invite .input-field i {
   position: absolute;
   top: 50%;
   left: 15px;
   margin-top: -8px;
 }
-
-.pop-up.share-networks .input-field input {
+.pop-up.remind-pop-up .confirm-btn {
+  margin-top: 30px;
+}
+.pop-up.remind-pop-up .confirm-btn a {
+  display: inline-block;
+  background-color: #000;
+  padding: 10px 60px;
+  font-size: 1.25em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: maven;
+  border-radius: 5px;
+}
+.pop-up.remind-invite .input-field input {
   width: 100%;
   line-height: 45px;
   background-color: #ccc;
@@ -1835,18 +1848,19 @@ header {
   padding-left: 45px;
 }
 
-.pop-up.share-networks ul li {
-  float: left;
+.pop-up.remind-invite ul li {
+  display: inline-block;
+  width: calc(50% - 7px);
   margin-top: 15px;
 }
 
-.pop-up.share-networks ul li:nth-child(1), .pop-up.share-networks ul li:nth-child(3) {
-  margin-right: 15px;
+.pop-up.remind-invite ul li:nth-child(1), .pop-up.remind-invite ul li:nth-child(3) {
+  margin-right: 14px;
 }
 
-.pop-up.share-networks ul li a {
+.pop-up.remind-invite ul li a {
   display: block;
-  width: 229px;
+  width: 100%;
   padding: 15px;
   color: white;
   text-align: left;
@@ -1855,34 +1869,34 @@ header {
   border-radius: 5px;
 }
 
-.pop-up.share-networks ul li a.fac {
+.pop-up.remind-invite ul li a.fac {
   background-color: #304a7e;
 }
 
-.pop-up.share-networks ul li a.twt {
+.pop-up.remind-invite ul li a.twt {
   background-color: #3992e6;
 }
 
-.pop-up.share-networks ul li a.lin {
+.pop-up.remind-invite ul li a.lin {
   background-color: #5086f2;
 }
 
-.pop-up.share-networks ul li a.eml {
+.pop-up.remind-invite ul li a.eml {
   background-color: #d35454;
 }
 
-.pop-up.share-networks ul li a i {
+.pop-up.remind-invite ul li a i {
   margin-right: 5px;
 }
 
-.pop-up.share-networks .close {
+.pop-up.remind-invite .close {
   position: absolute;
   bottom: -35px;
   left: 0;
   right: 0;
 }
 
-.pop-up.share-networks .close a {
+.pop-up.remind-invite .close a {
   color: white;
 }
 
@@ -2055,7 +2069,7 @@ header {
 }
 
 @media only screen and (max-height: 499px) {
-  .pop-up.share-networks > div {
+  .pop-up.remind-invite > div {
     position: absolute;
     top: 15px;
     bottom: 40px;
@@ -2063,7 +2077,7 @@ header {
     left: 15px;
     transform: none;
   }
-  .pop-up.share-networks .wrapper {
+  .pop-up.remind-invite .wrapper {
     position: absolute;
     width: auto;
     transform: none !important;
@@ -2072,6 +2086,9 @@ header {
     top: 0 !important;
     bottom: 0 !important;
     background-color: #fff;
+  }
+  .pop-up.remind-pop-up .close a {
+    color: #404040;
   }
 }
 
@@ -2486,11 +2503,29 @@ header {
     width: 100%;
     background-color: #fff;
   }
-  .pop-up.share-networks ul li {
+  .pop-up.remind-invite ul li {
     float: none;
     margin-right: 0 !important;
+    width: 100%;
   }
-  .pop-up.share-networks ul li a {
+  .pop-up.remind-pop-up > div {
+    position: static;
+    transform: none;
+  }
+  .pop-up.remind-pop-up .close {
+    bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pop-up.remind-pop-up .wrapper {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 15px;
+    right: 15px;
+    width: auto;
+  }
+  .pop-up.remind-invite ul li a {
     text-align: center;
     width: 100%;
   }
