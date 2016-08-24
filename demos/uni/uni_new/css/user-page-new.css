@@ -2060,7 +2060,7 @@ header {
   padding-right: 5px;
 }
 
-@media only screen and (max-height: 599px) {
+@media only screen and (max-height: 699px) {
   .pop-up.invite-friends .wrapper {
     transform: translateX(-50%);
     top: 15px;
