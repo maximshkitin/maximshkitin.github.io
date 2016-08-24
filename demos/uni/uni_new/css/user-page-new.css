@@ -919,7 +919,8 @@ header {
   margin-top: 30px;
 }
 
-#page aside caption {
+#page aside caption,
+#page aside .table-wrapper .caption {
   font-size: 1.3em;
   margin-bottom: 5px;
   font-family: exo;
@@ -938,12 +939,34 @@ header {
   padding-bottom: 3px;
   border-bottom: 1px solid #ccc;
 }
-
-#page aside table td {
+#page aside .fake-table li {
+  border-bottom: 1px solid #ccc;
+}
+#page aside table td,
+#page aside .fake-table li a {
   font-size: 0.8125em;
 }
-
-#page aside table td:first-child {
+#page aside .fake-table li.active a {
+  color: #666;
+}
+#page aside .fake-table li a span {
+  font-weight: 700;
+  float: left;
+}
+#page aside .fake-table li a i {
+  position: relative;
+  top: 3px;
+  float: right;
+}
+#page aside .fake-table li a {
+  color: #999;
+  text-transform: uppercase;
+}
+#page aside .fake-table li a:hover {
+  color: #4469b3;
+}
+#page aside table td:first-child
+ {
   width: 75%;
   color: #999;
   text-transform: uppercase;
@@ -1130,12 +1153,12 @@ header {
   margin-bottom: 5px;
 }
 
-#main-content .company-info .rank {
+#main-content .company-info .rank, .spin-opportunity .rank {
   position: relative;
   padding-right: 10px;
 }
 
-#main-content .company-info .rank:after {
+#main-content .company-info .rank:after, .spin-opportunity .rank:after {
   content: '';
   position: absolute;
   top: 0;
@@ -1144,12 +1167,23 @@ header {
   height: 100%;
   background-color: #ccc;
 }
-
-#main-content .company-info .score {
+.spin-opportunity {
+  padding: 15px 20px;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.05);
+}
+.spin-opportunity .title {
+  margin-bottom: 15px;
+  color: #5086f2;
+  font-family: maven;
+  font-weight: 700;
+}
+#main-content .company-info .score, .spin-opportunity .score {
   padding-left: 10px;
 }
 
-#main-content .company-info > div {
+#main-content .company-info > div, .spin-opportunity .info-wrapper > div {
   display: inline-block;
   text-align: center;
 }
@@ -1159,7 +1193,8 @@ header {
   margin-right: 5px;
 }
 
-#main-content .company-info > div p {
+#main-content .company-info > div p, 
+.spin-opportunity .info-wrapper > div p {
   line-height: 1;
 }
 
@@ -1167,8 +1202,15 @@ header {
   font-size: 1.75em;
   color: #666;
 }
-
-#main-content .company-info > div p:last-child {
+.spin-opportunity .info-wrapper > div p {
+  font-size: 1.75em;
+  color: #5086f2;
+}
+.spin-opportunity .info-wrapper {
+  text-align: center;
+}
+#main-content .company-info > div p:last-child,
+.spin-opportunity .info-wrapper > div p:last-child {
   font-size: .875em;
   color: #999;
   font-family: exo;
@@ -2092,6 +2134,11 @@ header {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .spin-opportunity .title {
+    text-align: left;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .container-restricted {
     padding: 0;
@@ -2254,7 +2301,8 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
-  #page .skew-section aside .wrapper .table-wrapper table caption {
+  #page .skew-section aside .wrapper .table-wrapper table caption,
+  #page aside .table-wrapper .caption {
     text-align: center;
   }
   #page .skew-section aside .wrapper .table-wrapper table td:first-child {
