@@ -50,7 +50,7 @@
   "gameOverText":"THANK YOU FOR PLAYING SPIN2WIN WHEEL. COME AND PLAY AGAIN SOON!",
   "invalidSpinText":"INVALID SPIN. PLEASE SPIN AGAIN.",
   "introText":"YOU HAVE TO<br>SPIN IT <span style='color:#F282A9;'>2</span> WIN IT!",
-  "hasSound":true,
+  "hasSound": false,
   "gameId":"9a0232ec06bc431114e2a7f3aea03bbe2164f1aa",
   "clickToSpin":true
 }

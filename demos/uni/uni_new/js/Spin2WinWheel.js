@@ -68,6 +68,9 @@ function Spin2WinWheel() {
     onGameEnd,
     onError,
     spinVelocityTracker,
+    winElements = [0, 2, 5, 6, 8, 9, 11, 12, 14, 16],
+    moreThan50 = [5, 8, 11, 12, 14, 16],
+    moreThan100 = [8, 11, 16],
     gameResultsArray = [],
     pegSnd = new Audio('media/wheel_tick.mp3'),
     spinDestinationArray,
@@ -439,7 +442,7 @@ function Spin2WinWheel() {
       var segId = Math.round(normalizedRotation / rotationStep);
       var winningSegment = segmentArray[segId].path;
 
-      //console.log(Math.abs(segId), segId, Number(segId))
+      // console.log(Math.abs(segId), segId, Number(segId))
       //setResultText(Math.abs(segId));
       showResult(Math.abs(segId));
       
@@ -480,16 +483,123 @@ function Spin2WinWheel() {
         minRotation: -9999999999999999,
         maxRotation: currentWheelRoation
       });      
-    },  
+    },
+    checkMoreThan100 = function(result) {
+      var flag = false;
+      moreThan100.forEach(function(val, i){
+        if (val == result) {
+          flag = true;
+          return true;
+        }
+      });
+      if (flag) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    } 
+    checkMoreThan50 = function(result) {
+      var flag = false;
+      moreThan50.forEach(function(val, i){
+        if (val == result) {
+          flag = true;
+          return true;
+        }
+      });
+      if (flag) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    } 
+    checkMoreThan5 = function(result) {
+      var flag = false;
+      winElements.forEach(function(val, i){
+        if (val == result) {
+          flag = true;
+          return true;
+        }
+      });
+      if (flag) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    } 
     getRandomSpinFunction = function(multiplier) {
       var f = function(endValue) {
-        //console.log(endValue)
+        // console.log(endValue)
         return (Math.round((endValue / rotationStep)) * rotationStep) - multiplier
       }
       return f;
     },
+    setValue = function(result) {
+      var spinAgain = 16;
+      var flag = false;
+      if (result == spinAgain) {
+        while (result == spinAgain || checkMoreThan5(result)) {
+          result = randomBetween(0, numSegments - 1);
+        }
+        return result;
+      }
+      winElements.forEach(function(val, i){
+        if(result == val) {
+          flag = true;
+          // console.log(val, result);
+          return;
+        }
+        // console.log('after 1 checking: ', result);
+      });
+      if (flag) {
+        if (checkMoreThan100(result)) {
+            for (var i = 0; i < 10; i++) {
+              if (checkMoreThan5(result)) {
+                result = randomBetween(0, numSegments - 1);
+                // console.log('generate again: ', result, ' count: ', i);
+              }
+              else {
+                break;
+              }
+            } // for
+        } else if (checkMoreThan50(result)) {
+          for (var i = 0; i < 4; i++) {
+            if (checkMoreThan5(result)) {
+              result = randomBetween(0, numSegments - 1);
+              // console.log('generate again: ', result, ' count: ', i);
+              if (checkMoreThan100(result)) {
+                i--;
+              }
+            } // if 
+            else {
+              break;
+            } // else if
+          } // for 
+        } else {
+          for (var i = 0; i < 3; i++) {
+            if (checkMoreThan5(result)) {
+              result = randomBetween(0, numSegments - 1);
+              // console.log('generate again: ', result, ' count: ', i);
+              if (checkMoreThan100(result) || checkMoreThan50(result)) {
+                i--;
+              }
+            } // if 
+            else {
+              break;
+            } // else if
+          } // for 
+        }
+      } // if flag
+      return result;
+    }
     getRandomClickSpin = function(multiplier) {
-      var val = - (rotationStep * randomBetween(0, numSegments)) - numRevsPerDestination * spinMultiplier
+      var prize = randomBetween(0, numSegments - 1);
+      // console.log('start result: ', prize);
+      prize = setValue(prize);
+      // console.log('final result: ', prize);
+      var val = - (rotationStep * prize) - numRevsPerDestination * spinMultiplier
       return val
     },
     createDraggable = function() {
@@ -642,9 +752,8 @@ function Spin2WinWheel() {
         var resultStr2 = segmentValuesArray[e].resultText;
 
         showToast(resultStr2);
-        //create a result object 
+        //create a result object
         resultObj = {target:thisWheel, type:'result', spinCount:spinCount, win:segmentValuesArray[e].win, msg:segmentValuesArray[e].resultText, gameId:gameId, id: segmentValuesArray[e].prizeId};
-        
         //fire the result event
         onResult(resultObj);
         

@@ -1,0 +1,20 @@
+[
+	{
+		"image": "img/some.jpg",
+		"title": "",
+		"description": "some text",
+		"type": "award"
+	},
+	{
+		"image": "img/some.jpg",
+		"title": "",
+		"description": "some text",
+		"type": "company"
+	},
+	{
+		"image": "img/some.jpg",
+		"title": "",
+		"description": "some text",
+		"type": "friend"
+	}
+]

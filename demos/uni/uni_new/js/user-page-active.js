@@ -2,6 +2,7 @@ var list = $('[data-animate]');
 var needToAnimate = $('[data-animate]').length;
 var deviceWidth = $(window).width();
 var topHeight = $('.top-navbar').outerHeight();
+var activityItems;
 $(document).ready(function () {
 	if (deviceWidth >= 1200 && $('#main-content').outerHeight() > 925) {
 		var asideHeight = $('#main-content').outerHeight();
@@ -39,6 +40,19 @@ $(document).ready(function () {
 		},300);
 		return false;
 	});
+
+
+	// json parsing
+
+	$.getJSON( "js/activity-data.json", function( data ) {
+		  activityItems = data;
+		  $.each( data, function( key, val ) {
+		    activityItems[key] = val;
+		  });
+	});
+	console.log(activityItems);
+
+
 });
 $(window).bind('load', function(){
 	var scrollTop = $(window).scrollTop();
