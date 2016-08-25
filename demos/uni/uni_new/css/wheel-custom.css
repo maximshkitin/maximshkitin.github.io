@@ -194,7 +194,25 @@ img {
   background-color: #5086f2;
   color: white;
 }
-
+.close-button {
+  margin-top: 60px;
+  margin-left: 80px;
+  
+  font-size: 1.875em;
+  position: relative;
+  z-index: 1000000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.close-button  a{
+color: white;
+}
+@media only screen and (max-width: 1199px) {
+  .close-button {
+    margin-left: 0;
+    text-align: center;
+  }
+}
 .skew-button.skew-button__white {
   background-color: white;
   color: #5086f2;
@@ -339,7 +357,7 @@ body {
   font-family: maven;
   color: white;
   font-size: 16px;
-  background-image: url("../img/wheel-bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
