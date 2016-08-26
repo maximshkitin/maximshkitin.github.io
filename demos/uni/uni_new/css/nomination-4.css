@@ -251,7 +251,31 @@ img {
   color: #ccc;
   font-size: 1.25em;
 }
+.atten-box {
+  margin-top: 20px;
+  display: none;
+  position: relative;
+  width: 48%;
+  padding: 0.9375em 1em 0.9375em 2.875em;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.05);
+  font-size: 1.0625em;
+  color: white;
+  margin-bottom: 15px;
+  background-color: #eb634b;
+  -webkit-animation: fadeEffect .6s ease;
+  animation: fadeEffect .6s ease;
+}
 
+.atten-box.active {
+  display: block;
+}
+
+.atten-box i {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.125em;
+}
 .modal {
   position: fixed;
   top: 0;
@@ -1061,7 +1085,7 @@ header {
   #progress ul .step .skew-button {
     font-size: 14px;
   }
-  #content [id*="answer-"], #content .variant {
+  #content [id*="answer-"], #content .variant, .atten-box {
     width: 90%;
   }
   #content .variant.checkbox:nth-child(2), #content .variant.checkbox:nth-child(4) {
@@ -1136,6 +1160,9 @@ header {
   #content .input-symbol {
     left: 14.4%;
   }
+  .atten-box {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 600px) {
@@ -1164,6 +1191,11 @@ header {
   }
   #content [id*="answer-"], #content .variant {
     min-width: 75%;
+  }
+  .atten-box {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
   #content .variant {
     display: inline-block;
