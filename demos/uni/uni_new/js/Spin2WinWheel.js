@@ -68,9 +68,9 @@ function Spin2WinWheel() {
     onGameEnd,
     onError,
     spinVelocityTracker,
-    winElements = [0, 2, 5, 6, 8, 9, 11, 12, 14, 16],
-    moreThan50 = [5, 8, 11, 12, 14, 16],
-    moreThan100 = [8, 11, 16],
+    impossibleToGet = [0, 3, 5, 8, 12, 14, 16],
+    highPriority = [1, 6, 15],
+    lowPriority = [11, 17],
     gameResultsArray = [],
     pegSnd = new Audio('media/wheel_tick.mp3'),
     spinDestinationArray,
@@ -484,9 +484,9 @@ function Spin2WinWheel() {
         maxRotation: currentWheelRoation
       });      
     },
-    checkMoreThan100 = function(result) {
+    checkValArray = function(result, arr) {
       var flag = false;
-      moreThan100.forEach(function(val, i){
+      arr.forEach(function(val, i){
         if (val == result) {
           flag = true;
           return true;
@@ -498,37 +498,7 @@ function Spin2WinWheel() {
       else {
         return false;
       }
-    } 
-    checkMoreThan50 = function(result) {
-      var flag = false;
-      moreThan50.forEach(function(val, i){
-        if (val == result) {
-          flag = true;
-          return true;
-        }
-      });
-      if (flag) {
-        return true;
-      }
-      else {
-        return false;
-      }
-    } 
-    checkMoreThan5 = function(result) {
-      var flag = false;
-      winElements.forEach(function(val, i){
-        if (val == result) {
-          flag = true;
-          return true;
-        }
-      });
-      if (flag) {
-        return true;
-      }
-      else {
-        return false;
-      }
-    } 
+    }
     getRandomSpinFunction = function(multiplier) {
       var f = function(endValue) {
         // console.log(endValue)
@@ -537,68 +507,37 @@ function Spin2WinWheel() {
       return f;
     },
     setValue = function(result) {
-      var spinAgain = 16;
-      var flag = false;
-      if (result == spinAgain) {
-        while (result == spinAgain || checkMoreThan5(result)) {
+      for (var i = 0; i < 8; i++) {
+        console.log('generate: ', result, ' count: ', i);
+        if (checkValArray(result, highPriority)) {
+          return result;
+        }
+        else if (checkValArray(result, impossibleToGet)) {
+          result = randomBetween(0, numSegments - 1);
+          i--;
+        }
+        else {
           result = randomBetween(0, numSegments - 1);
         }
-        return result;
       }
-      winElements.forEach(function(val, i){
-        if(result == val) {
-          flag = true;
-          // console.log(val, result);
-          return;
-        }
-        // console.log('after 1 checking: ', result);
-      });
-      if (flag) {
-        if (checkMoreThan100(result)) {
-            for (var i = 0; i < 10; i++) {
-              if (checkMoreThan5(result)) {
-                result = randomBetween(0, numSegments - 1);
-                // console.log('generate again: ', result, ' count: ', i);
-              }
-              else {
-                break;
-              }
-            } // for
-        } else if (checkMoreThan50(result)) {
-          for (var i = 0; i < 4; i++) {
-            if (checkMoreThan5(result)) {
-              result = randomBetween(0, numSegments - 1);
-              // console.log('generate again: ', result, ' count: ', i);
-              if (checkMoreThan100(result)) {
-                i--;
-              }
-            } // if 
-            else {
-              break;
-            } // else if
-          } // for 
-        } else {
-          for (var i = 0; i < 3; i++) {
-            if (checkMoreThan5(result)) {
-              result = randomBetween(0, numSegments - 1);
-              // console.log('generate again: ', result, ' count: ', i);
-              if (checkMoreThan100(result) || checkMoreThan50(result)) {
-                i--;
-              }
-            } // if 
-            else {
-              break;
-            } // else if
-          } // for 
-        }
-      } // if flag
-      return result;
+      var temp = randomBetween(0, 5);
+      console.log('lucky ', temp);
+      if (temp > 0) {
+        return 11;
+      }
+      else {
+        return 3;
+      }
+      
     }
     getRandomClickSpin = function(multiplier) {
       var prize = randomBetween(0, numSegments - 1);
-      // console.log('start result: ', prize);
-      prize = setValue(prize);
-      // console.log('final result: ', prize);
+      console.log(prize);
+      if (!checkValArray(prize, lowPriority) && !checkValArray(prize, highPriority)) {
+        console.log('start');
+        prize = setValue(prize);
+      }
+      console.log(prize);
       var val = - (rotationStep * prize) - numRevsPerDestination * spinMultiplier
       return val
     },
