@@ -356,6 +356,14 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+body.dashboard {
+  background-image: url('../img/dashboard-login-lg.jpg');
+  -webkit-animation: none;
+  animation: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .mt10 {
   margin-top: 10px;
@@ -624,14 +632,19 @@ hr {
   text-align: center;
   font-size: .9375em;
 }
+.copyright span {
+  color: #bebebe;
+  font-size: 6.25em;
+  opacity: .5;
+}
 
-@media screen and (min-height: 1080px) {
+@media screen and (min-height: 1300px) {
   body {
     overflow: hidden;
   }
 }
 
-@media screen and (max-height: 1079px) {
+@media screen and (max-height: 1299px) {
   #fixed-wrapper {
     position: static;
   }
@@ -643,13 +656,26 @@ hr {
   }
   #footer {
     position: static;
-    margin-top: 190px;
+    margin-top: 150px;
     margin-bottom: 30px;
     transform: none;
   }
 }
-
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+  only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+  only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+  only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+  only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+  only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+  body.dashboard {
+    background-image: url('../img/dashboard-login-retina.jpg');
+  }
+}
 @media screen and (max-width: 767px) {
+  body.dashboard {
+    background-image: url('../img/dashboard-login-mob.jpg');
+  }
   .benefits {
     width: 430px;
     margin-left: auto;

@@ -25,8 +25,8 @@ $(document).ready(function () {
 		var currentURL = $(this).find('input').val();
 		if (!checkURL(currentURL)) {
 			$('form .atten-box').addClass('active');
+			return false;
 		}
-		return false;
 	});
 	// $('.go-back').click(function(){
 	// 	$('.modal').fadeIn(700);
