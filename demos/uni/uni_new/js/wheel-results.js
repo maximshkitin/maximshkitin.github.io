@@ -30,7 +30,7 @@ function myResult(e) {
   var result = e['win'];
   // id 
   var id = e['id'];
-  work(id);
+  // work(id);
   
   var btn = $('.click-button');
   var descrTitle = $('.description p strong');
