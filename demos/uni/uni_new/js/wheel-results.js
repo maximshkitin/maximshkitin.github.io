@@ -5,7 +5,7 @@ function loadJSON(callback) {
 
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open('GET', './wheel_data.json', true); 
+  xobj.open('GET', 'wheel_data', true); 
   xobj.onreadystatechange = function() {
     if (xobj.readyState == 4 && xobj.status == "200") {
       //Call the anonymous function (callback) passing in the response
@@ -21,24 +21,17 @@ function myResult(e) {
     console.log('Spin Count: ' + e.spinCount + ' - ' + 'Win: ' + e.win + ' - ' + 'Message: ' +  e.msg);
   if(e.spinCount == 1){
     //show the game progress when the spinCount is 3
-    console.log(e.target.getGameProgress());
     //restart it if you like
     //e.target.restart();
   }  
 
-}
-
-//your own function to capture any errors
-function myError(e) {
-  //e is error object
-  console.log('Spin Count: ' + e.spinCount + ' - ' + 'Message: ' +  e.msg);
-
-}
-
-function myGameEnd(e) {
+  console.log( e );
   //e is gameResultsArray
-  console.log(e);
-  var result = e.results[0].win;
+  var result = e['win'];
+  // id 
+  var id = e['id'];
+  work(id);
+  
   var btn = $('.click-button');
   var descrTitle = $('.description p strong');
   var descrText = $('.description p + p');
@@ -47,28 +40,43 @@ function myGameEnd(e) {
   $('.prize-section').addClass('result');
   if (result) {
     descrTitle.addClass('win');
-    descrText[0].innerText = "Some text after win. Lorem ipsum dolor sit amet, int, ut! Voluptas error quis magnam officiis, porro eveniet ipsam vel obcaecati, sed libero placeat voluptatum in est natus rerum doloribus nobis voluptatibus, alias reiciendis cumque expedita. Sed, aperiam! Omnis quidem nemo ad repudiandae voluptatibus, quibusdam fugit eveniet non, deserunt unde odio."
+    descrText[0].innerText = "You have just won yourself a " + e.msg + "! An email will be sent to you on how you can redeem the credit. Earn more spins by unlocking more badges. "
     descrTitle[0].innerText = 'Congratulations';
-    skip[0].innerHTML = "i don't want to spin more. Show me how to redeem.";
+    skip[0].innerHTML = "I don't want more prizes. Show me how to redeem.";
+
   }
   else {
     descrTitle[0].innerText = 'Maybe next time';
-    descrText[0].innerText = "Some text after lose. Lorem ipsum dolor sit amet, int, ut! Voluptas error quis magnam officiis, porro eveniet ipsam vel obcaecati, sed libero placeat voluptatum in est natus rerum doloribus nobis voluptatibus, alias reiciendis cumque expedita. Sed, aperiam! Omnis quidem nemo ad repudiandae voluptatibus, quibusdam fugit eveniet non, deserunt unde odio."
+    descrText[0].innerText = "Oops! You might get lucky the next try. Invite 3 friends to get another spin"
     $('i.win').css('display', 'none');
     $('i.lose').css('display', 'inline-block');
     descrTitle.addClass('lose');
-    skip[0].innerHTML = "i don't want to spin more. Close this wheel.";
+    skip[0].innerHTML = "I don't want to spin more. Close this wheel.";
   }
+  prizeContainer[0].innerText = e['msg'];
+
+}
+
+//your own function to capture any errors
+function myError(e) {
+  //e is error object
+  console.log('Spin Count: ' + e.spinCount + ' - ' + 'Message: ' +  e.msg);
+}
+
+function myGameEnd(e) {
+
+  var btn = $('.click-button');
+
   if ($(window).height() < 850 && $(window).width() <= 1240) {
     var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
     if (isSafari) {
-      $('body').animate({ scrollTop: 0 }, 500);
+      $('body').animate({ scrollTop: 300 }, 500);
     } 
     else {
-      $('html').animate({ scrollTop: 0 }, 500);
+      $('html').animate({ scrollTop: 300 }, 500);
     }
   }
-  prizeContainer[0].innerText = e.results[0].msg;
+  
   btn.addClass('disabled');
   btn[0].innerText = 'spin more';
   $('.right-side .skip-link').addClass('active');
