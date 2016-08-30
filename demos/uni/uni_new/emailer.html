@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unicorn Award</title>
+	<style type="text/css">
+		@font-face {
+		  font-family: maven;
+		  src: url("fonts/maven-pro/maven_ex/maven_ex.eot");
+		  src: url("fonts/maven-pro/maven_ex/maven_ex.svg") format("svg"), url("fonts/maven-pro/maven_ex/maven_ex.woff") format("woff"), url("fonts/maven-pro/maven_ex/maven_ex.ttf") format("truetype");
+		  font-weight: 900;
+		}
+		@font-face {
+		  font-family: maven;
+		  src: url("fonts/maven-pro/maven_bold/maven_bold.eot");
+		  src: url("fonts/maven-pro/maven_bold/maven_bold.svg") format("svg"), url("fonts/maven-pro/maven_bold/maven_bold.woff") format("woff"), url("fonts/maven-pro/maven_bold/maven_bold.ttf") format("truetype");
+		  font-weight: 700;
+		}
+		@font-face {
+		  font-family: exo;
+		  src: url("fonts/exo-2/Exo2-ExtraBoldItalic/Exo2-ExtraBoldItalic.eot");
+		  src: url("fonts/exo-2/Exo2-ExtraBoldItalic/Exo2-ExtraBoldItalic.svg") format("svg"), url("fonts/exo-2/Exo2-ExtraBoldItalic/Exo2-ExtraBoldItalic.woff") format("woff"), url("fonts/exo-2/Exo2-ExtraBoldItalic/Exo2-ExtraBoldItalic.ttf") format("truetype");
+		  font-weight: 800;
+		  font-style: italic;
+		}
+		@font-face {
+		  font-family: maven;
+		  src: url("fonts/maven-pro/maven_reg/maven_reg.eot");
+		  src: url("fonts/maven-pro/maven_reg/maven_reg.svg") format("svg"), url("fonts/maven-pro/maven_reg/maven_reg.woff") format("woff"), url("fonts/maven-pro/maven_reg/maven_reg.ttf") format("truetype");
+		  font-weight: 400;
+		}
+		@font-face {
+		  font-family: exo;
+		  src: url("fonts/exo-2/Exo2-Light/Exo2-Light.eot");
+		  src: url("fonts/exo-2/Exo2-Light/Exo2-Light.svg") format("svg"), url("fonts/exo-2/Exo2-Light/Exo2-Light.woff") format("woff"), url("fonts/exo-2/Exo2-Light/Exo2-Light.ttf") format("truetype");
+		  font-weight: 300;
+		  font-style: normal;
+		}
+		@font-face {
+		  font-family: exo;
+		  src: url("fonts/exo-2/Exo2-Regular/Exo2-Regular.eot");
+		  src: url("fonts/exo-2/Exo2-Regular/Exo2-Regular.svg") format("svg"), url("fonts/exo-2/Exo2-Regular/Exo2-Regular.woff") format("woff"), url("fonts/exo-2/Exo2-Regular/Exo2-Regular.ttf") format("truetype");
+		  font-weight: 400;
+		  font-style: normal;
+		}
+		@font-face {
+		  font-family: exo;
+		  src: url("fonts/exo-2/Exo2-Medium/Exo2-Medium.eot");
+		  src: url("fonts/exo-2/Exo2-Medium/Exo2-Medium.svg") format("svg"), url("fonts/exo-2/Exo2-Medium/Exo2-Medium.woff") format("woff"), url("fonts/exo-2/Exo2-Medium/Exo2-Medium.ttf") format("truetype");
+		  font-weight: 500;
+		  font-style: normal;
+		}
+		@font-face {
+		  font-family: exo;
+		  src: url("fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.eot");
+		  src: url("fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.svg") format("svg"), url("fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.woff") format("woff"), url("fonts/exo-2/Exo2-MediumItalic/Exo2-MediumItalic.ttf") format("truetype");
+		  font-weight: 500;
+		  font-style: italic;
+		}
+		@font-face {
+		  font-family: exo;
+		  src: url("fonts/exo-2/Exo2-Thin/Exo2-Thin.eot");
+		  src: url("fonts/exo-2/Exo2-Thin/Exo2-Thin.svg") format("svg"), url("fonts/exo-2/Exo2-Thin/Exo2-Thin.woff") format("woff"), url("fonts/exo-2/Exo2-Thin/Exo2-Thin.ttf") format("truetype");
+		  font-weight: 100;
+		  font-style: normal;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+			outline: 0;
+		}
+		 body { 
+		 	width:100% !important; 
+		 	-webkit-text-size-adjust:100%; 
+		 	-ms-text-size-adjust:100%; 
+		 	margin:0; 
+		 	padding:0; 
+		 	font-family: exo;
+		 	font-size: 16px;
+		 	font-weight: 400;
+		 }
+		.container {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.block {
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		.block.logo {
+			background-color: #344f96;
+			text-align: center;
+		}
+		.block.thank-you {
+			background-image: url('img/emailer-bg-1.jpg');
+		}
+		.block.prize {
+			background-image: url('img/second.jpg');
+			color: white;
+		}
+		.block.thank-you .heading {
+			color: #404040; 
+			font-size: 4.25em; 
+			text-transform: uppercase; 
+			line-height: 1.25; 
+			font-weight: 100;
+		}
+		td {
+			text-align: center;
+		}
+		td.label div {
+			color: #fff;
+			font-weight: 800;
+			font-style: italic;
+			font-size: 24px;
+			line-height: 28px;
+			text-transform: uppercase;
+			width: 285px;
+			height: 40px;
+			display: inline-block;
+			background-image: url('img/emailer-bb.png');
+			background-repeat: no-repeat;
+		}
+		td.prize-val div {
+			display: inline-block;
+			width: 36px;
+			height: 32px;
+			background-image: url('img/emailer-gift.png');
+			margin-right: 10px;
+		}
+		td.prize-val span {
+			font-size: 32px;
+			color: #fff;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+		td.code b {
+			color: #5086f2; 
+			text-transform: uppercase; 
+			font-size: 22px;
+		}
+		td.code p {
+			font-family: maven;
+		}
+		td.code input {
+			background-color: #fff;
+			border: 0;
+			width: 100%;
+			border-radius: 3px;
+			font-weight: 900;
+			color: #000;
+			font-size: 40px;
+			line-height: 60px;
+			text-align: center;
+			font-style: italic;
+			margin-top: 15px;
+			margin-bottom: 5px;
+		}
+		td.button div {
+			display: inline-block;
+			width: 161px;
+			height: 44px;
+			line-height: 44px;
+			font-size: 20px;
+			font-style: italic;
+			text-transform: uppercase;
+			background-image: url('img/emailer-wb.png');
+		}
+		td.button a {
+			color: #fff;
+		}
+		@media only screen and (max-width: 767px) {
+			#sc-logo {
+				width: 226px;
+				height: 45px;
+			}
+			.block.thank-you .heading {
+				font-size: 3em;
+			}
+		}
+		@media only screen and (max-width: 767px) and (min-width: 480px) {
+			body {
+				font-size: 14px;
+			}
+			.container {
+				width: 450px;
+			}
+		}
+		@media only screen and (max-width: 479px) {
+			body {
+				font-size: 12px;
+			}
+			.container {
+				width: 280px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="block logo">
+		<table width="100%">
+			<tbody>
+				<tr>
+					<td height="50"></td>
+				</tr>
+				<tr>
+					<td style="padding: 40px 0;" valign="middle">
+						<img src="img/emailer-logo.png" alt="">
+					</td>
+				</tr>
+				<tr>
+					<td height="30" style="border-top: 1px solid #576da8;">
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+	<div class="block thank-you">
+		<div class="container">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td height="100"></td>
+					</tr>
+					<tr>
+						<td>
+							<img id="sc-logo" src="img/emailer-sc.png" alt="">
+						</td>
+					</tr>
+					<tr>
+						<td height="125"></td>
+					</tr>
+					<tr>
+						<td class="label">
+							<div>
+								Thank you
+							</div>
+							
+						</td>
+					</tr>
+					<tr></tr>
+					<tr>
+						<td class="heading" style="">
+							A BIG THANK YOU
+							FOR participating in the
+							unicorn award
+						</td>
+					</tr>
+					<tr height="100"></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="block prize">
+		<div class="container">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td height="100"></td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/emailer-tagg.png" alt="">
+						</td>
+					</tr>
+					<tr>
+						<td height="50"></td>
+					</tr>
+					<tr>
+						<td class="prize-val">
+							<div></div>
+							<span>
+								$10 playtagg
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td height="30"></td>
+					</tr>
+					<tr>
+						<td>
+							<table width="265" align="center" style="margin-left: auto; margin-right: auto;">
+								<tbody>
+									<tr>
+										<td class="code">
+											<b>
+												Promo code
+											</b>
+											<p style="margin-top: 10px;">
+												Lorem ipsum,  You have won a $10 PLAYTAGG voucher. to redeem your prize, read below to continue.
+											</p>
+											<input type="text" value="2fjT3">
+											<p>
+												<i>
+													Copy the code
+												</i>
+												
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							
+						</td>
+					</tr>
+					<tr>
+						<td height="90"></td>
+					</tr>
+					<tr>
+						<td class="label">
+							<div>
+								How to redeem
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="font-size: 3.125em; text-transform: uppercase;
+						font-weight: 500;">
+							Collect your prize!
+						</td>
+					</tr>
+					<tr>
+						<td height="10"></td>
+					</tr>
+					<tr>
+						<td>
+							<p style="font-family: maven; line-height: 1.5;">
+								<strong>
+									To redeem your prize simply.... 
+								</strong>
+								One of the best ways to determine which company will be the winner is to see if
+								they will take advantage of a great opportunity like this to nominate themselves. So begin the nominating process today
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td height="20"></td>
+					</tr>
+					<tr>
+						<td class="button">
+							<a href="">
+								<div>
+									Redeem now
+								</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td height="100"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
