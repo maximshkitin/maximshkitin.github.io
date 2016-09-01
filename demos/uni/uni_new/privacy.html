@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Privacy Policy</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/about.css">
 	<style>
 		* {
 			margin: 0;
@@ -11,10 +14,10 @@
 			outline: 0;
 		}
 		body {
-			font-size: 14px;
+			font-size: 16px;
 			font-family: helvetica, arial, sans-serif;
 		}
-		p, li {
+		.section p, .section li {
 			margin-top: 15px;
 			margin-bottom: 15px;
 		}
@@ -25,6 +28,141 @@
 		a {
 			color: #3273DF;
 			text-decoration: underline;
+		}
+
+		.top-navbar {
+		  position: relative;
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  background-color: #5487eb;
+		  color: #bbd2ff;
+		}
+
+		.top-navbar:before {
+		  display: block;
+		  content: '';
+		  position: absolute;
+		  z-index: 1;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: calc(50% + 215px);
+		  background-color: #4469b3;
+		}
+
+		.top-navbar:after {
+		  content: '';
+		  display: block;
+		  position: absolute;
+		  z-index: 1;
+		  top: 0;
+		  bottom: 0;
+		  left: calc(50% - 215px);
+		  width: 0;
+		  height: 0;
+		  border-top: 42px solid #4469b3;
+		  border-right: 14px solid transparent;
+		}
+
+		.top-navbar .contact-info {
+		  position: relative;
+		  z-index: 2;
+		  float: left;
+		}
+
+		.top-navbar .soc-networks {
+		  float: right;
+		}
+
+		.top-navbar .soc-networks ul li {
+		  float: left;
+		}
+
+		.top-navbar .soc-networks ul li:not(:first-child) {
+		  margin-left: 15px;
+		}
+
+		.top-navbar .soc-networks ul li a {
+		  font-size: 1.125em;
+		  color: #bbd2ff;
+		}
+
+		.top-navbar .soc-networks ul li a:hover {
+		  color: white;
+		}
+		#logo {
+		  margin-left: -3px;
+		  margin-top: 40px;
+		  margin-bottom: 40px;
+		  float: left;
+		  width: 268px;
+		  height: 33px;
+		  background-image: url("../img/logo.png");
+		  background-size: 268px 33px;
+		}
+		#main-nav {
+		  margin-right: 10px;
+		}
+
+		.navbar {
+		  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
+		.navbar #main-nav {
+		  float: right;
+		}
+
+		.navbar #main-nav > li {
+		  float: left;
+		}
+
+		.navbar #main-nav > li:not(:first-child) {
+		  margin-left: 20px;
+		}
+
+		.navbar #main-nav > li > a, .navbar #main-nav > li.skew-button a {
+		  display: block;
+		  padding-top: 47px;
+		  padding-bottom: 45px;
+		  font-family: exo;
+		  font-size: 0.875em;
+		  font-weight: 600;
+		  color: white;
+		  text-transform: uppercase;
+		}
+
+		.navbar #main-nav > li:not(.skew-button) {
+		  padding-left: 3px;
+		  padding-right: 3px;
+		  border-bottom: 3px solid transparent;
+		}
+
+		.navbar #main-nav > li:not(.skew-button):hover {
+		  border-bottom: 3px solid #5086f2;
+		}
+
+		.navbar #main-nav > li.skew-button {
+		  margin-top: 33px;
+		}
+
+		.navbar #main-nav > li.skew-button a {
+		  display: block;
+		  padding: 10px 25px;
+		  font-size: 1.25em;
+		  font-style: italic;
+		  font-weight: 500;
+		}
+
+		.navbar #main-nav > li.skew-button:hover {
+		  background-color: #4469b3;
+		}
+
+		.navbar #main-nav > li.active {
+		  border-bottom: 3px solid #5086f2;
+		}
+
+		.navbar #main-nav > li.active a {
+		  color: #bbd2ff;
 		}
 		span.red {
 			color: #C00000;
@@ -90,6 +228,67 @@
 	</style>
 </head>
 <body>
+	<div class="top-navbar clearfix">
+		<div class="container">
+			<div class="container-restricted">
+				<div class="contact-info">
+					<i class="fa fa-comment"></i>
+					<span>+33688888 | info@yourdomain.com</span>
+				</div>
+				<div class="soc-networks">
+					<ul>
+						<li><a class="fa fa-facebook" href=""></a></li>
+						<li><a class="fa fa-twitter" href=""></a></li>
+						<li><a class="fa fa-linkedin" href=""></a></li>
+						<li><a class="fa fa-youtube" href=""></a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<header>
+		<!-- NAVBAR -->
+		<nav class="navbar clearfix">
+			<div class="container">
+				<div class="container-restricted">
+					<div class="hamburger-menu">
+						<span></span>
+					    <span></span>
+					    <span></span>
+					</div>
+					<a href="">
+						<div id="logo"></div>
+					</a>
+					
+					<ul id="main-nav">
+						<li><a href="">Home.</a></li>
+						<li><a href="">About.</a></li>
+						<li><a href="">Gallery.</a></li>
+						<li><a href="">Contact.</a></li>
+						<li class="dropdown">
+							<a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							    My account
+							    <span class="caret"></span>
+							  </a>
+
+							  <ul class="dropdown-menu" aria-labelledby="dLabel">
+							    <li><a href="">Lorem ipsum</a></li>
+							    <li><a href="">Lorem ipsum</a></li>
+							    <li><a href="">Lorem ipsum</a></li>
+							    <li><a href="">Lorem ipsum</a></li>
+							    <li class="log-out"><a href="">Log out</a></li>
+							  </ul>
+						</li>
+						<li class="skew-button skew-button__blue">
+							<div class="fixed-deg">
+								<a href="">Nominate</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
 	<section id="main">
 		<h1>
 			Privacy Policy
