@@ -1,0 +1,174 @@
+
+@media only screen and (max-width: 991px) {
+	#aside {
+		padding-right: 15px;
+		background-color: transparent;
+	}
+	#right-side {
+		padding-left: 15px;
+	}
+	#content {
+		background-image: none;
+		background-color: #2a2a2b;
+	}
+	#popular-topics {
+		background-color: #3a3a3b;
+	}
+	h2, h3 {
+		text-align: center;
+	}
+	.content-heading:after {
+		left: 50%;
+		margin-left: -12px;
+	}
+	#footer {
+		.copyright {
+			margin-right: 0;
+			display: block;
+			text-align: center;
+		}
+		.left-side, .right-side {
+			float: none;
+		}
+		.right-side {
+			margin-top: 15px;
+			text-align: center;
+			.soc-networks {
+				float: none;
+				ul {
+					display: inline-block;
+				}
+			}
+			.to-top {
+				margin-left: 0;
+				margin-top: 10px;
+				position: static;
+			}
+		}
+		.footer-nav {
+			display: block;
+			ul {
+				width: 100%;
+				text-align: center;
+				li {
+					float: none;
+					margin-left: 0!important;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	#fixed-bar {
+		.soc-networks {
+			display: none;
+		}
+	}
+	#logo {
+		margin-left: 0;
+		left: 15px;
+	}
+	#header-title {
+		background-image: url('../img/knlg-base-header-sm.jpg');
+		&.product {
+			background-image: url('../img/product-hero-big.jpg');
+		}
+	}
+	.pop-up {
+		.wrapper {
+			width: auto;
+			left: 15px;
+			right: 15px;
+			transform: translateY(-50%);
+		}
+	}
+	#header-title h1 {
+		font-size: 1.5em;
+	}
+	#right-side .end-article .vote-like {
+		display: block;
+		width: 200px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#right-side .end-article .author-info {
+		margin-top: 15px;
+		text-align: center;
+		max-width: 100%;
+		display: block;
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width: 599px) and (min-width: 480px) {
+	#contact-form form .radio-buttons label {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 14px;
+	}
+	#logo {
+		top: 23px;
+		a {
+			width: 60px;
+			height: 60px;
+			background-size: 60px 60px;
+		}
+	}
+	#main-nav ul li.dd-menu {
+		margin-left: 15px;
+	}
+	.content-heading {
+		font-size: 1.75em;
+	}
+	.content-subheading {
+		font-size: 1.5em;
+	}
+	#right-side .comment-box .user-info {
+		float: none;
+	}
+	#right-side .comment-box .comment-text {
+		margin-left: 0;
+	}
+	#right-side .comment-box .comment-text .message {
+		min-height: auto;
+	}
+	.pinned-images {
+		float: none;
+		max-width: 100%;
+	}
+	.pop-up .wrapper .content .buttons {
+		text-align: center;
+	}
+	.submit-wrap {
+		margin-top: 15px;
+		float: none;
+		text-align: center;
+		> div {
+			position: relative;
+			display: inline-block;
+		}
+	}
+	.pop-up {
+		.polygon-button {
+			font-size: 1em;
+		}
+	}
+	#contact-form form .radio-buttons label {
+		width: 100%;
+	}
+	#contact-form form table td.fullname {
+		white-space: normal;
+		input {
+			width: 100%;
+		}
+	}
+	#input-user-surname {
+		margin-top: 15px;
+	}
+}

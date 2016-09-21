@@ -153,6 +153,14 @@ function navActive(scrollTop){
 	});
 }
 
+
+
+[vc_text_separator title=""]
+[text-with-icon icon_type="image_icon"]
+<i class="fa fa-info-circle"></i> Alternatively, you could send email to 
+<strong><a href="mailto:example@domain.com">example@domain.com</a>.</strong>
+[/text-with-icon]
+
 // form validation
 
 var form = document.getElementById('send-form');
