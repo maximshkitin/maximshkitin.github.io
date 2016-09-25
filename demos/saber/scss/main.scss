@@ -346,14 +346,23 @@ body {
 		float: right;
 		ul {
 			li {
-				padding: 1.25em 1.125em;
 				float: left;
-				font-size: 1.125em;
-				color: #999;
-				font-family: tit;
-				font-weight: 300;
-				text-transform: uppercase;
-				&.active {
+				a {
+					display: block;
+					padding: 1.25em 1.125em;
+					font-size: 1.125em;
+					font-family: tit;
+					font-weight: 300;
+					text-transform: uppercase;
+					color: #999;
+					&:hover {
+						color: $chrome;
+						.fa-flash {
+							border-color: $chrome;
+						}
+					}
+				}
+				&.active a {
 					font-weight: 700;
 					color: $chrome;
 					background-color: #191a1c;
