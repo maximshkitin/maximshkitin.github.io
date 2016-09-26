@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- <link href="https://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" /> -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body class="invoice">
+	<header id="header">
+		<div class="fixed-bar clearfix">
+			<div class="container">
+				<div class="left-side">
+					<a href="#" class="back">
+						<i class="fa fa-chevron-left"></i>
+					</a>
+					<div class="logo"></div>
+				</div>
+				<div class="right-side">
+					<a href="#" class="polygon-button">
+						<i class="fa fa-download"></i>
+						Download
+					</a>
+					<a href="#" class="polygon-button print">
+						<i class="fa fa-print"></i>
+						Print
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	<section class="container" id="content">
+		<h1>
+			Invoice <span>#S123234</span>
+		</h1>
+		<div class="wr clearfix">
+			<div class="client-info">
+				<div class="info-section">
+					<p class="title"><span>To:</span></p>
+					<p class="name"><strong>John Doe Watanabe</strong></p>
+					<div class="phone">
+						<div>
+							Phone
+						</div>
+						<div>
+							:
+							<strong>
+							+9988998	
+							</strong>
+						</div>
+					</div>
+					<div class="email">
+						<div>
+							Email
+						</div>
+						<div>
+							:
+							<strong>
+							loremipsum@gmail.com	
+							</strong>
+						</div>
+					</div>
+				</div>
+				<div class="info-section">
+					<p class="title">
+						Billing Address
+					</p>
+					<p>
+						<i class="fa fa-map-marker"></i>
+						<span>
+							9988998 Orchard Road, Marina Bay, SG.
+						</span>
+					</p>
+				</div>
+				<div class="info-section">
+					<p class="title">
+						Shiping Address
+					</p>
+					<p>
+						<i class="fa fa-truck"></i>
+						<span>
+							Bleecker Street 902108, Lorem Ipsum, NY.
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="logo"></div>
+		</div>
+		<div class="order-info row">
+			<div class="col-md-4">
+				<p><i class="fa fa-hashtag"></i> ORDER ID / INVOICE NO <span>#S1235367</span></p>
+			</div>
+			<div class="col-md-4 tac">
+				<p><i class="fa fa-calendar"></i>DATE PUBLISHED <span>28-08-2015</span></p>
+			</div>
+			<div class="col-md-4 tar payment-info">
+				<p class="unpaid">Payment Status 
+					<i class="fa fa-exclamation-circle"></i> 
+					<span>Unpaid</span>
+				</p>
+				<!-- <p class="paid">Payment Status 
+					<i class="fa fa-check-circle-o"></i> 
+					<span>Paid (28-08-2015)</span>
+				</p> -->
+			</div>
+		</div>
+		<div class="table-wrapper">
+			<table>
+				<thead>
+					<tr>
+						<th>Sku</th>
+						<th>Item description</th>
+						<th>Qty</th>
+						<th>Price / Unit</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>SSS1214425</td>
+						<td>
+							<strong>
+								Master series
+							</strong>
+							- Black vantage (10 colours)
+						</td>
+						<td>1</td>
+						<td>$849</td>
+						<td>$849</td>
+					</tr>
+					<tr>
+						<td>SSS1214425</td>
+						<td>
+							<strong>
+								Master series
+							</strong>
+							- Black vantage (10 colours)
+						</td>
+						<td>1</td>
+						<td>$849</td>
+						<td>$849</td>
+					</tr>
+					<tr class="summary">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<div>Subtotal</div>
+							<div>Shipping</div>
+							<div>Tax (10%)</div>
+						</td>
+						<td>
+							<div>$1356.00</div>
+							<div>$40.55</div>
+							<div>$143.00</div>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">
+							Invoice Total
+						</td>
+						<td colspan="3" class="tar">
+							1775.80 SGD
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<footer class="clearfix">
+			<p class="copyright">
+				<strong>SaberMach</strong>
+				Lorem Ipsum Ltd. Singapore
+			</p>
+			<a href="">
+				www.sabermach.com
+			</a>
+		</footer>
+	</section>
+	<div id="modal">
+		<div class="loader-icon"></div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.liveFilter.js"></script>
+	<!-- <script src="https://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+	<script src="js/common.js"></script>
+</body>
+</html>

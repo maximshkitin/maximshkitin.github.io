@@ -41,6 +41,12 @@
     font-weight: 400;
 }
 @font-face {
+    font-family: roboto;
+    src: url("../fonts/roboto/bold.eot");
+    src: url("../fonts/roboto/bold.svg") format("svg"), url("../fonts/roboto/bold.woff") format("woff"), url("../fonts/roboto/bold.ttf") format("truetype");
+    font-weight: 700;
+}
+@font-face {
 	font-family: roboto;
 	src: url("../fonts/roboto/italic.eot");
     src: url("../fonts/roboto/italic.svg") format("svg"), url("../fonts/roboto/italic.woff") format("woff"), url("../fonts/roboto/italic.ttf") format("truetype");

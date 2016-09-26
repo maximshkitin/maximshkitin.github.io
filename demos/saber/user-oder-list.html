@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- <link href="https://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" /> -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body class="user-page">
+	<header id="header">
+		<div class="fixed-bar">
+			<div id="top-line"></div>
+			<div class="clearfix" id="header-content">
+				<div class="container">
+				<div class="soc-networks">
+					<ul>
+						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa fa-instagram"></i></a></li>
+						<li><a href=""><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<div id="logo"><a href=""></a></div>
+				<div id="main-nav">
+					<nav>
+						<ul>
+							<li class="bg-li store">
+								<a href="">Store</a></li>
+							<li class="bg-li cart">
+								<a href="">Cart</a></li>
+							<li class="bg-li login hidden">
+								<a href="">Login</a></li>
+							<li class="dd-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+								<ul class="clearfix">
+									<li>
+										<a href="">
+											<i class="fa fa-home"></i>
+											<span>Home</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<i class="fa fa-info-circle"></i>
+											<span>About</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<i class="fa fa-question-circle"></i>
+											<span>Faq</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<i class="fa fa-envelope"></i>
+											<span>Contact</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="user-page order order-list" id="content">
+		<div class="container">
+			<div class="row">
+				<aside class="col-md-4" id="aside">
+					<div id="avatar">
+						<img src="img/dummy-man.jpg" alt="">
+					</div>
+					<h2>
+						My Account
+					</h2>
+					<ul>
+						<li><a href="">
+							<i class="fa fa-tachometer"></i>
+							Dashboard
+						</a></li>
+						<li><a href="">
+							<i class="fa fa-shopping-cart"></i>
+							Orders
+						</a></li>
+						<li><a href="">
+							<i class="fa fa-user"></i>
+							Account Details
+						</a></li>
+						<li><a href="">
+							<i class="fa fa-sliders"></i>
+							Settings
+						</a></li>
+					</ul>
+					<div class="note">
+						<i class="fa fa-info-circle"></i>
+						Visit <strong>knowlegdebase</strong>  for support
+					</div>
+				</aside>
+				<section class="col-md-8" id="right-side">
+					<div class="page-nav">
+						<ul class="clearfix">
+							<li><a href="">
+								<i class="fa fa-home"></i>
+							</a></li>
+							<li><a href="">My account</a></li>
+							<li><a href="">Active Orders</a></li>
+						</ul>
+					</div>
+					<hr class="dark">
+					<div class="order-info clearfix">
+						<h1 class="content-heading">
+							<i class="fa fa-shopping-cart"></i>
+							Orders
+						</h1>
+						<ul>
+							<li class="active">
+								<a href="">Active Orders</a>
+								
+							</li>
+							<li>
+								<a href="">Inactive Orders</a>
+								
+							</li>
+						</ul>
+					</div>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th class="tal">Order ID</th>
+									<th>Date</th>
+									<th>Total</th>
+									<th>Payment</th>
+									<th>Invoice</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<a href="">#S12888</a>
+										<div class="status red">
+											<span>
+												pending
+											</span>
+										</div>
+									</td>
+									<td>
+										Feb 28, 2015
+									</td>
+									<td>
+										$849
+									</td>
+									<td class="pay-status paid">
+										<p>
+											<i class="fa fa-check-circle-o"></i>
+											paid
+										</p>
+										<span>
+											on
+											<span class="date">
+												Feb 19,2018
+											</span>
+										</span>
+									</td>
+									<td>
+										<ul class="clearfix">
+											<li><a href="">
+												<i class="fa fa-download"></i>
+											</a></li>
+											<li><a href="">
+												<i class="fa fa-print"></i>
+											</a></li>
+											<li><a href="">
+												<i class="fa fa-file-pdf-o"></i>
+											</a></li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">#S12888</a>
+										<div class="status light">
+											<span>
+												processing
+											</span>
+										</div>
+									</td>
+									<td>
+										Feb 28, 2015
+									</td>
+									<td>
+										$849
+									</td>
+									<td class="pay-status unpaid">
+										<p>
+											<i class="fa fa-info-circle"></i>
+											unpaid
+										</p>
+										<a href="">
+											Pay now
+										</a>
+									</td>
+									<td>
+										<ul class="clearfix">
+											<li><a href="">
+												<i class="fa fa-download"></i>
+											</a></li>
+											<li><a href="">
+												<i class="fa fa-print"></i>
+											</a></li>
+											<li><a href="">
+												<i class="fa fa-file-pdf-o"></i>
+											</a></li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">#S12888</a>
+										<div class="status grey">
+											<span>
+												completed
+											</span>
+										</div>
+									</td>
+									<td>
+										Feb 28, 2015
+									</td>
+									<td>
+										$849
+									</td>
+									<td class="pay-status paid">
+										<p>
+											<i class="fa fa-check-circle-o"></i>
+											paid
+										</p>
+										<span>
+											on
+											<span class="date">
+												Feb 19,2018
+											</span>
+										</span>
+									</td>
+									<td>
+										<ul class="clearfix">
+											<li><a href="">
+												<i class="fa fa-download"></i>
+											</a></li>
+											<li><a href="">
+												<i class="fa fa-print"></i>
+											</a></li>
+											<li><a href="">
+												<i class="fa fa-file-pdf-o"></i>
+											</a></li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">#S12888</a>
+										<div class="status red">
+											<span>
+												pending
+											</span>
+										</div>
+									</td>
+									<td>
+										Feb 28, 2015
+									</td>
+									<td>
+										$849
+									</td>
+									<td class="pay-status paid">
+										<p>
+											<i class="fa fa-check-circle-o"></i>
+											paid
+										</p>
+										<span>
+											on
+											<span class="date">
+												Feb 19,2018
+											</span>
+										</span>
+									</td>
+									<td>
+										<ul class="clearfix">
+											<li><a href="">
+												<i class="fa fa-download"></i>
+											</a></li>
+											<li><a href="">
+												<i class="fa fa-print"></i>
+											</a></li>
+											<li><a href="">
+												<i class="fa fa-file-pdf-o"></i>
+											</a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="empty"></div>
+					<div class="info-box">
+						<p>
+							No active order. Buy lorem ipsum product in the <a href="">store</a>  now, or if you have already picked saber(s) before then <a href="">view</a>  cart to proceed to checkout.
+						</p>
+					</div>
+					<hr class="dark">
+					<div class="pagination row">
+						<div class="col-md-3">
+							<a class="next-prev" href="">
+								<i class="fa fa-arrow-circle-left"></i>
+								Previous
+							</a>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li class="active"><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 tar">
+							<a class="next-prev disabled" href="">
+								Next
+								<i class="fa fa-arrow-circle-right"></i>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div id="modal">
+		<div class="loader-icon"></div>
+	</div>
+	<footer id="footer">
+		<div class="container">
+			<div class="left-side">
+				<span class="copyright">
+					©2017 <span>Saber Mach</span>
+				</span>
+				<div class="footer-nav">
+					<ul class="clearfix">
+						<li><a href="">Policies</a></li>
+						<li><a href="">Terms and Conditions</a></li>
+						<li><a href="">Faq</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Help Center</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="right-side">
+				<div class="soc-networks">
+					<ul class="clearfix">
+						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa fa-instagram"></i></a></li>
+						<li><a href=""><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<div class="to-top">
+					<i class="fa fa-angle-up"></i><br>
+					back to top
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.liveFilter.js"></script>
+	<!-- <script src="https://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+	<script src="js/common.js"></script>
+</body>
+</html>
