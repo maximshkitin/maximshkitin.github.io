@@ -534,6 +534,7 @@ padding-bottom: 200px;
 background-image: url('../dist/images/hero-about.jpg');
 background-repeat: no-repeat;
 text-align: center;
+overflow: hidden;
 }
 
 .page-header .page-title{display: inline-block;font-size:2.8em;position:relative;top:30px;color:#fff;z-index:100;color:#CDA25F; margin-left: auto; margin-right: auto;}
