@@ -1225,6 +1225,10 @@ ul.tabs li a{font-size:0.8em}
 	.site-header .branding {
 		padding-left: 0;
 	}
+	.section-title::after {
+		left: 50%;
+		margin-left: -30px;
+	}
 }
 /*# sourceMappingURL=../src/maps/styles.css.map */
 
