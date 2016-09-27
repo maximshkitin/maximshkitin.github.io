@@ -112,7 +112,7 @@ td,th{padding:0}
 
 .site-content{position:absolute;top:0;right:0;bottom:0;left:0;overflow-x:hidden;overflow:auto}
 
-.row{display:-ms-flexbox;display:flex}[class*="col-"]{padding:0 30px}
+.row{ display: block;display:-ms-flexbox;display:flex}[class*="col-"]{padding:0 30px}
 
 .col-1{width:100%}
 
@@ -533,9 +533,10 @@ ul.tabs .active::after{content:'';display:block;position:absolute;width:20px;hei
 padding-bottom: 200px;
 background-image: url('../dist/images/hero-about.jpg');
 background-repeat: no-repeat;
+text-align: center;
 }
 
-.page-header .page-title{font-size:2.8em;position:relative;top:30px;color:#fff;z-index:100;color:#CDA25F; margin-left: auto; margin-right: auto;}
+.page-header .page-title{display: inline-block;font-size:2.8em;position:relative;top:30px;color:#fff;z-index:100;color:#CDA25F; margin-left: auto; margin-right: auto;}
 
 .page-header .page-title span{position:relative;z-index:100}
 
@@ -759,9 +760,9 @@ background-repeat: no-repeat;
 
 .section-carousel .section-title::after{display:none}
 
-.section-carousel .section-title .title{font-size:2.8em;margin-bottom:15px}
+.section-carousel .section-title .title{font-size:2.25em;margin-bottom:15px}
 
-.section-carousel .section-title .description{font-size:1.4em;color:#999}
+.section-carousel .section-title .description{font-size:1em;color:#999}
 
 .section-carousel .swiper-slide{border:5px solid #fff}
 
