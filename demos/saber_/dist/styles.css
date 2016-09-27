@@ -529,7 +529,7 @@ ul.tabs .active::after{content:'';display:block;position:absolute;width:20px;hei
 
 .success-container .content .continue-shopping{color:#555;text-transform:uppercase;float:left;padding:15px 0;font-size:1.2em}
 
-.page-header{background-size:cover;background-attachment:fixed; padding-top: 200px;
+.page-header{background-size:cover;padding-top: 200px;
 padding-bottom: 200px;
 background-image: url('../dist/images/hero-about.jpg');
 background-repeat: no-repeat;
