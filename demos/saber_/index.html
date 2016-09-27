@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Saber Mach :: Illuminating Passions</title>
+	<link rel="stylesheet" href="dist/font-awesome.css">
+	<link rel="stylesheet" href="dist/bootstrap.css">
 	<link rel="stylesheet" href="dist/styles.css">
 	<link rel="shortcut icon" type="image/png" href="dist/images/favicon.png">
 	
@@ -32,86 +34,65 @@
 	<!-- <div id="page" class="site-content"> -->
 
   	<header class="site-header">
-  		<div class="l-center">
-
-	  	<div class="branding">
-	  		<a href="index.html" class="logo">
-	  			<img src="dist/images/logo-sabermach.svg" alt="Saber Mach">
-	  		</a>
-	  	</div><!-- .branding -->
-
-
-	  	<div class="main-menu">
-	  		<nav class="main-nav">
-	  			<ul class="links">
-	  				<li class="menu">
-	  					<a href="index.html#">
-	  						<svg viewBox="0 0 150 150" class="icon icon-menu">
-	  							<use xlink:href="/dist/icons/sprite.svg#icon_menu"></use>
-	  						</svg>
-	  					</a>
-	  					<ul class="sub-menu">
-	  						<li>
-	  							<a href="index.html">
-	  								<svg viewBox="0 0 150 150" class="icon icon-home">
-	  									<use xlink:href="/dist/icons/sprite.svg#icon_home"></use>
-	  								</svg>
-	  								<span class="link-label">Home</span>
-	  							</a>
-	  						</li>
-	  						<li>
-	  							<a href="views/page.html">
-	  								<svg viewBox="0 0 150 150" class="icon icon-info">
-  										<use xlink:href="/dist/icons/sprite.svg#icon_info"></use>
-  									</svg>	
-  									<span class="link-label">About</span>
-	  							</a>
-	  						</li>
-	  						<li>
-	  							<a href="views/page.html#faq">
-	  								<svg viewBox="0 0 150 150" class="icon icon-help">
-	  									<use xlink:href="/dist/icons/sprite.svg#icon_help"></use>
-	  								</svg>
-	  								<span class="link-label">FAQ</span>
-	  							</a>
-	  						</li>
-	  						<li>
-	  							<a href="views/page.html#contact">
-	  								<svg viewBox="0 0 150 150" class="icon icon-mail">
-	  									<use xlink:href="/dist/icons/sprite.svg#icon_mail"></use>
-	  								</svg>
-	  								<span class="link-label">Contact</span>
-	  							</a>
-  							</li>
-	  					</ul>
-	  				</li>
-	  			</ul>
-	  		</nav>
-	  	</div><!-- .main-menu -->
-
-
-	  	<div class="social-links">
-	  		<nav class="social-nav">
-	  			<ul>
-	  				<li>
-	  					<a href="https://www.facebook.com/sgsabermach/">
-	  						<svg viewBox="0 0 150 150" class="icon icon-facebook">
-	  							<use xlink:href="/dist/icons/sprite.svg#icon_facebook"></use>
-	  						</svg>
-	  					</a>
-	  				</li>
-	  				<li>
-	  					<a href="https://www.instagram.com/sabermachsg/">
-	  						<svg viewBox="0 0 150 150" class="icon icon-instagram">
-	  							<use xlink:href="/dist/icons/sprite.svg#icon_instagram"></use>
-	  						</svg>
-	  					</a>
-	  				</li>
-	  			</ul>
-	  		</nav>
-	  	</div><!-- .social-links -->
-
-	  	</div><!-- .l-center -->
+  		<div class="fixed-bar">
+			<div id="top-line"></div>
+			<div class="clearfix" id="header-content">
+				<div class="container">
+				<div class="soc-networks">
+					<ul>
+						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa fa-instagram"></i></a></li>
+						<li><a href=""><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<div id="logo"><a href=""></a></div>
+				<div id="main-nav">
+					<nav>
+						<ul>
+							<li class="bg-li store">
+								<a href="">Store</a></li>
+							<li class="bg-li cart">
+								<a href="">Cart</a></li>
+							<li class="bg-li login hidden">
+								<a href="">Login</a></li>
+							<li class="dd-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+								<ul class="clearfix">
+									<li>
+										<a href="">
+											<i class="fa fa-home"></i>
+											<span>Home</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<i class="fa fa-info-circle"></i>
+											<span>About</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<i class="fa fa-question-circle"></i>
+											<span>Faq</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<i class="fa fa-envelope"></i>
+											<span>Contact</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				</div>
+			</div>
+		</div>
   	</header><!-- .site-header -->
 
   	<section id="intro" class="home-section section-intro">
@@ -439,7 +420,7 @@
 			$('.saber-image').addClass('margin');
 		} 
 	</script>
-	
+	<script src="dist/js/common.js"></script>
 	
 	
 	

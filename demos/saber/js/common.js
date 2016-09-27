@@ -183,7 +183,7 @@ $(window).scroll(function(){
 			$('#fixed-toggle .polygon-button').removeClass('yellow');
 		}
 		if (includePosition <= scrollTop) {
-			$('.click-slide').addClass('slideInUp animated');
+			$('.click-slide').addClass('active');
 		}
 	}
 	

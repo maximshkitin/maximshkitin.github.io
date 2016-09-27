@@ -529,9 +529,13 @@ ul.tabs .active::after{content:'';display:block;position:absolute;width:20px;hei
 
 .success-container .content .continue-shopping{color:#555;text-transform:uppercase;float:left;padding:15px 0;font-size:1.2em}
 
-.page-header{background-size:cover;background-attachment:fixed;height:65vh;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center}
+.page-header{background-size:cover;background-attachment:fixed; padding-top: 200px;
+padding-bottom: 200px;
+background-image: url('../dist/images/hero-about.jpg');
+background-repeat: no-repeat;
+}
 
-.page-header .page-title{font-size:2.8em;position:relative;top:30px;color:#fff;z-index:100;color:#CDA25F}
+.page-header .page-title{font-size:2.8em;position:relative;top:30px;color:#fff;z-index:100;color:#CDA25F; margin-left: auto; margin-right: auto;}
 
 .page-header .page-title span{position:relative;z-index:100}
 
@@ -1300,7 +1304,7 @@ body {
 }
 
 #main-nav li a {
-  font-family: orbitron;
+  font-family: "Orbitron";
   color: #999;
 }
 
