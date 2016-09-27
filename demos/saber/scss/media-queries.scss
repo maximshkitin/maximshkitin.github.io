@@ -58,12 +58,83 @@
 			}
 		}
 	}
+	.products-photo {
+		margin-bottom: 60px;
+	}
+	#content .buy-row {
+		text-align: center;
+	}
+	#content .buy-row p {
+		margin-top: 15px;
+		float: none;
+		margin-bottom: 15px;
+	}
+	#content .buy-row .polygon-button {
+		float: none;
+	}
+	.separator.yellow {
+		display: none;
+	}
+	#content {
+		.options {
+			text-align: center;
+			.table-wrapper {
+				padding-left: 0;
+				margin-top: 30px;
+				table {
+					width: 100%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+			.heading {
+				padding-right: 0;
+			}
+		}
+		.include {
+			text-align: center;
+			h2 {
+				margin-top: 30px;
+			}
+			ul {
+				li {
+					text-align: left;
+				}
+			}
+		}
+	}
+	#content .click-slide p,
+	#content .click-slide .polygon-button {
+		float: none;
+	}
+	#content .click-slide  {
+		text-align: center;
+	}
+	#content .click-slide p {
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	#content .unique-features .list-features ul li {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 @media only screen and (max-width: 767px) {
 	#fixed-bar {
 		.soc-networks {
 			display: none;
 		}
+	}
+	#header .soc-networks {
+		display: none;
+	}
+	#content .unique-features .list-features ul li {
+		float: none;
+		width: 100%;
+	}
+	.separator {
+		display: none;
 	}
 	#logo {
 		margin-left: 0;
@@ -101,6 +172,47 @@
 		max-width: 100%;
 		display: block;
 		margin-right: 0;
+	}
+	.descr-box .options-list ul li:not(:nth-child(4n)) {
+		margin-right: auto;
+	}
+	.descr-box .options-list ul li {
+		width: calc(50% - 15px);
+		margin-bottom: 15px;
+	}
+	.descr-box .options-list ul li:nth-child(2n) {
+		margin-left: 30px;
+	}
+	#content .product-nav {
+		.left-side {
+			display: none;
+		}
+		.right-side {
+			float: none;
+			ul {
+				text-align: center;
+				li {
+					float: none;
+					display: inline-block;
+					a {
+						height: 40px;
+						padding: .875em .75em;
+						font-size: .875em;
+					}
+				}
+			}
+		}
+	}
+	#content .right-side i.fa-flash {
+		width: 15px;
+		height: 15px;
+	}
+	#content .right-side ul li.active a:before,
+	#content .right-side ul li.active a:after {
+		border-bottom: 40px solid #191a1c;
+	}
+	#content .buy-row p {
+		font-size: .5em;
 	}
 }
 @media only screen and (max-width: 599px) and (min-width: 480px) {
@@ -170,5 +282,30 @@
 	}
 	#input-user-surname {
 		margin-top: 15px;
+	}
+	#content .unique-features .list-features ul li {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#header-title.product h1 {
+		font-size: 2em;
+	}
+	#content .buy-row .polygon-button {
+		height: 40px;
+		padding-top: .875em;
+		span {
+			line-height: 45px;
+		}
+	}
+	#content .options {
+		padding: 50px 0;
+	}
+	#content .click-slide p {
+		font-size: 1.25em;
+		margin-bottom: 10px;
+	}
+	#content .include ul li {
+		width: 100%;
+		float: none;
 	}
 }
