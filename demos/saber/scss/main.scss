@@ -598,6 +598,13 @@ body {
 	    background-image: -webkit-linear-gradient(135deg, #a36d22 0%, #CDA25F 38%, #a36d22 73%, #CDA25F 100%);
 	    background-image: -o-linear-gradient(135deg, #a36d22 0%, #CDA25F 38%, #a36d22 73%, #CDA25F 100%);
 	    background-image: linear-gradient(135deg, #a36d22 0%, #CDA25F 38%, #a36d22 73%, #CDA25F 100%);
+	    transform: translateY(100%);
+	    -webkit-transition: transform 1s;
+	    transition: transform 1s;
+	    // transition-delay: 0.5s;
+	    &.active {
+	    	transform: translateY(0%);
+	    }
 		p {
 			margin-top: 10px;
 			float: left;
