@@ -986,7 +986,7 @@ input[type='text'],input[type='email'],input[type='password'],input[type='search
 
 @media screen and (max-width: 800px){[class*='col-']{width:100%;padding:15px 30px}
 
-// .row{-ms-flex-direction:column;flex-direction:column}
+.row{-ms-flex-direction:column;flex-direction:column}
 
 .content{-ms-flex-direction:column;flex-direction:column}
 
