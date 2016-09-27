@@ -1585,7 +1585,8 @@ body {
   }
 
   .section-intro .sabermach-title {
-  	bottom: 7%;
+  	bottom: 5%;
+  	margin: 0;
   	font-size: 1.375em;
   }
   .slogan {
