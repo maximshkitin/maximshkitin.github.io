@@ -72,7 +72,7 @@
 			</div>
 		</div>
 	</header>
-	<div class="user-page edit" id="content">
+	<div class="user-page edit-fields" id="content">
 		<div class="container">
 			<div class="row">
 				<aside class="col-md-4" id="aside">
@@ -120,79 +120,142 @@
 						<i class="fa fa-user"></i>
 						Account Details
 					</h1>
-					<div class="contact-details">
-						<div class="content-subheading clearfix">
-							<div style="float: left;">Contact Details</div>
-							<a class="oval-btn" href="">
-								Edit
-								<i class="fa fa-pencil"></i>
-							</a>
+					<form action="">
+						<div class="content-subheading">
+							Edit Billing Address
 						</div>
 						<hr class="dark">
-						<div class="row details">
-							<div class="col-md-6">
-								<div class="clearfix">
-									<p>Full Name</p>
-									<p>: John Doe Watanabe</p>
-								</div>
-								<div class="clearfix">
-									<p>Phone</p>
-									<p>: 93453525</p>
-								</div>
-								<div class="clearfix">
-									<p>Email</p>
-									<p>: jsdf_88@gmail.com</p>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="avatar">
-									<div class="img-cut">
-										<img src="img/dummy-man.jpg" alt="">
-									</div>
-									<div class="upload">
-										<i class="fa fa-upload"></i>
-										upload image
-									</div>
-								</div>
-							</div>
+						<div class="table-wrapper visible">
+							<table>
+								<tbody>
+									<tr>
+										<td>Country</td>
+										<td class="inputs-2">
+											<div class="input-field">
+												<div class="fake-select">
+													<i class="fa fa-chevron-down"></i>
+													<span>
+														--- Select Country ---
+													</span>
+													<ul class="select-menu">
+														<li><a href="">Pre-sale question</a></li>
+														<li><a href="">Order</a></li>
+														<li><a href="">I want to suggest</a></li>
+														<li><a href="">Lorem ipsum dolor sit amet</a></li>
+														<li><a href="">Other...</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="input-field">
+												<div class="fake-select">
+													<i class="fa fa-chevron-down"></i>
+													<span>
+														--- Select Region ---
+													</span>
+													<ul class="select-menu">
+														<li><a href="">Pre-sale question</a></li>
+														<li><a href="">Order</a></li>
+														<li><a href="">I want to suggest</a></li>
+														<li><a href="">Lorem ipsum dolor sit amet</a></li>
+														<li><a href="">Other...</a></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Address</td>
+										<td><div class="input-field">
+												<input class="dark-input" type="text" required>
+											</div></td>
+									</tr>
+									<tr>
+										<td>Post code</td>
+										<td><div class="input-field">
+												<input class="dark-input" type="text" required>
+											</div></td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-					</div>
-					<div class="addresses">
-						<div class="content-subheading clearfix">
-							<div style="float: left;">Addresses</div>
-							<a class="oval-btn" href="">
-								Edit
-								<i class="fa fa-pencil"></i>
-							</a>
+						<div class="content-subheading clearfix" style="margin-top: 60px;">
+							<div style="float: left;">Edit Shipping Address</div>
+							<label class="sub-check" for="">
+								<input type="checkbox">
+								Ship to billing address
+							</label>
 						</div>
 						<hr class="dark">
-						<div class="row bb">
-							<div class="col-md-6">
-								<p class="title">
-									Billing Address
-								</p>
-								<p>
-									<i class="fa fa-map-marker"></i>
-									Bleecker Street 902108, Lorem Ipsum, NY.
-								</p>
-							</div>
-							<div class="col-md-6">
-								<p class="title">
-									Shipping Address
-								</p>
-								<p>
-									<i class="fa fa-truck"></i>
-									Bleecker Street 902108, Lorem Ipsum, NY.
-								</p>
+						<div class="table-wrapper visible">
+							<table>
+								<tbody>
+									<tr>
+										<td>Country</td>
+										<td class="inputs-2">
+											<div class="input-field">
+												<div class="fake-select">
+													<i class="fa fa-chevron-down"></i>
+													<span>
+														--- Select Country ---
+													</span>
+													<ul class="select-menu">
+														<li><a href="">Pre-sale question</a></li>
+														<li><a href="">Order</a></li>
+														<li><a href="">I want to suggest</a></li>
+														<li><a href="">Lorem ipsum dolor sit amet</a></li>
+														<li><a href="">Other...</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="input-field">
+												<div class="fake-select">
+													<i class="fa fa-chevron-down"></i>
+													<span>
+														--- Select Region ---
+													</span>
+													<ul class="select-menu">
+														<li><a href="">Pre-sale question</a></li>
+														<li><a href="">Order</a></li>
+														<li><a href="">I want to suggest</a></li>
+														<li><a href="">Lorem ipsum dolor sit amet</a></li>
+														<li><a href="">Other...</a></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Address</td>
+										<td><div class="input-field">
+												<input class="dark-input" type="text" required>
+											</div></td>
+									</tr>
+									<tr>
+										<td>Post code</td>
+										<td><div class="input-field">
+												<input class="dark-input" type="text" required>
+											</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<hr class="dark">
+						<div class="buttons">
+							<a href="" class="polygon-button o">
+								Cancel
+							</a>
+							<div class="submit-wrap">
+								<i class="fa fa-save"></i>
+								<input type="submit" class="submit-button" value="Save">
 							</div>
 						</div>
-					</div>
-					<div class="info-box">
+					</form>
+				<!-- 	<div class="info-box">
 						<p>
 						<i class="fa fa-info-circle"></i>
 							By default, the saved addresses above will be used (auto-filled) on your checkout page. Lorem ipsum.
 						</p>
-					</div>
+					</div> -->
 				</section>
 			</div>
 		</div>

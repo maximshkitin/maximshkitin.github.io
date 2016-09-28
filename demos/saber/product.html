@@ -28,8 +28,39 @@
 				<div id="main-nav">
 					<nav>
 						<ul>
-							<li class="bg-li store">
-								<a href="">Store</a></li>
+							<li class="bg-li store dd-menu">
+								<a href="">Store</a>
+								<ul class="clearfix">
+									<li>
+										<a href="">
+											Expert<br>
+											<span>Series</span>
+											<i class="fa fa-chevron-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Expert<br>
+											<span>Series</span>
+											<i class="fa fa-chevron-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Expert<br>
+											<span>Series</span>
+											<i class="fa fa-chevron-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Expert<br>
+											<span>Series</span>
+											<i class="fa fa-chevron-right"></i>
+										</a>
+									</li>
+								</ul>
+							</li>
 							<li class="bg-li cart">
 								<a href="">Cart</a></li>
 							<li class="bg-li login hidden">
@@ -87,9 +118,23 @@
 								<h1>
 									Expert Series
 								</h1>
-								<div class="products-photo">
+								<ul class="bxslider">
+									<li>
+										<img src="img/products/product-1.png" alt="">
+									</li>
+									<li>
+										<img src="img/products/product-2.png" alt="">
+									</li>
+									<li>
+										<img src="img/products/product-1.png" alt="">
+									</li>
+									<li>
+										<img src="img/products/product-2.png" alt="">
+									</li>
+								</ul>
+								<!-- <div class="products-photo">
 									<img src="img/products/product-1.png" alt="">
-								</div>
+								</div> -->
 							</section>
 						</div>
 					</div>
@@ -178,9 +223,7 @@
 
 						</div>
 					</div>
-				</div>
-				
-				
+				</div>		
 			</div>
 		</div>
 	</header>
@@ -464,6 +507,16 @@
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.liveFilter.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script>
+	    $(document).ready(function(){
+	      $('.bxslider').bxSlider({
+	        mode: 'fade',
+	        pager: true,
+	        controls: false
+	      });
+	    });
+	</script>
 	<!-- <script src="https://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
 	<script src="js/common.js"></script>
 </body>

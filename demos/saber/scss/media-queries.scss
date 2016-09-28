@@ -1,4 +1,25 @@
+// @media only screen and (min-width: 992px) {
 
+// }
+@media only screen and (min-width: 768px) {
+	.kek {
+		margin-right: 110px;
+	}
+	.pagination {
+		position: relative;
+		.next {
+			float: left;
+		}
+		.prev {
+			float: right;
+		}
+		.listing {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
 @media only screen and (max-width: 991px) {
 	#aside {
 		padding-right: 15px;
@@ -8,7 +29,7 @@
 		padding-left: 15px;
 	}
 	#content {
-		background-image: none;
+		background-image: none!important;
 		background-color: #2a2a2b;
 	}
 	#popular-topics {
@@ -113,6 +134,44 @@
 	#content .click-slide p {
 		margin-bottom: 20px;
 	}
+	#content.user-page {
+		background-color: #252526;
+		#aside {
+			text-align: center;
+			padding-right: 15px;
+			.note {
+				position: static;
+				margin-top: 50px;
+			}
+		}
+		#avatar {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#right-side {
+			text-align: center;
+			padding-left: 15px;
+			background-color: #252526;
+			.general {
+				margin-top: 50px;
+			}
+			h1 {
+				text-align: center;
+			}
+		}
+	}
+	.contact-details {
+		text-align: left;
+	}
+	.invoice #content .order-info {
+		text-align: center;
+		.tar {
+			text-align: center;
+		}
+		> div {
+			margin-bottom: 15px;
+		}
+	}
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
 	#content .unique-features .list-features ul li {
@@ -216,6 +275,102 @@
 	#content .buy-row p {
 		font-size: .5em;
 	}
+	#content.user-page {
+		#right-side {
+			background-color: #191a1c;
+			.order-info {
+				h1 {
+					float: none;
+				}
+				ul {
+					margin-top: 0;
+					li {
+						margin-left: 15px;
+						font-size: .75em;
+					}
+				}
+			}
+		}
+		.buttons {
+			text-align: center;
+		}
+		.table-wrapper {
+			margin-top: 20px;
+			overflow-x: scroll;
+		}
+	}
+	.mob-tac {
+		text-align: center;
+	}
+	#content.user-page.edit .avatar {
+		float: none;
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+	#content.user-page.order-list #right-side .order-info ul {
+		float: none;
+		li {
+			float: none;
+			display: inline-block;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+	#content.user-page.order-list .table-wrapper {
+		padding-top: 0;
+	}
+	#content.user-page.order-list .pagination .next-prev {
+		position: static;
+	}
+	.pagination {
+		.listing {
+			clear: both;
+			margin-top: 40px;
+		}
+	}
+	#content.user-page.edit-fields .submit-wrap {
+		margin-top: 0;
+		float: none;
+		display: inline-block;
+	}
+	#content.user-page .table-wrapper.visible {
+		overflow: visible;
+	}
+	.invoice #content {
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.invoice .table-wrapper table thead th, .invoice .table-wrapper table tfoot td {
+		font-size: .875em;
+	}
+	.invoice #content h1 {
+		font-size: 1.75em;
+	}
+	.invoice #content {
+		.logo {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.client-info {
+			float: none;
+			width: 100%;
+		}
+	}
+	.invoice .fixed-bar .logo {
+		display: none;
+	}
+
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	#content.user-page.edit-fields .table-wrapper table tr td:last-child {
+		width: 70%;
+	}
+	#content.user-page.edit-fields .table-wrapper table tr td:first-child {
+		width: 30%;
+	}
 }
 @media only screen and (max-width: 599px) and (min-width: 480px) {
 	#contact-form form .radio-buttons label {
@@ -276,14 +431,11 @@
 	#contact-form form .radio-buttons label {
 		width: 100%;
 	}
-	#contact-form form table td.fullname {
+	#contact-form form table td.inputs-2 {
 		white-space: normal;
-		input {
+		.input-field {
 			width: 100%;
 		}
-	}
-	#input-user-surname {
-		margin-top: 15px;
 	}
 	#content .unique-features .list-features ul li {
 		padding-left: 15px;
@@ -309,5 +461,54 @@
 	#content .include ul li {
 		width: 100%;
 		float: none;
+	}
+	#content.user-page #right-side .page-nav ul li {
+		font-size: .75em;
+	}
+	#content.user-page .buttons a {
+		font-size: .6em;
+	}
+	#content.user-page.edit-fields .table-wrapper table tr td:first-child {
+		width: 35%;
+		vertical-align: top;
+		padding-top: 23px;
+	}
+	#content.user-page .input-field {
+		width: 100%;
+		white-space: normal;
+	}
+	#content.user-page.edit-fields .table-wrapper table tr td:last-child {
+		width: 65%;
+	}
+	#content.user-page .pass input {
+		width: 100%;
+	}
+	#content.user-page.edit-fields .buttons a {
+		font-size: .875em;
+	}
+	#content.user-page.edit-fields .buttons {
+		input, a {
+			height: 40px;
+		}
+		.polygon-button {
+			padding-top: 15px;
+		}
+	}
+	#content.user-page .inputs-2 .input-field {
+		width: 100%;
+		display: block;
+	}
+	.inputs-2 {
+		.input-field {
+			&:last-child {
+				margin-top: 15px;
+			}
+		}
+	}
+	.invoice .right-side .polygon-button {
+		font-size: .75em;
+	}
+	.invoice .right-side {
+		margin-top: 7px;
 	}
 }
