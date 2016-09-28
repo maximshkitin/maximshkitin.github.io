@@ -172,6 +172,9 @@
 			margin-bottom: 15px;
 		}
 	}
+	#product-intro {
+		margin-bottom: 40px;
+	}
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
 	#content .unique-features .list-features ul li {
@@ -510,5 +513,12 @@
 	}
 	.invoice .right-side {
 		margin-top: 7px;
+	}
+	#content.user-page.edit .oval-btn {
+		margin-top: 0;
+	}
+	#main-nav ul li.dd-menu ul {
+		right: 0;
+		left: -50%;
 	}
 }
