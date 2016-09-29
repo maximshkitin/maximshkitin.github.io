@@ -103,6 +103,9 @@ $(document).ready(function(){
 			return false;
 		}
 	});
+	$('#message-form').submit(function(){
+		window.location.replace("https://maximshkitin.github.io/demos/saber/board.html");
+	});
 	$('.to-top').click(function(){
 		var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
 		if (isSafari) {
