@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="<?php bloginfo("stylesheet_url") ?>">
+	<title>Oolar</title>
+</head>
+<body>
+	<section id="intro">
+		<div class="container">
+			<header>
+				<div class="clearfix">
+					<div id="top-rect">
+						
+						<svg width="85px" height="85px" viewBox="20 20 84 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+						    <desc>Created with Sketch.</desc>
+						    <defs>
+						        <rect id="path-1" x="20" y="20" width="83" height="83"></rect>
+						        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="83" height="83" fill="white">
+						            <use xlink:href="#path-1"></use>
+						        </mask>
+						    </defs>
+						    <use id="Rectangle-2" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="6" fill-opacity="0" fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+						    <path d="M22.53125,22.7539062 L101.914062,100.96875" id="Path-2" stroke="#FFFFFF" stroke-width="3" fill="none"></path>
+						</svg>
+					</div>
+					<nav>
+						<ul id="main-nav">
+							<li>
+								<a href="">About</a>
+							</li>
+							<li>
+								<a href="">Price</a>
+							</li>
+							<li>
+								<a href="">Contact</a>
+							</li>
+							<li>
+								<a href="">Login</a>
+							</li>
+							<li class="spec">
+								<a href="">Download now</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="descr">
+					<div class="dib">
+						Welcome to
+					</div>
+					<div class="logo">
+					</div>
+					<div class="dib">
+						Download Oolar Now
+					</div>
+					<div class="buttons">
+						<a href=""><img src="<?php bloginfo('template_url') ?>/img/google.png" alt=""></a><br>
+						<a href=""><img src="<?php bloginfo('template_url') ?>/img/apple.png" alt=""></a>
+					</div>
+					<div class="mouse to-next" data-ref="#about"></div>
+					
+				</div>
+				
+			</header>
+		</div>
+		<div class="footer"></div>
+	</section>
+	<section id="about">
+		<div class="container">
+			<div class="clearfix">
+				<div class="col-60 img-restr left">
+					<img id="shadow-img" src="<?php bloginfo('template_url') ?>/img/phone-2.png" alt="">
+				</div>
+				<div class="col-40 right">
+					<div class="wrapper">
+						<div class="subheading">
+							Introducing Oolar
+						</div>
+						<h2 class="stn-heading">
+							Reshaping Reality with Oolar
+						</h2>
+						<div class="subdescr">
+							<a href="">
+								View Image in 3D
+							</a>
+						</div>
+						<div class="descr-text">
+							<p>
+								With Oolar, you can now scan objects and bring them to life! 
+								Enhance experience of ordinary items like name cards with interactive contents, videos, web links and even social media networks. 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="to-next" data-ref="#about-2"></div>
+		</div>
+	</section>
+	<section id="about-2">
+		<div class="container">
+			<div class="clearfix">
+				<div class="col-60 right">
+					<img src="<?php bloginfo('template_url') ?>/img/phone-1.png" alt="">
+				</div>
+				<div class="col-40 left">
+					<div class="wrapper">
+						<h2 class="stn-heading">
+							AUGMENTED REALITY
+							EXPERIENCE IN 3 SIMPLE STEPS
+						</h2>
+						<div class="descr-text">
+							<ol>
+								<li>Download OOLAR App</li>
+								<li>
+									Sign up for a OOLAR account 
+									Upload any images, videos or objects onto your user account
+								</li>
+								<li>
+									Enjoy your Augmented Reality Experience
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="to-next" data-ref="#contact"></div>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="container">
+			<div class="border-wrapper">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="wrapper">
+							<h2 class="stn-heading">
+								Get in touch with us
+							</h2>
+						</div>
+						
+					</div>
+					<div class="col-md-6">
+							<form action="">
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<label for="input-name">Name</label>
+											</td>
+											<td>
+												<div class="input-area required">
+													<span class="required"></span>
+													<input id="input-name" type="text" required>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label for="input-company">Company</label>
+											</td>
+											<td>
+												<div class="input-area">
+													<input id="input-company" type="text">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label for="input-phone">Phone</label>
+											</td>
+											<td>
+												<div class="input-area required">
+													<span class="required"></span>
+													<input id="input-phone" type="text" required>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="vat">
+												<label for="input-message">Message</label>
+											</td>
+											<td>
+												<div class="input-area kek">
+													<textarea id="input-message"></textarea>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="submit clearfix">
+									<div><span class="required"></span> Required Field</div>
+									<input type="submit" value="submit">
+								</div>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="left-side">
+				<p>
+					Powered by TRV Creative PTE LTD
+				</p>
+			</div>
+			<div class="right-side">
+				<div class="logo"></div>
+				<p class="copyright">© 2016 Landing. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="<?php bloginfo('template_url') ?>/js/jquery.min.js"></script>
+	<script src="<?php bloginfo('template_url') ?>/js/common.js"></script>
+</body>
+</html>
