@@ -1,0 +1,38 @@
+@font-face {
+	font-family: exo;
+	src: url('../fonts/exo-r.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: exo;
+	src: url('../fonts/exo-b.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: exo;
+	src: url('../fonts/exo-t.otf') format('opentype');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: adam;
+	src: url('../fonts/adam.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: neou;
+	src: url('../fonts/neou-b.otf') format('opentype'),
+		 url('../fonts/neou-b.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: neou;
+	src: url('../fonts/neou-t.otf') format('opentype'),
+		 url('../fonts/neou-t.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
