@@ -16,6 +16,14 @@
 	#main-header {
 		text-align: center;
 	}
+	#pricing {
+		.row {
+			margin-top: 0;
+		}
+		.col-md-6 {
+			margin-top: 80px;
+		}
+	}
 	#about .get-site .arrow {
 		display: none;
 	}

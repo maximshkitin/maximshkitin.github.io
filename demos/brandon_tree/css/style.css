@@ -223,19 +223,21 @@ body {
   position: relative;
 }
 
+.subheading {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  color: #FF6D6D;
+  font-family: exo;
+  letter-spacing: 3px;
+}
+
 #features {
   text-align: center;
   text-transform: uppercase;
   padding: 200px 0;
   background-image: url("../img/features-bg-3.png");
   background-size: cover;
-}
-
-#features .subheading {
-  font-size: 1.25em;
-  color: #FF6D6D;
-  font-family: exo;
-  letter-spacing: 3px;
 }
 
 #features .description {
@@ -246,6 +248,20 @@ body {
 
 #features .row {
   margin-top: 30px;
+}
+
+#pricing {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #000;
+}
+
+#pricing img {
+  max-width: 75%;
+}
+
+#pricing .row {
+  margin-top: 80px;
 }
 
 #portfolio {
@@ -327,6 +343,12 @@ body {
 @media only screen and (max-width: 991px) {
   #main-header {
     text-align: center;
+  }
+  #pricing .row {
+    margin-top: 0;
+  }
+  #pricing .col-md-6 {
+    margin-top: 80px;
   }
   #about .get-site .arrow {
     display: none;

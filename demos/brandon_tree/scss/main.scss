@@ -162,19 +162,20 @@ body {
 }
 
 
-
+.subheading {
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	color: #FF6D6D;
+	font-family: exo;
+	letter-spacing: 3px;
+}
 #features {
 	text-align: center;
 	text-transform: uppercase;
 	padding: 200px 0;
 	background-image: url('../img/features-bg-3.png');
 	background-size: cover;
-	.subheading {
-		font-size: 1.25em;
-		color: #FF6D6D;
-		font-family: exo;
-		letter-spacing: 3px;
-	}
 	.description {
 		margin-top: 30px;
 		font-size: .875em;
@@ -182,6 +183,17 @@ body {
 	}
 	.row {
 		margin-top: 30px;
+	}
+}
+#pricing {
+	text-align: center;
+	padding: 100px 0;
+	background-color: #000;
+	img {
+		max-width: 75%;
+	}
+	.row {
+		margin-top: 80px;
 	}
 }
 #portfolio {
