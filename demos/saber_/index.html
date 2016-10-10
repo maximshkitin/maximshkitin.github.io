@@ -9,25 +9,6 @@
 	<link rel="stylesheet" href="dist/bootstrap.css">
 	<link rel="stylesheet" href="dist/styles.css">
 	<link rel="shortcut icon" type="image/png" href="dist/images/favicon.png">
-	
-	<script src='dist/js/vendor.js'></script>
-	<script src='dist/js/app.js'></script>
-	
-	<!--<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>-->
-	<!--<script type="text/javascript" src='/dist/js/jquery-1.10.1.min.js'></script>-->
-	<script type="text/javascript" src='dist/js/restive.min.js'></script>
-	
-	<!-- Configure Restive.JS -->
-	<script>
-		$( document ).ready(function() {
-			$('body').restive({
-				breakpoints: ['240', '320', '480', '640', '720', '960', '1280'],
-				classes: ['rp_240', 'rp_320', 'rp_480', 'rp_640', 'rp_720', 'rp_960', 'rp_1280'],
-				turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet',
-				force_dip: true
-			});
-		});
-	</script>
 </head>
 
 <body class="home">
@@ -441,7 +422,19 @@
 			</div>
 		</div>
 	</footer>
+	<script src='dist/js/compile.js'></script>
 	
+	<!-- Configure Restive.JS -->
+	<script>
+		$( document ).ready(function() {
+			$('body').restive({
+				breakpoints: ['240', '320', '480', '640', '720', '960', '1280'],
+				classes: ['rp_240', 'rp_320', 'rp_480', 'rp_640', 'rp_720', 'rp_960', 'rp_1280'],
+				turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet',
+				force_dip: true
+			});
+		});
+	</script>
 	<!-- </div> --><!-- .site-content -->
 	<script>
 		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
@@ -449,7 +442,6 @@
 			$('.saber-image').addClass('margin');
 		} 
 	</script>
-	<script src="dist/js/common.js"></script>
 	
 	
 	
