@@ -2016,4 +2016,55 @@ body.user-page {
 		}
 	}
 }
+body.login {
+	background-color: #252526;
+}
+#content.login {
+	.wrapper {
+		width: 400px;
+		padding-top: 250px;
+		padding-bottom: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		.chrome-heading {
+			text-align: center;
+		}
+	}
+	.input-field {
+		margin-top: 10px;
+		&.submit {
+			a {
+				font-size: .75em;
+				display: inline-block;
+				margin-top: 20px;
+				float: left;
+				color: #808080;
+				text-decoration: underline;
+				&:hover {
+					color: $chrome;
+				}
+			}
+			input {
+				float: right;
+				padding-left: 30px;
+			}
+		}
+	}
+	.form-wrapper {
+		// margin-top: 20px;
+		input {
+			margin-top: 5px;
+		}
+		label {
+			text-transform: uppercase;
+		    font-family: tit;
+		    font-weight: 300;
+		    span {
+		    	font-size: .875em;
+		    	// font-family: roboto;
+		    	text-transform: none;
+		    }
+		}
+	}
+}
 

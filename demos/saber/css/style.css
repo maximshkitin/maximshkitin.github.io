@@ -2286,6 +2286,59 @@ body.user-page {
   border-color: #cba05d;
 }
 
+body.login {
+  background-color: #252526;
+}
+
+#content.login .wrapper {
+  width: 400px;
+  padding-top: 250px;
+  padding-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content.login .wrapper .chrome-heading {
+  text-align: center;
+}
+
+#content.login .input-field {
+  margin-top: 10px;
+}
+
+#content.login .input-field.submit a {
+  font-size: .75em;
+  display: inline-block;
+  margin-top: 20px;
+  float: left;
+  color: #808080;
+  text-decoration: underline;
+}
+
+#content.login .input-field.submit a:hover {
+  color: #cba05d;
+}
+
+#content.login .input-field.submit input {
+  float: right;
+  padding-left: 30px;
+}
+
+#content.login .form-wrapper input {
+  margin-top: 5px;
+}
+
+#content.login .form-wrapper label {
+  text-transform: uppercase;
+  font-family: tit;
+  font-weight: 300;
+}
+
+#content.login .form-wrapper label span {
+  font-size: .875em;
+  text-transform: none;
+}
+
 #modal {
   position: fixed;
   top: 0;
@@ -3333,6 +3386,12 @@ textarea {
     width: 60px;
     height: 60px;
     background-size: 60px 60px;
+  }
+  #content.login .wrapper {
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   #main-nav ul li.dd-menu {
     margin-left: 15px;
