@@ -203,62 +203,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/compressed.js"></script>
-	<script>
-		var checkForms = function(fields) {
-		 	var flag = true;
-		 	fields.map(function(i, val){
-		 		if ($(val).val() == '') {
-		 			flag = false;
-		 			$(val).css('border-color', 'red');
-		 		}
-		 		else {
-		 			$(val).css('border-color', 'black');
-		 		}
-		 	});
-		 	if (flag) return true;
-		 	else return false;
-		}
-		$('.to-sign-up').click(function(){
-			$(this).closest('.form-toggle').fadeOut(300);
-			setTimeout(function(){
-				$('.form-toggle.sign-up').fadeIn(300);
-			}, 300);
-			var delay = 600;
-			var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
-			if (isSafari) {
-		 		$('body').animate({ scrollTop: $('.container-form').offset().top - 150 }, delay);
-			} 
-		    else {
-		     	$('html').animate({ scrollTop: $('.container-form').offset().top - 150 }, delay);
-		    }
-			return false;
-		});
-		$('.to-log-in').click(function(){
-			$(this).closest('.form-toggle').fadeOut(300);
-			setTimeout(function(){
-				$('.form-toggle.log-in').fadeIn(300);
-			}, 300);
-			var delay = 600;
-			var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
-			if (isSafari) {
-		 		$('body').animate({ scrollTop: $('.container-form').offset().top - 150 }, delay);
-			} 
-		    else {
-		     	$('html').animate({ scrollTop: $('.container-form').offset().top - 150 }, delay);
-		    }
-			return false;
-		});
-		$('.form-wrapper').submit(function(){
-			var fields = $(this).find('input:not([type="submit"])');
-			if (!checkForms(fields)) {
-				return false;
-			}
-			if ($('.new-pass').val().length < 6 || $('.new-pass').val() != $('.confirm-pass').val()) {
-				$('.pass').css('border-color', 'red');
-				return false;
-			}
-		});
-	</script>
+	<script src="js/compile.js"></script>
 </body>
 </html>

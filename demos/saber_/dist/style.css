@@ -1,9 +1,10 @@
 @font-face {
   font-family: icons;
-  src: url("fonts/fa/fa.eot");
-  src: url("fonts/fa/fa.svg") format("svg"), url("fonts/fa/fa.woff2") format("woff2"), url("fonts/fa/fa.woff") format("woff"), url("fonts/fa/fa.ttf") format("truetype");
+  src: url("../fonts/fa/fa.eot");
+  src: url("../fonts/fa/fa.svg") format("svg"), url("../fonts/fa/fa.woff2") format("woff2"), url("../fonts/fa/fa.woff") format("woff"), url("../fonts/fa/fa.ttf") format("truetype");
   font-weight: 400;
 }
+
 @font-face {
   font-family: tit;
   src: url("../fonts/titillium/light.eot");
@@ -65,23 +66,8 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 
 body.home{margin:0;width:100%;overflow-x:hidden;min-height:100vh;background:radial-gradient(ellipse at center, #191919 0%, #0a0a0a 100%) fixed;color:#CCC}
 
-body,button,input,select,textarea{color:#CCC;line-height:1.4}
-body.home, body.page {font-family: tit; color: #ccc;}
-body.page ol {
-  padding-left: 40px;
-}
-body.page p {margin-bottom: 2em; margin-top: 10px;}
-body.page .heading {text-align: center; font-size: 3em; color: #CDA25F;}
-body.page h1, body.page h2, body.page h3,body.page h4,body.page h5, body.page h6, body.home h1, body.home h2, body.home h3,body.home h4,body.home h5, body.home h6 {font-family: orbitron; font-weight: 300; margin-top: 1em;
-margin-bottom: 1em;}
-body.page input[type='text'], body.page input[type='email'], body.page input[type='password'], body.page input[type='search'], body.page select, body.page textarea {    width: 75%;
-    float: left;
-    border: 1px solid #000;
-    background: #101010;
-    color: #777;
-    padding: 7px 10px;
-    border-radius: 4px;}
-body.page .section-contact-form textarea, body.page .section-contact-form .input-2 {width: 100%; margin-bottom: 15px;}
+body,button,input,select,textarea{color:#CCC;font-family:tit,sans-serif;line-height:1.4}
+
 blockquote,q{quotes:"" ""}
 
 blockquote:before,blockquote:after,q:before,q:after{content:""}
@@ -180,19 +166,7 @@ td,th{padding:0}
 
 .site-content{position:absolute;top:0;right:0;bottom:0;left:0;overflow-x:hidden;overflow:auto}
 
-.row{ display: block;display:-ms-flexbox;display:flex}.home [class*="col-"], .page [class*="col-"]{padding:0 30px}
-
-.col-1{width:100%}
-
-.col-2-1{width:50%}
-
-.col-3-1{width:33.33%}
-
-.col-3-2{width:66.66%}
-
-.col-4-1{width:25%}
-
-.col-4-3{width:75%}
+.row{ display: block;display:-ms-flexbox;display:flex}.home [class*="col-"]{padding:0 30px}
 
 .swiper-container{margin:0 auto;position:relative;overflow:hidden;z-index:1}
 
@@ -599,7 +573,7 @@ ul.tabs .active::after{content:'';display:block;position:absolute;width:20px;hei
 
 .page-header{background-size:cover;padding-top: 200px;
 padding-bottom: 200px;
-background-image: url('../img/hero-about.jpg');
+background-image: url('../dist/images/hero-about.jpg');
 background-repeat: no-repeat;
 text-align: center;
 overflow: hidden;
@@ -669,7 +643,7 @@ overflow: hidden;
 .featured-phone a { color: #333;}
 .home-section{min-height:100vh;position:relative}
 
-.section-intro{background:url("../img/background-intro.svg") no-repeat center center;background-size:cover;background-position:fixed;text-align:center}
+.section-intro{background:url("images/background-intro.svg") no-repeat center center;background-size:cover;background-position:fixed;text-align:center}
 
 .section-intro .sabermach-title{position:fixed;width:100%;bottom:30%;left:0;font-weight:normal;font-size:1.8em}
 
@@ -694,7 +668,7 @@ overflow: hidden;
 
 .saber-image .saber-container{display:-ms-flexbox;display:flex;height:100%;width:100%;position:absolute;top:0;left:0;-ms-flex-line-pack:center;align-content:center;-ms-flex-pack:center;justify-content:center}
 
-.saber-image .saber-photo{position:fixed;bottom:50%;display:block;width:124px;height:1500px;transform:scale(0.5) translate3d(0, 100%, 0) rotate(90deg);background:url("../img/saber-sprite.png") no-repeat 0 0}
+.saber-image .saber-photo{position:fixed;bottom:50%;display:block;width:124px;height:1500px;transform:scale(0.5) translate3d(0, 100%, 0) rotate(90deg);background:url("images/saber-sprite.png") no-repeat 0 0}
 
 .saber-image img{z-index:100;position:relative}
 
@@ -706,7 +680,7 @@ overflow: hidden;
 
 .fixed{position:fixed !important}
 
-.section-why{background:url("../img/backline.svg") center center;background-size:100% auto;overflow:hidden}
+.section-why{background:url("images/backline.svg") center center;background-size:100% auto;overflow:hidden}
 
 .section-why .why-intro
   {width:40%;height:100%;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;-ms-flex-direction:column;flex-direction:column;transform:translateX(-100%);position:absolute;top:0;left:0}
@@ -746,7 +720,7 @@ overflow: hidden;
     
     .do-action-text .icon{width:20px;fill:#CDA25F;margin:0 10px;display:inline-block;vertical-align:-4px}
     
-    .section-features{background:url("../img/backline.svg") center center;background-size:100% auto;text-align:center}
+    .section-features{background:url("images/backline.svg") center center;background-size:100% auto;text-align:center}
     
     .section-features .saber-image{z-index:100}.section-features .saber-image .saber-photo{opacity:0}
     
@@ -823,7 +797,7 @@ overflow: hidden;
 .section-cta .btn-store
   {background:#000;color:#fff;display:inline-block;padding:10px 25px;font-size:1.4em;float:right;-webkit-clip-path:polygon(7% 0, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);clip-path:polygon(7% 0, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%)}
   
-.section-cta .btn-store .icon{fill:#fff;width:25px;vertical-align:-4px;margin-right:5px}.section-carousel{background:url("../img/backline.svg") center center;background-size:100% auto;padding-top:150px;margin-bottom:75px}
+.section-cta .btn-store .icon{fill:#fff;width:25px;vertical-align:-4px;margin-right:5px}.section-carousel{background:url("images/backline.svg") center center;background-size:100% auto;padding-top:150px;margin-bottom:75px}
 
 .section-carousel .section-title{width:100%;text-align:center;margin-bottom:100px}
 
@@ -899,7 +873,7 @@ legend{color:#CDA25F;text-transform:uppercase;font-weight:bold;display:block;wid
 
 .col-left .title .logo-sm{display:block;font-size:2.8em;font-family:orbitron,sans-serif;transform:skew(-15deg)}
 
-.col-left .saber .saber-photo{display:inline-block;transform:rotate(25deg);width:48px;height:500px;background:url("../img/saber-flipped.png") no-repeat center center;background-size:auto 100%}
+.col-left .saber .saber-photo{display:inline-block;transform:rotate(25deg);width:48px;height:500px;background:url("images/saber-flipped.png") no-repeat center center;background-size:auto 100%}
 
 .col-left .options-selected{color:#CDA25F;display:inline-block}
 
@@ -1518,7 +1492,7 @@ body {
 
 #logo a {
   display: block;
-  background-image: url("../img/logo-sabermach.svg");
+  background-image: url("images/logo-sabermach.svg");
   background-size: 90px 90px;
   width: 90px;
   height: 90px;
@@ -1763,7 +1737,6 @@ body {
   background-color: #ffe09c;
   color: #4c4c4c;
 }
-
 
 * {
   margin: 0;
