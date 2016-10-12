@@ -342,6 +342,55 @@ body {
   color: #fff;
 }
 
+#pricing .item {
+  font-family: helvetica, arial, sans-serif;
+}
+
+#pricing .item.item-1 .header {
+  background-color: #f5ab14;
+}
+
+#pricing .item.item-2 .header {
+  background-color: #f64d4d;
+}
+
+#pricing .item.item-3 .header {
+  background-color: #30dbb5;
+}
+
+#pricing .item.item-4 .header {
+  background-color: #bc33e0;
+}
+
+#pricing .item .header {
+  padding: 60px 25px;
+  color: #fff;
+}
+
+#pricing .item .header div.price {
+  font-size: 4em;
+}
+
+#pricing .item .header div.type {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+#pricing .item .list {
+  padding: 25px;
+  background-color: #fff;
+  color: #5D5D5D;
+}
+
+#pricing .item .list ul {
+  border-bottom: 1px solid #ccc;
+}
+
+#pricing .item .list ul li {
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
 #pricing .row {
   margin-top: 80px;
 }
@@ -578,5 +627,11 @@ body {
   }
   #main-footer .left-side {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  #how-it-works .item h3:before {
+    display: none;
   }
 }

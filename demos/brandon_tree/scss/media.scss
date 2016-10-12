@@ -176,3 +176,8 @@
 		}
 	}
 }
+@media only screen and (max-width: 365px) {
+	#how-it-works .item h3:before {
+		display: none;
+	}
+}

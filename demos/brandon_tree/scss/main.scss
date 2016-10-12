@@ -260,6 +260,54 @@ body {
 	.subheading {
 		color: #fff;
 	}
+	.item {
+		font-family: helvetica, arial, sans-serif;
+		&.item-1 {
+			.header {
+				background-color: #f5ab14;
+			}
+		}
+		&.item-2 {
+			.header {
+				background-color: #f64d4d;
+			}
+		}
+		&.item-3 {
+			.header {
+				background-color: #30dbb5;
+			}
+		}
+		&.item-4 {
+			.header {
+				background-color: #bc33e0;
+			}
+		}
+		.header {
+			padding: 60px 25px;
+			color: #fff;
+			div {
+				&.price {
+					font-size: 4em;
+				}
+				&.type {
+					margin-top: 20px;
+					font-size: 1em;
+				}
+			}
+		}
+		.list {
+			padding: 25px;
+			background-color: #fff;
+			color: #5D5D5D;
+			ul {
+				border-bottom: 1px solid #ccc;
+				li {
+					margin-bottom: 20px;
+					line-height: 1.25;
+				}
+			}
+		}
+	}
 	.row {
 		margin-top: 80px;
 	}
