@@ -170,6 +170,71 @@ body {
 	font-family: exo;
 	letter-spacing: 3px;
 }
+#how-it-works {
+	padding: 80px 0;
+	background-color: #000;
+	color: #fff;
+	.list-items {
+		margin-top: 50px;
+	}
+	.mob-appear {
+		display: none;
+	}
+	.item {
+		position: relative;
+		padding-left: 480px;
+		padding-top: 100px;
+		font-family: exo;
+		color: #000;
+		height: 390px;
+		background-repeat: no-repeat;
+		background-position: top center;
+		h3 {
+			position: relative;
+			text-transform: uppercase;
+			font-size: 1.5em;
+			letter-spacing: 4px;
+			&:before {
+				position: absolute;
+				top: -15px;
+				left: -45px;
+				content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAL5JREFUSA1jNKroU/n5/68mAwVAi1N+5+qGsF/4jGD59f9fGMN/hlZ8igjJ3fn5Qgyo5jU+dUz4JKkpN2oR2aE5/IKOhZiwYGZixKtMUpCX+dz///jM+otPEmy4ppQYw+r8OLwWASWfE1AQP/ziaNRHBOIct/TwCzoWFkbmZf+Y/53E5Wk7LWUVoNwMXPLEiuPP8kBT/v//bwSkzhJrIA51oxkWR8AQITz8kjfdfESwPgIG/0sg7iUiGvApuQoA9RsjUzCMvhkAAAAASUVORK5CYII=');
+			}
+		}
+		p {
+			letter-spacing: 2px;
+			font-size: .875em;
+		}
+		&:nth-child(1) {
+			background-image: url('../img/step-1.png');
+			z-index: 4;
+		}
+		&:nth-child(2) {
+			background-image: url('../img/step-2.png');
+			z-index: 3;
+		}
+		&:nth-child(3) {
+			background-image: url('../img/step-3.png');
+			z-index: 2;
+		}
+		&:nth-child(4) {
+			background-image: url('../img/step-4.png');
+			z-index: 1;
+		}
+		&:not(:first-child ) {
+			margin-top: -170px;
+		}
+	}
+	.text-box {
+		width: 290px;
+	}
+	hr {
+		margin-left: -20px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-top: 15px solid #231F20;
+	}
+}
 #features {
 	text-align: center;
 	text-transform: uppercase;
@@ -188,22 +253,25 @@ body {
 #pricing {
 	text-align: center;
 	padding: 100px 0;
-	background-color: #fff;
-	img {
-		max-width: 85%;
+	background: #000;
+	background: -webkit-linear-gradient(#000000 0%, #3B3B3B 100%);
+	background: -o-linear-gradient(#000000 0%, #3B3B3B 100%);
+	background: linear-gradient(#000000 0%, #3B3B3B 100%);
+	.subheading {
+		color: #fff;
 	}
 	.row {
 		margin-top: 80px;
 	}
-	a {
-		display: inline-block;
-		padding: 10px 30px;
-		font-family: exo;
-		text-transform: uppercase;
-		background-color: #00deb6;
-		border-radius: 5px;
-		color: #fff;
-	}
+	// a {
+	// 	display: inline-block;
+	// 	padding: 10px 30px;
+	// 	font-family: exo;
+	// 	text-transform: uppercase;
+	// 	background-color: #00deb6;
+	// 	border-radius: 5px;
+	// 	color: #fff;
+	// }
 }
 #portfolio {
 	background-image: url('../img/triangle-big.jpg');

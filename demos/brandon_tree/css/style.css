@@ -232,6 +232,85 @@ body {
   letter-spacing: 3px;
 }
 
+#how-it-works {
+  padding: 80px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+#how-it-works .list-items {
+  margin-top: 50px;
+}
+
+#how-it-works .mob-appear {
+  display: none;
+}
+
+#how-it-works .item {
+  position: relative;
+  padding-left: 480px;
+  padding-top: 100px;
+  font-family: exo;
+  color: #000;
+  height: 390px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#how-it-works .item h3 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+}
+
+#how-it-works .item h3:before {
+  position: absolute;
+  top: -15px;
+  left: -45px;
+  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAL5JREFUSA1jNKroU/n5/68mAwVAi1N+5+qGsF/4jGD59f9fGMN/hlZ8igjJ3fn5Qgyo5jU+dUz4JKkpN2oR2aE5/IKOhZiwYGZixKtMUpCX+dz///jM+otPEmy4ppQYw+r8OLwWASWfE1AQP/ziaNRHBOIct/TwCzoWFkbmZf+Y/53E5Wk7LWUVoNwMXPLEiuPP8kBT/v//bwSkzhJrIA51oxkWR8AQITz8kjfdfESwPgIG/0sg7iUiGvApuQoA9RsjUzCMvhkAAAAASUVORK5CYII=");
+}
+
+#how-it-works .item p {
+  letter-spacing: 2px;
+  font-size: .875em;
+}
+
+#how-it-works .item:nth-child(1) {
+  background-image: url("../img/step-1.png");
+  z-index: 4;
+}
+
+#how-it-works .item:nth-child(2) {
+  background-image: url("../img/step-2.png");
+  z-index: 3;
+}
+
+#how-it-works .item:nth-child(3) {
+  background-image: url("../img/step-3.png");
+  z-index: 2;
+}
+
+#how-it-works .item:nth-child(4) {
+  background-image: url("../img/step-4.png");
+  z-index: 1;
+}
+
+#how-it-works .item:not(:first-child) {
+  margin-top: -170px;
+}
+
+#how-it-works .text-box {
+  width: 290px;
+}
+
+#how-it-works hr {
+  margin-left: -20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top: 15px solid #231F20;
+}
+
 #features {
   text-align: center;
   text-transform: uppercase;
@@ -253,25 +332,18 @@ body {
 #pricing {
   text-align: center;
   padding: 100px 0;
-  background-color: #fff;
+  background: #000;
+  background: -webkit-linear-gradient(#000000 0%, #3B3B3B 100%);
+  background: -o-linear-gradient(#000000 0%, #3B3B3B 100%);
+  background: linear-gradient(#000000 0%, #3B3B3B 100%);
 }
 
-#pricing img {
-  max-width: 85%;
+#pricing .subheading {
+  color: #fff;
 }
 
 #pricing .row {
   margin-top: 80px;
-}
-
-#pricing a {
-  display: inline-block;
-  padding: 10px 30px;
-  font-family: exo;
-  text-transform: uppercase;
-  background-color: #00deb6;
-  border-radius: 5px;
-  color: #fff;
 }
 
 #portfolio {
@@ -348,6 +420,44 @@ body {
   #about .get-site p {
     font-size: 1.25em;
   }
+  #how-it-works .item {
+    height: 350px;
+    padding-left: 370px;
+    padding-top: 90px;
+  }
+  #how-it-works .item:not(:first-child) {
+    margin-top: -154px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+  #how-it-works .item {
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  #how-it-works .text-box {
+    width: 170px;
+  }
+  #how-it-works .item {
+    height: 267px;
+    padding-top: 60px;
+    padding-left: 300px;
+  }
+  #how-it-works .item h3 {
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+  #how-it-works .item hr {
+    border-top: 10px solid #231F20;
+  }
+  #how-it-works .item p {
+    font-size: .75em;
+  }
+  #how-it-works .item:not(:first-child) {
+    margin-top: -117px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -394,6 +504,55 @@ body {
   }
   #portfolio .left-col {
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #how-it-works {
+    text-align: center;
+  }
+  #how-it-works hr {
+    margin-left: 0;
+  }
+  #how-it-works h3 {
+    display: inline-block;
+  }
+  #how-it-works .item {
+    background-image: none !important;
+    margin-top: 0 !important;
+    padding: 50px 20px;
+    height: auto;
+  }
+  #how-it-works .item:nth-child(1) {
+    background-color: #30dbb5;
+  }
+  #how-it-works .item:nth-child(2) {
+    background-color: #f64d4d;
+  }
+  #how-it-works .item:nth-child(3) {
+    background-color: #f5ab14;
+  }
+  #how-it-works .item:nth-child(4) {
+    background-color: #bc33e0;
+  }
+  #how-it-works .text-box {
+    width: auto;
+    text-align: center;
+  }
+  #how-it-works img.mob-appear {
+    margin-top: 30px;
+    display: inline;
+  }
+  #how-it-works .mob-appear {
+    display: block;
+  }
+  #how-it-works .step {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 8px;
+    font-family: adam;
+    margin-bottom: 60px;
   }
 }
 
