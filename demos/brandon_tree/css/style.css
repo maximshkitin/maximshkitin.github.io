@@ -257,7 +257,7 @@ body {
 }
 
 #pricing img {
-  max-width: 75%;
+  max-width: 85%;
 }
 
 #pricing .row {
@@ -357,7 +357,7 @@ body {
   #pricing .row {
     margin-top: 0;
   }
-  #pricing .col-md-6 {
+  #pricing .item {
     margin-top: 80px;
   }
   #about .get-site .arrow {
