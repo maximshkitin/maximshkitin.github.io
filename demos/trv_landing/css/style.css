@@ -196,13 +196,13 @@ em {
   font-weight: 700;
 }
 
-#about .form-wrapper > div {
+#about .form-wrapper .wnl {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
 }
 
-#about .form-wrapper img {
+#about .form-wrapper .img {
   margin-top: 80px;
 }
 
@@ -339,7 +339,7 @@ em {
   font-size: 2.25em;
 }
 
-#portfolio .type, #portfolio .img-wrapper {
+#portfolio .type-wrapper, #portfolio .img-wrapper {
   float: left;
 }
 
@@ -369,38 +369,48 @@ em {
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAdCAYAAACuc5z4AAAABGdBTUEAALGPC/xhBQAAA6hJREFUSA2dlUtIlFEUx+el42NeNpOVCDWlUEmlRVBBugiJEiJcSNIm2rSMFr0IXARRUmG1DyKQYFpURKtc9KBFJRWSuShKZjCnRmQclSzHmX7n9l2d+fy00QuH/z2P+7/nnu/c+9lsC4xkMrk+lUpdn5iYiCHtsVisdIHQws0QHhofH/8JYVYL+nNkpbDgD/b39xcvxmg3OxOJRFVJScl7u91eafZls9mn2DNgPRjH3+nxeO6Z40R3aGMkEnFKJm63u8WKVOKwNwP7wVXgNuQup2gE5w2XWDhuM1lcZBpGisRW4JD17cgLc7xrbGysBtL7ZOE3OwvRWWeZiMPpdJ5fAum0ebOZmZkHZpvoDrL1WTmwf8H+HRxHBjKZzDH0A8gHsYGDyCm/3/8EnDfs1Hcr1jeIO8c7NT09vcflcnkhCSDDyAh+6aKAw+GoBkd9Pt8rMIvMG6rdID/Kwg5KUg3GkLNEVkLQZaxwgrqDMsxnROcUzQa5ETYHqivoxW7I+6hXKaQZ6n6QTS4QtuglwF8xR5U/0+0mffkIQslM5rllyV+Ro7H5Tq6+XBQZ2XQ6HQ+FQkOiqFJIy8H5Ed1NxgMs2MBcskVV+lrm5cgv9G/4NzFXa8HZgS+JXKI811TdUAJ4hfRhNBqtB+9INPh6ZGRkB3hFdMaNeDy+Hf2Z0my2x9S5VQTbSTac5Ltc5QbvVaXg6+taDdXV1f3hmsaMhT/C4fAUJ4pKlVgcq62t/Y1fHR89TnazfYy9D3J5Tzr0lw4ZRFqXWsvboHRQ6Zg0avtqY52CycnJt0wSxG9WAeysiXPj/jtn3YrcIMogdZdWTOsM1TubG1TgPNDb22v9VhgEyyLmyD6+geWfRWe83FJ46AhpQzWYy/VWV1wTBw3fkoCMy/gxzD5izIuoexkkTof8OQjQ7bYkYoKLeQaESA1a8gRcQTKPuBobG0uwygWRoV8qheyep5v96HbuwE36N8G8CtJd4DAvY5eDB8jDei8GGeY+VRcIu76+GrVder0G/0akHJ4IpC3BYDDm4ihejqCOQ1AL1/EMQUcQuWm70c/Rn4dFx38cXT5Wk+jG6PR6vbeMuT6hTXaW+ko5ZFRD0vlvqogqILusdbABf0OOLptLR80Sap90hXSEPqK2F4xsvMYq2EUG7/iKp8F9BGxB5P7rWlutkSxTEH4GX1LKbqugvEx5tCsIXseXDhMs/7VWCJqwjYK3SeATOMgH+trT0zPU1tYm74Ll+AvEh6rwJU9vvQAAAABJRU5ErkJggg==");
 }
 
-#portfolio .item.green {
+#portfolio .type-wrapper:hover .decorate-heading {
+  border-color: antiquewhite;
+  color: antiquewhite;
+}
+
+#portfolio .type-wrapper.green {
   background-color: #39dcc9;
 }
 
-#portfolio .item.blue {
+#portfolio .type-wrapper.blue {
   background-color: #70c6eb;
 }
 
-#portfolio .item.orange {
+#portfolio .type-wrapper.orange {
   background-color: #f79231;
 }
 
-#portfolio .item.red {
+#portfolio .type-wrapper.red {
   background-color: #f3787a;
 }
 
-#portfolio .item.yellow {
+#portfolio .type-wrapper.yellow {
   background-color: #fee39a;
+}
+
+#portfolio .type-wrapper.yellow:hover .decorate-heading {
+  border-color: #f3787a;
+  color: #f3787a;
 }
 
 #portfolio .img-wrapper {
   width: 60%;
 }
 
-#portfolio .type {
+#portfolio .type-wrapper {
   position: relative;
   width: 40%;
 }
 
-#portfolio .type > div {
-  left: 20%;
-  right: 20%;
+#portfolio .type-wrapper .decorate-heading {
+  left: 18%;
+  right: 18%;
   position: absolute;
   top: 50%;
   padding-top: 10px;
@@ -448,6 +458,10 @@ em {
   #about .get-site p {
     font-size: 1.25em;
   }
+  #about {
+    background-position: -150px 100px;
+    background-size: 300px 450px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -464,7 +478,8 @@ em {
     display: none;
   }
   #about {
-    padding-bottom: 150px;
+    background-image: none;
+    padding-bottom: 100px;
   }
   #about .get-site {
     text-align: center;
@@ -478,6 +493,21 @@ em {
   }
   #about .form-wrapper .heading {
     text-align: center;
+  }
+  #about .form-wrapper .img {
+    text-align: center;
+  }
+  #description {
+    background-size: 60%;
+  }
+  #main-header .right-text {
+    text-align: center;
+  }
+  #portfolio .type-wrapper .decorate-heading {
+    left: 10%;
+    right: 10%;
+    font-size: 1.25em;
+    margin-top: -20px;
   }
   #features {
     padding-top: 100px;
@@ -495,16 +525,45 @@ em {
   #portfolio .left-col {
     margin-bottom: 50px;
   }
+  #main-heading {
+    font-size: 2.5em;
+  }
+  .decorate-heading {
+    font-size: 3em;
+  }
+  #main-header .decorate-heading + p {
+    font-size: 1.25em;
+  }
 }
 
 @media only screen and (max-width: 479px) {
   body {
     font-size: 14px;
   }
+  .stn-heading {
+    font-size: 1.75em;
+  }
+  .decorate-heading {
+    font-size: 2.5em;
+  }
+  #main-heading {
+    font-size: 2em;
+  }
   #main-header .space-heading.space-heading__header {
     margin-top: 100px;
     margin-bottom: 100px;
     font-size: 1.75em;
+  }
+  #portfolio .note {
+    font-size: 1.5em;
+  }
+  #portfolio .type-wrapper .decorate-heading {
+    left: 8%;
+    right: 8%;
+    font-size: .875em;
+    padding-top: 6px;
+    margin-top: -10px;
+    border-width: 1px;
   }
   #about .text-box {
     padding: 0;

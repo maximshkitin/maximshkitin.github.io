@@ -64,13 +64,6 @@ em {
 		line-height: 1.35;
 	}
 }
-// .logo {
-// 	display: inline-block;
-// 	width: 127px;
-// 	height: 81px;
-// 	background-image: url('../img/logo.png');
-// 	background-size: 127px 81px;
-// }
 #about {
 	position: relative;
 	padding-top: 100px;
@@ -115,12 +108,12 @@ em {
 		top: -450px;
 		font-family: exo;
 		font-weight: 700;
-		> div {
+		.wnl {
 			-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,.35);
 			-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,.35);
 			box-shadow: 0px 0px 10px 0px rgba(0,0,0,.35);
 		}
-		img {
+		.img {
 			margin-top: 80px;
 		}
 		.heading {
@@ -247,9 +240,22 @@ em {
 	.decorate-heading {
 		font-size: 2.25em;
 	}
-	.type, .img-wrapper {
+	.type-wrapper, .img-wrapper {
 		float: left;
 	}
+	// .overlay {
+	// 	position: absolute;
+	//     top: 0;
+	//     bottom: 0;
+	//     left: 0;
+	//     right: 0;
+	//     opacity: 0;
+	//     background-color: rgba(0,0,0,.3);
+	//     transition: opacity .5s ease;
+	//     &:hover {
+	//     	opacity: 1;
+	//     }
+	// }
 	.beer {
 		display: inline-block;
 		font-family: blackjack;
@@ -272,32 +278,57 @@ em {
 			}
 		}
 	}
-	.item {
+	.type-wrapper {
+		&:hover {
+			.decorate-heading {
+				border-color: antiquewhite;
+				color: antiquewhite;
+			}
+		}
 		&.green {
 			background-color: #39dcc9;
+			&:hover {
+				// background-color: ;
+			}
 		}
 		&.blue {
 			background-color: #70c6eb;
+			&:hover {
+				// background-color: ;
+			}
 		}
 		&.orange {
 			background-color: #f79231;
+			&:hover {
+				// background-color: ;
+			}
 		}
 		&.red {
 			background-color: #f3787a;
+			&:hover {
+				// background-color: ;
+			}
 		}
 		&.yellow {
 			background-color: #fee39a;
+			&:hover {
+				// background-color: ;
+				.decorate-heading {
+					border-color: #f3787a;
+					color: #f3787a;
+				}
+			}
 		}
 	}
 	.img-wrapper {
 		width: 60%;
 	}
-	.type {
+	.type-wrapper {
 		position: relative;
 		width: 40%;
-		> div {
-			left: 20%;
-			right: 20%;
+		.decorate-heading {
+			left: 18%;
+			right: 18%;
 			position: absolute;
 			top: 50%;
 			padding-top: 10px;

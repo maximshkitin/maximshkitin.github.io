@@ -4,7 +4,7 @@ $(document).ready(function(){
 		types.map(function(i, val) {
 			var th = $(val);
 			var imgHeight = th.closest('.clearfix').find('.img-wrapper').height();
-			th.css('height', imgHeight - 1);
+			th.css('height', imgHeight);
 		});
 	}
 	setHeight();
