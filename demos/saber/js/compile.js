@@ -22,62 +22,6 @@ $(document).ready(function(){
 	        }
 	    }        
 	})
-	if ($('body').hasClass('login')) {
-		var checkForms = function(fields) {
-		 	var flag = true;
-		 	fields.map(function(i, val){
-		 		if ($(val).val() == '') {
-		 			flag = false;
-		 			$(val).css('border-color', 'red');
-		 		}
-		 		else {
-		 			$(val).css('border-color', 'black');
-		 		}
-		 	});
-		 	if (flag) return true;
-		 	else return false;
-		}
-		$('.to-sign-up').click(function(){
-			$(this).closest('.form-toggle').fadeOut(300);
-			setTimeout(function(){
-				$('.form-toggle.sign-up').fadeIn(300);
-			}, 300);
-			var delay = 600;
-			var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
-			if (isSafari) {
-		 		$('body').animate({ scrollTop: $('.container-form').offset().top - 150 }, delay);
-			} 
-		    else {
-		     	$('html').animate({ scrollTop: $('.container-form').offset().top - 150 }, delay);
-		    }
-			return false;
-		});
-		$('.to-log-in').click(function(){
-			$(this).closest('.form-toggle').fadeOut(300);
-			setTimeout(function(){
-				$('.form-toggle.log-in').fadeIn(300);
-			}, 300);
-			var delay = 600;
-			var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
-			if (isSafari) {
-		 		$('body').animate({ scrollTop: $('.container-form').offset().top - 150 }, delay);
-			} 
-		    else {
-		     	$('html').animate({ scrollTop: $('.container-form').offset().top - 150 }, delay);
-		    }
-			return false;
-		});
-		$('.form-wrapper').submit(function(){
-			var fields = $(this).find('input:not([type="submit"])');
-			if (!checkForms(fields)) {
-				return false;
-			}
-			if ($('.new-pass').val().length < 6 || $('.new-pass').val() != $('.confirm-pass').val()) {
-				$('.pass').css('border-color', 'red');
-				return false;
-			}
-		});
-	}
 	$('.dd-menu').click(function(){
 		$(this).find('ul').toggleClass('active');
 	});
@@ -196,10 +140,15 @@ $(document).ready(function(){
 		e.stopPropagation();
 	});
 	$('.fake-select li a').click(function(){
+		var thisSelect = $(this).closest('.fake-select');
 		var text = $(this).text();
-		$('.fake-select > span').html(text);
-		$('.fake-select').addClass('validate');
-		$('.fake-select').removeClass('open');
+		var id = $(this).parent().index();
+		var select = $(this).closest('.input-field').find('option');
+		select.removeAttr('selected');
+		select.eq(id).attr('selected', 'selected');
+		thisSelect.find(' > span').html(text);
+		thisSelect.addClass('validate');
+		thisSelect.removeClass('open');
 		return false;
 	});
 
@@ -248,11 +197,11 @@ $(window).load(function(){
 	$('.right-line.last .title b').css('left', descrBoxTitleLast + 20);
 	if ($('body').hasClass('user-page')) {
 		var temp = $('#right-side').outerHeight();
-		if (temp > 600 && $(window).width() > 991) {
-			$('#aside').css('min-height', temp);
+		if (temp < 500) {
+			$('#aside').css('min-height', 500);
 		}
 		else {
-			$('#aside').css('min-height', 600);
+			$('#aside').css('min-height', temp);
 		}
 	}
 	else if ($('body').hasClass('product')) {
@@ -264,6 +213,15 @@ $(window).load(function(){
 })(jQuery);
 
 if (document.getElementsByTagName('body')[0].className === 'knlg') {
+		/*
+	 * jQuery.liveFilter
+	 *
+	 * Copyright (c) 2009 Mike Merritt
+	 *
+	 * Forked by Lim Chee Aun (cheeaun.com)
+	 * 
+	 */
+	 
 	(function($){
 		$.fn.liveFilter = function(inputEl, filterEl, options){
 			var defaults = {
