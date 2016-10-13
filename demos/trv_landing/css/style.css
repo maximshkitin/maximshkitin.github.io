@@ -378,25 +378,45 @@ em {
   background-color: #39dcc9;
 }
 
+#portfolio .type-wrapper.green:hover {
+  background-color: #42c1b2;
+}
+
 #portfolio .type-wrapper.blue {
   background-color: #70c6eb;
+}
+
+#portfolio .type-wrapper.blue:hover {
+  background-color: #62accc;
 }
 
 #portfolio .type-wrapper.orange {
   background-color: #f79231;
 }
 
+#portfolio .type-wrapper.orange:hover {
+  background-color: #d6802e;
+}
+
 #portfolio .type-wrapper.red {
   background-color: #f3787a;
+}
+
+#portfolio .type-wrapper.red:hover {
+  background-color: #ca6566;
 }
 
 #portfolio .type-wrapper.yellow {
   background-color: #fee39a;
 }
 
-#portfolio .type-wrapper.yellow:hover .decorate-heading {
-  border-color: #f3787a;
-  color: #f3787a;
+#portfolio .type-wrapper.yellow .decorate-heading {
+  border-color: #8C8B85;
+  color: #8C8B85;
+}
+
+#portfolio .type-wrapper.yellow:hover {
+  background-color: #ead18b;
 }
 
 #portfolio .img-wrapper {
@@ -439,13 +459,52 @@ em {
 }
 
 #main-footer .left-side {
-  margin-top: 55px;
+  margin-top: 40px;
+}
+
+#main-footer .left-side > div {
+  float: left;
+}
+
+#main-footer .left-side li {
+  float: left;
+  margin-left: 30px;
+}
+
+#main-footer .left-side p {
+  opacity: .5;
+  margin-bottom: 10px;
+}
+
+#main-footer .left-side .visit {
+  margin-left: 50px;
+}
+
+#main-footer .left-side .visit p {
+  margin-bottom: 15px;
+}
+
+#main-footer .left-side .visit a {
+  margin-left: 30px;
   text-transform: uppercase;
+  color: #fff;
+}
+
+#main-footer .left-side .visit a:hover {
+  text-decoration: underline;
 }
 
 #main-footer .copyright {
-  margin-top: 20px;
+  margin-top: 10px;
   opacity: .7;
+}
+
+#main-footer .logo {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/trv-logo.png");
+  background-size: 70px 70px;
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
