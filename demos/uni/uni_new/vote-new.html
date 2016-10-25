@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/nomination-3.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<div id="questionnaire">
+		<header>
+			<div class="container">
+				<div class="container-restricted">
+					<a href="">
+						<div id="logo"></div>
+					</a>
+					<div id="header-title">
+						<p>
+							<strong>
+								<span>
+									Select a company<br>
+								</span>
+								to be voted
+							</strong>
+						</p>
+						<a href=""><i class="fa fa-times-circle"></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="progress-empty">
+		</div>
+		<div id="content">
+			<div class="container">
+				<div class="row custom-row">
+					<div class="question first-question">
+						<section class="col-md-10 col-md-offset-1 quest-wrapper">
+							<div class="skew-button skew-button__blue step-number">
+								<div class="fixed-deg">
+									choose your option
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-7 col-sm-7 col-xs-12 question-area pl0 pr0">
+									<h1 class="big-mt">
+										John Doe Has Voted:
+									</h1>
+									<div id="voted-item">
+										<div class="item" data-animate="fadeInUpLess">
+											<div class="rank"><span>1</span></div>
+											<div class="item-img">
+												<h2>Z-Daq</h2>
+												<div class="info">
+													<p><i class="fa fa-star"></i>8800</p>
+													<p><i class="fa fa-industry"></i>Finance, Trading</p>
+												</div>
+												
+											</div>
+											<div class="item-descr">
+												<div class="restrict">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos mollitia explicabo in, voluptates fugiat sint est. Rem inventore voluptate quaerat?</p>
+													<a href="">see details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<form name="question-1" action="">
+										<div class="sub-question">Are you working there?</div>
+										<div class="variant radio">
+											<input type="radio" name="question" value="no"> <i>No. I just love this company</i>
+										</div>
+										<div class="variant radio">
+											<input type="radio" name="question" value="yes"> <i>Yes. I work in this company</i>
+										</div>
+										<div class="bottom-position">
+											<hr>
+											<div class="button-wrapper">
+												<div class="submit-button skew-button">
+													<div class="fixed-deg">
+														<input type="submit" value="Next">
+													</div>	
+												</div>
+											</div>
+										</div>
+										
+									</form>
+								</div>
+								<div class="col-md-3 col-sm-5 col-xs-12 info-area pr0">
+									<div class="info-box">
+										<i class="fa fa-info-circle"></i>
+										<p>
+											Please provide the company’s full name
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="container">
+			<div class="container-restricted">
+				<div class="sponsors-logo" data-animate="fadeInUpLess">
+					<p>
+						<span>Unicornaward</span><br>
+						is proudly sponsored by<br>
+						<b></b>
+					</p>
+					<figure>
+						<img src="img/sponsor-logo.png" alt="SixCap">
+						<figcaption>
+							Sixcapital
+						</figcaption>
+					</figure>
+					<ul>
+						<li><a href="">About</a></li>
+						<li><a href="">Terms & Conditions</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div class="copyright">
+					<span>© 2016</span> SIX CAPITAL Pte Ltd. All Rights Reserved
+					<div class="to-top">
+						<a href="">
+							<i class="fa fa-arrow-up"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal"></div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/nomination-3.js"></script>
+</body>
+</html>

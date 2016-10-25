@@ -699,6 +699,7 @@ body {
   width: 215px;
   padding: 25px;
   color: white;
+  float: left;
 }
 
 #list .list-items .item .item-img h2 {
@@ -720,8 +721,9 @@ body {
 
 #list .list-items .item .item-descr {
   position: relative;
-  width: 335px;
   padding: 25px 0;
+  margin-left: 215px;
+  display: block;
 }
 
 #list .list-items .item .item-descr .subtitle {
@@ -750,7 +752,7 @@ body {
 #list .list-items .item .item-descr .restrict {
   height: 100%;
   padding: 0 25px;
-  border-right: 5px solid #5086f2;
+  padding-right: 40px;
 }
 
 #list .list-items .item .item-descr p {
@@ -822,51 +824,51 @@ body {
   margin-left: 5px;
 }
 
-#list .list-items .item.item-1 .item-img {
+#list .list-items .item:nth-of-type(1) .item-img {
   background-color: #1f8cba;
 }
 
-#list .list-items .item.item-1 .rank {
+#list .list-items .item:nth-of-type(1) .rank {
   border-top: 50px solid #1f8cba;
 }
 
-#list .list-items .item.item-2 .item-img {
+#list .list-items .item:nth-of-type(2) .item-img {
   background-color: #6377f7;
 }
 
-#list .list-items .item.item-2 .rank {
+#list .list-items .item:nth-of-type(2) .rank {
   border-top: 50px solid #6377f7;
 }
 
-#list .list-items .item.item-3 .item-img {
+#list .list-items .item:nth-of-type(3) .item-img {
   background-color: #746ff7;
 }
 
-#list .list-items .item.item-3 .rank {
+#list .list-items .item:nth-of-type(3) .rank {
   border-top: 50px solid #746ff7;
 }
 
-#list .list-items .item.item-4 .item-img {
+#list .list-items .item:nth-of-type(4) .item-img {
   background-color: #8b69fa;
 }
 
-#list .list-items .item.item-4 .rank {
+#list .list-items .item:nth-of-type(4) .rank {
   border-top: 50px solid #8b69fa;
 }
 
-#list .list-items .item.item-5 .item-img {
+#list .list-items .item:nth-of-type(5) .item-img {
   background-color: #a160fc;
 }
 
-#list .list-items .item.item-5 .rank {
+#list .list-items .item:nth-of-type(5) .rank {
   border-top: 50px solid #a160fc;
 }
 
-#list .list-items .item.item-6 .item-img {
+#list .list-items .item:nth-of-type(6) .item-img {
   background-color: #b048fa;
 }
 
-#list .list-items .item.item-6 .rank {
+#list .list-items .item:nth-of-type(6) .rank {
   border-top: 50px solid #b048fa;
 }
 

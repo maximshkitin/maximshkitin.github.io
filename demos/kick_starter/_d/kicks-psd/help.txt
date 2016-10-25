@@ -1,0 +1,67 @@
+Kickstars - Crowdfunding Creative PSD Template
+
+Thank you for purchasing my theme. If you have any questions, please feel free to contact me via email envato@bestwebsoft.com. Thanks!
+
+
+Description:
+
+What is Kickstars?
+Kickstarter is a PSD template for a website which allows online sales of small stock to a huge pool of investors. This is very popular kind of business and we can see how the market grows day by day.
+
+This release consisted with 11 PSD files. All layers are organized properly, so it takes you a moment to find necessary layer and edit it.
+
+We would like to thank you for your purchase and hope that you will enjoy using of our product. Cheers!
+
+
+Features:
+
+- unique and fresh design
+- help file included
+- organized and layered PSD templates
+- 960px layout width
+- free fonts used
+- multiple colors
+
+
+Pages:
+
+- home
+- project
+- search results
+- single
+- how it works
+- profile
+- blog
+- post
+- category
+- day news
+- login
+
+
+Fonts:
+
+Dosis (logo only)
+Open Sans
+
+
+Credits:
+Slider image can be found here: http://www.fotopedia.com/items/flickr-3531136243.
+Images from the preview files are not included into the original release.
+
+
+Questions:
+
+== How to add images and how to use clipping mask. ==
+1) I have used clipping mask option for inserting images into certain locations (to the blocks with rounded corners). Why? Because it is pretty easy and you do not need to cut the source image.
+However, if you'll need to add new images into the theme, please follow the instructions below:
+1) Open any PSD file which contains images (for example, thumbnails on portfolio or blog page)
+2) Make sure that 'Auto-select' (located at the top left corner of software window) is active and selected box says "Layer".
+3) Click to the image which you would like to remove or replace with another image.
+4) You will see folder of this element with all available layers at the bottom right corner of your software window (layers panel). It is possible that layer with "thumb" or "img" name will be active.
+5) You will see an arrow which is pointing to the layer below. The layer with an arrow is a clipping mask layer. You need to create the same one for your new image.
+6) Create new layer and drag or paste your image to it. 
+7) Make sure that this new layer with your image is located above the "thumb" or "img" layer (old image layer).
+8) Click to the new layer with image (using right mouse button) and you'll see a menu. Choose 'Create Clipping Mask'.
+9) Now you can delete the old layer and setup location of your image. It will be located within the borders of the bottom element.
+
+More detailed information about masking layers can be found here: http://helpx.adobe.com/photoshop/using/masking-layers.html
