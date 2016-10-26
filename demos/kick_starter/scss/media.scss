@@ -69,6 +69,17 @@
 	.footer-nav .title {
 		font-size: 1.125em;
 	}
+	.author-info {
+		.grad-btn {
+			padding: 7px 8px;
+		}
+	}
+	#aside-project .author-info .img-wrapper {
+		width: 90px;
+	}
+	#aside-project .author-info .descr {
+		margin-left: 105px;
+	}
 }
 @media only screen and (min-width: 768px) {
 	.hamb {
@@ -283,6 +294,56 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	#stn-project {
+		.stn-heading {
+			font-size: 1.375em;
+		}
+		.overview-bl {
+			.art-overview, .stats {
+				padding: 10px;
+			}
+			
+		}
+		#tab-section .tabs ul li {
+			width: 25%;
+			text-align: center;
+			a {
+				padding-left: 0;
+				padding-right: 0;
+				border: 0;
+				background-color: transparent;
+			}
+			
+		}
+		.tab-content {
+			.grad-btn {
+				text-align: center;
+				padding-left: 0;
+				padding-right: 0;
+				width: calc(50% - 5px);
+				&:last-child {
+					float: right;
+				}
+			}
+		}
+		#tab-section .tab-content .bottom-btns a:last-child {
+			margin-left: 0;
+		}
+	}
+	#tab-section .tab-content{
+		.text-block, .bottom-btns {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	#aside-project .author-info .img-wrapper {
+			width: 208px;
+		}
+		#aside-project .author-info .descr {
+			margin-left: 223px;
+		}
 }
 @media only screen and (max-width: 479px) {
 	.search-register input {

@@ -14,11 +14,28 @@ $(document).ready(function(){
 	});
 	$('.hamb').click(function(){
 		$('.menu-wrapper').slideToggle();
-		if ($('body').hasClass('no-scroll')) {
-			$('body').removeClass('no-scroll');
+		$('body').toggleClass('no-scroll');
+	});
+	$('.acc-item .title').click(function(){
+		if ($(this).closest('.acc-item').hasClass('active')) {
+			$(this).closest('.acc-item').removeClass('active');
+			$(this).closest('.acc-item').find('.content').slideUp();
 		}
 		else {
-			$('body').addClass('no-scroll');
+			$('.acc-item.active').find('.content').slideUp();
+			$('.acc-item.active').removeClass('active');
+			$(this).closest('.acc-item').addClass('active');
+			$(this).closest('.acc-item').find('.content').slideDown();
 		}
+	});
+	$('.tabs li a').click(function(){
+		if (!$(this).parent().hasClass('active')) {
+			var i = $(this).parent().index();
+			$('.tab-content.active').removeClass('active');
+			$('.tabs li').removeClass('active');
+			$(this).parent().addClass('active');
+			$('.tab-content').eq(i).addClass('active');
+		}
+		return false;
 	});
 });
