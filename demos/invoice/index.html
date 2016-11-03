@@ -4,10 +4,27 @@
 	<meta charset="UTF-8">
 	<title>Invoice</title>
 	<style>
+		@font-face {
+			font-family: roboto;
+			src: url("roboto/reg.eot");
+		    src: url("roboto/reg.svg") format("svg"), url("roboto/reg.woff") format("woff"), url("roboto/reg.ttf") format("truetype");
+		    font-weight: 400;
+		}
+		@font-face {
+			font-family: roboto;
+			src: url("roboto/bold.eot");
+		    src: url("roboto/bold.svg") format("svg"), url("roboto/bold.woff") format("woff"), url("roboto/bold.ttf") format("truetype");
+		    font-weight: 700;
+		}
 		body {
 			background-color: #e4e6eb; 
 		    margin: 0; 
 		    padding: 0; 
+		    background-image: url('img/invoice-bg.png');
+		    background-position: left bottom;
+		    background-repeat: no-repeat;
+		    font-family: roboto, helvetica, arial, sans-serif;
+		    color: #545454;
 		}
 		a {
 			text-decoration: none;
@@ -43,6 +60,11 @@
 		span[class="orange"]{
 			color: #dfb16b;
 		}
+		td[class="orange"] {
+			padding-top: 20px;
+			font-size: 20px;
+			color: #dfb16b;
+		}
 		td[class="bottom-border__grey"] {
 			padding-top: 15px;
 			border-bottom: 1px solid #ededed;
@@ -51,13 +73,16 @@
 			border-radius: 5px;
 			overflow: hidden;
 		}
-		table[class="order"] th,
-		table[class="order"] tfoot td {
-			color: #fff;
-			background-color: #dfb16b;
+		td[class="status-line"] {
 			text-transform: uppercase;
-			padding-top: 10px;
-			padding-bottom: 10px;
+			padding-bottom: 15px;
+		}
+		th[class="order-h"],
+		td[class="order-f"] {
+			color: #fff;
+			text-transform: uppercase;
+			padding-top: 15px;
+			padding-bottom: 15px;
 			font-weight: 700;
 		}
 		table[class="order"] tfoot td {
@@ -65,20 +90,37 @@
 			padding-right: 25px;
 		}
 		table[class="order"] th,
-		table[class="order"] td {
+		table[class="order"] tbody td {
 			border-right: 1px solid #fff;
 		}
 		table[class="order"] tbody td {
-			background-color: #f7fafc;
 			height: 120px;
 			padding-left: 25px;
 			padding-right: 25px;
+			font-size: 14px;
 		}
-		table[class="order"] tbody tr:nth-child(2n+1) td {
+		table[class="order"] tbody tr:nth-child(2n+1) {
 			background-color: #f7fafc;
 		}
-		table[class="order"] tbody tr:nth-child(2n) td {
+		table[class="order"] tbody tr:nth-child(2n) {
 			background-color: #f0f2f5;
+		}
+		td[class="pr-30"] {
+			padding-right: 30px;
+		}
+		table[class="info-table"] td {
+			padding-top: 10px;
+		}
+		img {
+			vertical-align: middle;
+		}
+		table[class="order"] th:last-child, 
+		table[class="order"] td:last-child {
+			border-right: 0;
+		}
+		span[class="paid"],
+		span[class="unpaid"] {
+			padding-left: 10px;
 		}
 	</style>
 </head>
@@ -148,7 +190,7 @@
 											<tr>
 												<td cellpadding="0" cellspacing="0" width="45">&nbsp;</td>
 												<td cellpadding="0" cellspacing="0">
-													<table cellpadding="0" cellspacing="0" width="400">
+													<table class="info-table" cellpadding="0" cellspacing="0" width="400">
 														<tbody>
 															<tr>
 																<td cellpadding="0" cellspacing="0" class="orange">
@@ -156,7 +198,7 @@
 																</td>
 															</tr>
 															<tr>
-																<td cellpadding="0" cellspacing="0" class="orange">
+																<td cellpadding="0" cellspacing="0">
 																	<strong>Joe Doe</strong>
 																</td>
 															</tr>
@@ -165,12 +207,12 @@
 																	<table cellpadding="0" cellspacing="0">
 																		<tbody>
 																			<tr>
-																				<td cellpadding="0" cellspacing="0">Phone:</td>
+																				<td class="pr-30" cellpadding="0" cellspacing="0">Phone:</td>
 																				<td cellpadding="0" cellspacing="0"><strong>+9349934</strong></td>
 																			</tr>
 																			<tr>
-																				<td cellpadding="0" cellspacing="0">Phone:</td>
-																				<td cellpadding="0" cellspacing="0"><strong>+9349934</strong></td>
+																				<td class="pr-30" cellpadding="0" cellspacing="0">Email:</td>
+																				<td cellpadding="0" cellspacing="0"><strong>msfsdf@sdf.sd</strong></td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -181,7 +223,7 @@
 															</tr>
 														</tbody>
 													</table>
-													<table cellpadding="0" cellspacing="0" width="400">
+													<table class="info-table" cellpadding="0" cellspacing="0" width="400">
 														<tbody>
 															<tr>
 																<td cellpadding="0" cellspacing="0" class="orange">
@@ -189,7 +231,7 @@
 																</td>
 															</tr>
 															<tr>
-																<td cellpadding="0" cellspacing="0" class="orange">
+																<td cellpadding="0" cellspacing="0">
 																	<img src="img/map-marker.png" alt="">
 																	9988998 Orchard Road, Marina Bay, SG.
 																</td>
@@ -199,7 +241,7 @@
 															</tr>
 														</tbody>
 													</table>
-													<table cellpadding="0" cellspacing="0" width="400">
+													<table class="info-table" cellpadding="0" cellspacing="0" width="400">
 														<tbody>
 															<tr>
 																<td cellpadding="0" cellspacing="0" class="orange">
@@ -207,7 +249,7 @@
 																</td>
 															</tr>
 															<tr>
-																<td cellpadding="0" cellspacing="0" class="orange">
+																<td cellpadding="0" cellspacing="0">
 																	<img src="img/truck.png" alt="">
 																	9988998 Orchard Road, Marina Bay, SG.
 																</td>
@@ -218,7 +260,7 @@
 														</tbody>
 													</table>
 												</td>
-												<td width="150" align="right">
+												<td width="150" align="right" valign="top">
 													<a href="">
 														<img width="150" height="150" src="img/logo-sabermach.svg" alt="">
 													</a>
@@ -237,21 +279,27 @@
 								<td width="100%" height="60">&nbsp;</td>
 							</tr>
 							<tr>
-								<td width="1000" cellpadding="0" cellspacing="0">
-									<table width="1000" cellpadding="0" cellspacing="0">
+								<td width="100%" cellpadding="0" cellspacing="0">
+									<table width="100%" cellpadding="0" cellspacing="0">
 										<tbody>
 											<tr>
-												<td width="45">&nbsp;</td>
-												<td align="left">
+												<td class="status-line" width="45">&nbsp;</td>
+												<td class="status-line" align="left">
+													<img src="img/hash-y.png" alt="">
 													Order / Invoice <span class="orange"><strong>#123123</strong></span>
 												</td>
-												<td align="center">
+												<td class="status-line" align="center">
+													<img src="img/calendar.png" alt="">
 													Data Published <span class="orange"><strong>12/21/2013</strong></span>
 												</td>
-												<td align="right">
-													Payment Status <span class="unpaid"><strong>Unpaid</strong></span>
+												<td class="status-line" align="right">
+													Payment Status <span class="unpaid"><strong style="color: #ed7253;"><img src="img/exclam-red.png" alt=""> Unpaid</strong></span>
+													<!-- <strong style="color: #dfb16b;">
+														<img src="img/check-y.png" alt="">
+														Paid
+													</strong> -->
 												</td>
-												<td width="45">&nbsp;</td>
+												<td class="status-line" width="45">&nbsp;</td>
 											</tr>
 										</tbody>
 									</table>
@@ -267,11 +315,11 @@
 													<table class="order" cellpadding="0" cellspacing="0" width="100%">
 														<thead>
 															<tr>
-																<th>Sku</th>
-																<th>Item description</th>
-																<th>QTY</th>
-																<th>Price / Unit</th>
-																<th>Total</th>
+																<th class="order-h" bgcolor="#dfb16b">Sku</th>
+																<th class="order-h" bgcolor="#dfb16b">Item description</th>
+																<th class="order-h" bgcolor="#dfb16b">QTY</th>
+																<th class="order-h" bgcolor="#dfb16b">Price / Unit</th>
+																<th class="order-h" bgcolor="#dfb16b">Total</th>
 															</tr>
 														</thead>
 														<tbody>
@@ -321,9 +369,9 @@
 														</tbody>
 														<tfoot>
 															<tr>
-																<td>Invoice total</td>
-																<td colspan="3">&nbsp;</td>
-																<td align="right">
+																<td class="order-f" bgcolor="#dfb16b">Invoice total</td>
+																<td class="order-f" bgcolor="#dfb16b" colspan="3">&nbsp;</td>
+																<td class="order-f" bgcolor="#dfb16b" align="right">
 																	1234 SGD
 																</td>
 															</tr>
@@ -358,7 +406,7 @@
 																</strong>
 																Lorem Ipsum Ltd. Singapore
 															</td>
-															<td align="right" class="orange">
+															<td align="right">
 																<a href="" style="color: #dfb16b;">www.sabermach.com</a>
 															</td>
 														</tr>
@@ -376,6 +424,9 @@
 						</tbody>
 					</table>
 				</td>
+			</tr>
+			<tr>
+				<td width="100%" height="120">&nbsp;</td>
 			</tr>
 		</tbody>
 	</table>
