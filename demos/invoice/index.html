@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Invoice</title>
+	<style>
+		body {
+			background-color: #e4e6eb; 
+		    margin: 0; 
+		    padding: 0; 
+		}
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		html {
+			width: 100%;
+		}
+		table[class="header"] {
+			background: #c78c43;
+		    background: -moz-linear-gradient(0deg, #c78739 0%, #dca55c 30%, #c58a40 83%, #b87b31 93%, #ca934a 100%);
+		    background: -webkit-linear-gradient(0deg, #c78739 0%, #dca55c 30%, #c58a40 83%, #b87b31 93%, #ca934a 100%);
+		    background: -ms-linear-gradient(0deg, #c78739 0%, #dca55c 30%, #c58a40 83%, #b87b31 93%, #ca934a 100%);
+		    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+		}
+		td[class="right-border"] {
+			border-right: 1px solid #fff;
+		}
+		table[class="content-table"] {
+			border-radius: 12px;
+			margin: 0 auto;
+			box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+		}
+		td[class="heading"] {
+			color: #999;
+		    font-weight: 400;
+		    font-size: 34px;
+		    text-align: center;
+		    text-transform: uppercase;
+		}
+		span[class="orange"]{
+			color: #dfb16b;
+		}
+		td[class="bottom-border__grey"] {
+			padding-top: 15px;
+			border-bottom: 1px solid #ededed;
+		}
+		table[class="order"] {
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		table[class="order"] th,
+		table[class="order"] tfoot td {
+			color: #fff;
+			background-color: #dfb16b;
+			text-transform: uppercase;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-weight: 700;
+		}
+		table[class="order"] tfoot td {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+		table[class="order"] th,
+		table[class="order"] td {
+			border-right: 1px solid #fff;
+		}
+		table[class="order"] tbody td {
+			background-color: #f7fafc;
+			height: 120px;
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+		table[class="order"] tbody tr:nth-child(2n+1) td {
+			background-color: #f7fafc;
+		}
+		table[class="order"] tbody tr:nth-child(2n) td {
+			background-color: #f0f2f5;
+		}
+	</style>
+</head>
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td width="100%">
+					<table class="header" width="100%" height="70" cellpadding="0" cellspacing="0">
+						<tbody>
+							<tr>
+								<td width="70">&nbsp;</td>
+								<td width="40" align="right">
+									<a href="">
+										<img src="img/chevron.png" alt="">
+									</a>
+								</td>
+								<td class="right-border" width="20">&nbsp;</td>
+								<td width="20">&nbsp;</td>
+								<td>
+									<img src="img/invoice-logo.png" alt="">
+								</td>
+								<td align="right">
+									<a href="">
+										<img src="img/download-btn.png" alt="">
+									</a>
+									<a href="">
+										<img src="img/print-btn.png" alt="">
+									</a>
+								</td>
+								<td width="60">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%" cellpadding="0" cellspacing="0">
+						<tbody>
+							<tr>
+								<td width="100%" cellpadding="0" cellspacing="0" height="70">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td cellpadding="0" cellspacing="0" width="100%">
+					<table class="content-table" bgcolor="#fff" width="1000" cellpadding="0" cellspacing="0">
+						<tbody>
+							<tr>
+								<td width="100%" height="45">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="heading" align="center" width="100%">
+									Invoice <span class="orange">#123434</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="30">&nbsp;</td>
+							</tr>
+							<tr>
+								<td cellpadding="0" cellspacing="0" width="100%">
+									<table cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td cellpadding="0" cellspacing="0" width="45">&nbsp;</td>
+												<td cellpadding="0" cellspacing="0">
+													<table cellpadding="0" cellspacing="0" width="400">
+														<tbody>
+															<tr>
+																<td cellpadding="0" cellspacing="0" class="orange">
+																	<strong>To:</strong>
+																</td>
+															</tr>
+															<tr>
+																<td cellpadding="0" cellspacing="0" class="orange">
+																	<strong>Joe Doe</strong>
+																</td>
+															</tr>
+															<tr>
+																<td cellpadding="0" cellspacing="0">
+																	<table cellpadding="0" cellspacing="0">
+																		<tbody>
+																			<tr>
+																				<td cellpadding="0" cellspacing="0">Phone:</td>
+																				<td cellpadding="0" cellspacing="0"><strong>+9349934</strong></td>
+																			</tr>
+																			<tr>
+																				<td cellpadding="0" cellspacing="0">Phone:</td>
+																				<td cellpadding="0" cellspacing="0"><strong>+9349934</strong></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td class="bottom-border__grey"></td>
+															</tr>
+														</tbody>
+													</table>
+													<table cellpadding="0" cellspacing="0" width="400">
+														<tbody>
+															<tr>
+																<td cellpadding="0" cellspacing="0" class="orange">
+																	<strong>Billing Address</strong>
+																</td>
+															</tr>
+															<tr>
+																<td cellpadding="0" cellspacing="0" class="orange">
+																	<img src="img/map-marker.png" alt="">
+																	9988998 Orchard Road, Marina Bay, SG.
+																</td>
+															</tr>
+															<tr>
+																<td class="bottom-border__grey"></td>
+															</tr>
+														</tbody>
+													</table>
+													<table cellpadding="0" cellspacing="0" width="400">
+														<tbody>
+															<tr>
+																<td cellpadding="0" cellspacing="0" class="orange">
+																	<strong>Shipping Address</strong>
+																</td>
+															</tr>
+															<tr>
+																<td cellpadding="0" cellspacing="0" class="orange">
+																	<img src="img/truck.png" alt="">
+																	9988998 Orchard Road, Marina Bay, SG.
+																</td>
+															</tr>
+															<tr>
+																<td class="bottom-border__grey"></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+												<td width="150" align="right">
+													<a href="">
+														<img width="150" height="150" src="img/logo-sabermach.svg" alt="">
+													</a>
+												</td>
+												<td cellpadding="0" cellspacing="0" width="45">&nbsp;</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="45">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="100%" height="60">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="1000" cellpadding="0" cellspacing="0">
+									<table width="1000" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td width="45">&nbsp;</td>
+												<td align="left">
+													Order / Invoice <span class="orange"><strong>#123123</strong></span>
+												</td>
+												<td align="center">
+													Data Published <span class="orange"><strong>12/21/2013</strong></span>
+												</td>
+												<td align="right">
+													Payment Status <span class="unpaid"><strong>Unpaid</strong></span>
+												</td>
+												<td width="45">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td width="45">&nbsp;</td>
+												<td>
+													<table class="order" cellpadding="0" cellspacing="0" width="100%">
+														<thead>
+															<tr>
+																<th>Sku</th>
+																<th>Item description</th>
+																<th>QTY</th>
+																<th>Price / Unit</th>
+																<th>Total</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td align="center">
+																	SSS1214425
+																</td>
+																<td>
+																	<strong>
+																		Master series
+																	</strong>
+																	- Black vantage (10 colours)
+																</td>
+																<td align="center"><strong>1</strong></td>
+																<td align="center">$343</td>
+																<td align="right">$343</td>
+															</tr>
+															<tr>
+																<td align="center">
+																	SSS1214425
+																</td>
+																<td>
+																	<strong>
+																		Master series
+																	</strong>
+																	- Black vantage (10 colours)
+																</td>
+																<td align="center"><strong>1</strong></td>
+																<td align="center">$343</td>
+																<td align="right">$343</td>
+															</tr>
+															<tr>
+																<td colspan="3"></td>
+																<td>
+																	Subtotal<br>
+																	Shipping<br>
+																	Tax 10%
+																</td>
+																<td align="right">
+																	<strong>
+																		$2323<br>
+																		$2323<br>
+																		$2323
+																	</strong>
+																</td>
+															</tr>
+														</tbody>
+														<tfoot>
+															<tr>
+																<td>Invoice total</td>
+																<td colspan="3">&nbsp;</td>
+																<td align="right">
+																	1234 SGD
+																</td>
+															</tr>
+														</tfoot>
+													</table>
+												</td>
+												<td width="45">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="200">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>
+									<table width="100%" cellpadding="0" cellspacing="0">
+										<tbody>
+											<td width="45">&nbsp;</td>
+											<td>
+												<table width="100%" cellpadding="0" cellspacing="0">
+													<tbody>
+														<tr>
+															<td style="border-top: 1px solid #ededed;">&nbsp;</td>
+															<td style="border-top: 1px solid #ededed;">&nbsp;</td>
+														</tr>
+														<tr>
+															<td>
+																<strong>
+																	SaberMach 
+																</strong>
+																Lorem Ipsum Ltd. Singapore
+															</td>
+															<td align="right" class="orange">
+																<a href="" style="color: #dfb16b;">www.sabermach.com</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+											<td width="45">&nbsp;</td>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="45">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
