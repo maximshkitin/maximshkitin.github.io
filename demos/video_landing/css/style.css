@@ -19,10 +19,6 @@ p {
   margin-bottom: 15px;
 }
 
-.video-container {
-  overflow: hidden;
-}
-
 #video-overlay {
   position: absolute;
   top: 0;
@@ -303,6 +299,7 @@ section {
 }
 
 video {
+  vertical-align: top;
   width: 100%;
 }
 
@@ -313,10 +310,11 @@ section .text-content {
 }
 
 #art-jam {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   background-image: url("../img/art-jam.png");
   background-position: right top;
+  background-size: 60%;
 }
 
 #art-jam .text-content {
@@ -324,10 +322,11 @@ section .text-content {
 }
 
 #mtv {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-image: url("../img/mtv.png");
   background-position: left center;
+  background-size: 60%;
 }
 
 #dj {
@@ -363,7 +362,7 @@ section .text-content {
 }
 
 #contact h2 {
-  width: 85%;
+  padding-top: 150px;
   font-size: 5.625em;
   color: #fff;
   text-transform: uppercase;
@@ -380,11 +379,18 @@ section .text-content {
   border-radius: 10px;
   border: 0;
   outline: 0;
+  background-color: #fff;
+  color: #9B9B9B;
+}
+
+.input-field select {
+  height: 50px;
 }
 
 .input-field textarea {
   padding-top: 10px;
   padding-bottom: 10px;
+  resize: none;
 }
 
 .tac {
@@ -408,4 +414,21 @@ section .text-content {
 
 .field-50 {
   height: 50px;
+}
+
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #0B3F60;
+}
+
+#footer .logo img {
+  width: 280px;
+}
+
+.copyright {
+  font-size: .75em;
+  text-align: right;
+  color: #fff;
+  opacity: .5;
 }
