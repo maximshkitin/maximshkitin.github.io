@@ -10,5 +10,11 @@ $(document).ready(function(){
 		video[0].play();
 	});
 	var rowH = $('#we-offer .first').closest('.row').height();
-	$('#we-offer .first').css('height', rowH);
+	if ($(window).width() >= 992) {
+		$('#we-offer .first').css('height', rowH);
+	}
+	else {
+		$('#we-offer .first').css('height', 400);
+	}
+	
 });

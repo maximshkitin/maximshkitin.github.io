@@ -1,12 +1,171 @@
 @media only screen and (max-width: 1199px) {
 	
 }
-@media only screen and (max-width: 991px) {
-	
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+	#art-jam {
+		background-size: 68%;
+	}
+	#sch-rock-stn {
+		background-size: 55%;
+	}
+	#mtv {
+		background-size: 62%;
+	}
+	#add-services {
+		background-size: 62%;
+	}
 }
-@media only screen and (min-width: 767px) {
-	
+@media only screen and (min-width: 992px) {
+	.custom-4 {
+		width: 30%;
+	}
+	.custom-8 {
+		width: 70%;
+	}
+	.custom-3 {
+		width: 29.16666667%;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.about-restr,.services-rescr, #art-jam .text-content {
+		padding: 0;
+	}
+	#about {
+		text-align: center;
+	}
+	.half-bg, #dj {
+		text-align: center;
+		padding-top: 300px !important;
+		padding-bottom: 50px !important;
+		position: relative;
+		background-image: none!important;
+		&:before {
+			content: '';
+			background-position: center;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 0;
+			height: 250px;
+			background-color: #000;
+			left: 0;
+			right: 0;
+		}
+	}
+	#sch-rock-stn {
+		&:before {
+			background-color: #0B3F60;
+			background-image: url('../img/sch-mob.png');
+		}
+	}
+	#art-jam {
+		&:before {
+			background-color: #F8E71C;
+			background-image: url('../img/jam-mob.png');
+		}
+	}
+	#mtv {
+		&:before {
+			background-color: #F08F8F;
+			background-image: url('../img/tv-mob.png');
+		}
+	}
+	#dj {
+		background-color: #fff;
+		&:before {
+			background-color: #eee;
+			background-image: url('../img/dj.png');
+		}
+	}
+	#other-cst {
+		&:before {
+			background-color: #fff;
+			background-position: top center;
+			background-image: url('../img/other-mob.png');
+		}
+	}
+	#add-services {
+		&:before {
+			background-color: #50E3C2;
+			background-image: url('../img/add-mob.png');
+		}
+	}
+	#about {
+		&:before {
+			background-color: #0B3F60;
+			background-image: url('../img/about-mob.png');
+		}
+	}
+	#sch-rock {
+		background-image: url('../img/sch-mob.png');
+	}
+	#art-jam_ {
+		background-image: url('../img/jam-mob.png');
+	}
+	#dj_ {
+		background-image: url('../img/dj.png');
+	}
+	#add-services_ {
+		background-image: url('../img/add-mob.png');
+	}
+	#mtv_ {
+		background-image: url('../img/tv-mob.png');
+	}
+	#other_ {
+		background-image: url('../img/other-mob.png');
+	}
+	.prog-item {
+		height: 350px !important;
+		margin-top: 15px;
+		background-position: center;
+	}
+	.item-content {
+		right: 20px;
+		text-align: center;
+	}
+	.white-mob {
+		color: #fff;
+	}
+	#contact h2 {
+		padding-top: 0;
+		text-align: center;
+	}
+	#contact {
+		.form-wrapper {
+			margin-top: 50px;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	#footer, #footer .copyright {
+		text-align: center;
+	}
+	#footer .copyright {
+		margin-top: 30px;
+	}
+	body {
+		font-size: 14px;
+	}
+	.hire-board {
+		background-image: none;
+		.text-blc {
+			padding-left: 0;
+		}
+	}
+	#contact h2 {
+		font-size: 4.75em;
+	}
+	#we-offer h2 {
+		font-size: 2em;
+		text-align: center;
+		margin-bottom: 10px;
+	}
 }
 @media only screen and (max-width: 479px) {
-	
+	body {
+		font-size: 12px;
+	}
+	.hire-board .red-btn {
+		padding: .5em 0;
+		width: 100%;
+	}
 }
