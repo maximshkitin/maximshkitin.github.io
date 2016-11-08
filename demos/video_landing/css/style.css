@@ -20,6 +20,7 @@ p {
 }
 
 #video-overlay {
+  cursor: pointer;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -560,6 +561,9 @@ section .text-content {
 }
 
 @media only screen and (max-width: 767px) {
+  .overlay-img {
+    display: none;
+  }
   #footer, #footer .copyright {
     text-align: center;
   }
