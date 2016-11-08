@@ -563,7 +563,7 @@ section .text-content {
 @media only screen and (max-width: 767px) {
   #hire {
     background-image: none;
-    background-color: #CE381C;
+    background-color: #F7583A;
   }
   .overlay-img {
     display: none;
