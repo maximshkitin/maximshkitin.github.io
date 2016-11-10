@@ -1,7 +1,7 @@
 <?php echo $header; ?>
 <div class="main">
   <main class="l-center content">
-    <div class="col-left">
+    <div class="col-left fixed-l">
       <div class="title">
         <span class="action">
           <svg viewBox="0 0 150 150" class="icon icon-shine">

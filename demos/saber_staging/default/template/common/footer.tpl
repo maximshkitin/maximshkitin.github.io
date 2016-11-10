@@ -28,6 +28,7 @@
         <i class="fa fa-angle-up"></i><br>
         <?php echo $back_to_top;?>
       </div>
+      <p class="made-by">Powered by TRV Creative</p>
     </div>
   </div>
 </footer>

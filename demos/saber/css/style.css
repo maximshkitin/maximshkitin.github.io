@@ -2406,7 +2406,16 @@ body {
 }
 
 #content .options .heading {
-  padding-right: 200px;
+  padding-right: 150px;
+}
+.options .colors li {
+  display: inline-block;
+}
+.options .colors li p {
+  font-size: .625em;
+  color: #999;
+  margin-top: 5px;
+  text-align: left;
 }
 
 #content .options .descr {

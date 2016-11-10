@@ -166,6 +166,16 @@ $(document).ready(function(){
 
 	// store 
 
+
+	if ($(window).width() >= 800) {
+		if ($('body').hasClass('store')) {
+			if ($('.col-left').hasClass('fixed-l')) {
+				var w = $('.l-center.content').width() * 0.4;
+				$('.col-left.fixed-l').css('width', w);
+			}
+		}	
+	}
+
 	$('.choose-series-radio').on('click', function(){
 		var id = '#' + $(this).attr('id');
 
@@ -187,6 +197,20 @@ $(document).ready(function(){
 		$('#saber-photo .saber-kernel img').attr('src', color);
 	});
 
+});
+$(window).resize(function(){
+	if ($('body').hasClass('store')) {
+		if ($('.col-left').hasClass('fixed-l')) {
+			if ($(window).width() >= 800) {
+				var w = $('.l-center.content').width() * 0.4;
+				$('.col-left.fixed-l').css('width', w);
+			}
+			else {
+				$('.col-left.fixed-l').css('width', 'auto');
+			}
+		}	
+	}
+	
 });
 $(window).scroll(function(){
 	var scrollTop = $(window).scrollTop();

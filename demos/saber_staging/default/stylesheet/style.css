@@ -1600,10 +1600,22 @@ body {
 .options-list li {
   cursor: pointer;
 }
+.made-by {
+  margin: 0;
+  line-height: 0;
+  text-align: right;
+  font-size: 10px;
+  text-transform: uppercase;
+}
 @media only screen and (max-width: 991px) {
   #footer .copyright {
     margin-right: 0;
     display: block;
+    text-align: center;
+  }
+  .made-by {
+    margin-top: 10px;
+    line-height: 1;
     text-align: center;
   }
   .account-login #content {
@@ -2412,7 +2424,16 @@ body {
 }
 
 #content .options .heading {
-  padding-right: 200px;
+  padding-right: 150px;
+}
+.options .colors li {
+  display: inline-block;
+}
+.options .colors li p {
+  font-size: .625em;
+  color: #999;
+  margin-top: 5px;
+  text-align: left;
 }
 
 #content .options .descr {
@@ -4755,10 +4776,10 @@ textarea {
 
 @media only screen and (min-width: 992px) {
   #content.user-page #aside {
-    min-height: 500px;
+    min-height: 600px;
   }
   #content.user-page #right-side {
-    min-height: 500px;
+    min-height: 600px;
   }
 }
 @media only screen and (min-width: 768px) {

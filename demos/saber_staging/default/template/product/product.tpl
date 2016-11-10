@@ -179,14 +179,76 @@
 							<?php if(!empty($downloads)):?>
 							<hr class="dark">
 							<?php foreach ($downloads as $item) :?>
-							<div class="download-box clearfix">
+							<!-- <div class="download-box clearfix">
 								<a href="<?php echo $item->url;?>">
 									<i class="fa fa-file-pdf-o"></i>
 									<p>
 										Download the <?php echo str_replace($heading_title, '<strong>' . $heading_title . '</strong>', $item->name);?>
 									</p>
 								</a>
-							</div>
+							</div> -->
+							<ul class="colors">
+								<li>
+									<div class="item">
+										<img src="img/color-1.png" alt="">
+										<p>Red</p>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<img src="img/color-2.png" alt="">
+										<p>Blue</p>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<img src="img/color-1.png" alt="">
+										<p>Red</p>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<img src="img/color-2.png" alt="">
+										<p>Blue</p>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<img src="img/color-1.png" alt="">
+										<p>Red</p>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<img src="img/color-2.png" alt="">
+										<p>Blue</p>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<img src="img/color-1.png" alt="">
+										<p>Red</p>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<img src="img/color-2.png" alt="">
+										<p>Blue</p>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<img src="img/color-1.png" alt="">
+										<p>Red</p>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<img src="img/color-2.png" alt="">
+										<p>Blue</p>
+									</div>
+								</li>
+							</ul>
 							<?php endforeach;?>
 							<?php endif;?>
 						</div>
