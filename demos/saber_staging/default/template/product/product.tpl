@@ -190,61 +190,61 @@
 							<ul class="colors">
 								<li>
 									<div class="item">
-										<img src="img/color-1.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-1.png" alt="">
 										<p>Red</p>
 									</div>
 								</li>
 								<li>
 									<div class="item">
-										<img src="img/color-2.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-2.png" alt="">
 										<p>Blue</p>
 									</div>
 								</li>
 								<li>
 									<div class="item">
-										<img src="img/color-1.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-1.png" alt="">
 										<p>Red</p>
 									</div>
 								</li>
 								<li>
 									<div class="item">
-										<img src="img/color-2.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-2.png" alt="">
 										<p>Blue</p>
 									</div>
 								</li>
 								<li>
 									<div class="item">
-										<img src="img/color-1.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-1.png" alt="">
 										<p>Red</p>
 									</div>
 								</li>
 								<li>
 									<div class="item">
-										<img src="img/color-2.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-2.png" alt="">
 										<p>Blue</p>
 									</div>
 								</li>
 								<li>
 									<div class="item">
-										<img src="img/color-1.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-1.png" alt="">
 										<p>Red</p>
 									</div>
 								</li>
 								<li>
 									<div class="item">
-										<img src="img/color-2.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-2.png" alt="">
 										<p>Blue</p>
 									</div>
 								</li>
 								<li>
 									<div class="item">
-										<img src="img/color-1.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-1.png" alt="">
 										<p>Red</p>
 									</div>
 								</li>
 								<li>
 									<div class="item">
-										<img src="img/color-2.png" alt="">
+										<img src="https://raw.githubusercontent.com/maximshkitin/maximshkitin.github.io/98012c4293d599fc1cfd735cbafbb80d24c480bb/demos/saber_staging/default/img/color-2.png" alt="">
 										<p>Blue</p>
 									</div>
 								</li>
