@@ -1,0 +1,143 @@
+$grey: #ececec;
+$blue: #083754;
+
+@media only screen and (max-width: 1199px) {
+	
+}
+@media only screen and (max-width: 991px) {
+
+	body {
+		font-size: 14px;
+	}
+
+	.hamb-menu {
+		display: block;
+	}
+	#main-ph-title {
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+	.stn-text-restr {
+		padding: 0;
+	}
+	.img-wrap {
+		margin-bottom: 50px;
+	}
+	[class*="col-"].right, [class*="col-"].left {
+		float: none;
+	}
+	.comment-restr {
+		margin-top: 50px;
+		padding-left: 0;
+	}
+	.bor-wrapper {
+		min-height: 200px;
+		height: auto;
+	}
+	.stn-descr {
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	#main-nav {
+		float: none;
+		border-bottom: 0;
+		nav {
+			display: none;
+			position: absolute;
+		    left: 0;
+		    right: 0;
+		    background-color: #fff;
+		    z-index: 10;
+		}
+		li {
+			margin: 0;
+			float: none;
+			text-align: center;
+			padding-left: 15px;
+			padding-right: 15px;
+			&:not(:last-child){
+				border-bottom: 1px solid #efefef;
+			}
+			a {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				display: block;
+			}
+		}
+	}
+	.logo {
+		display: inline-block;
+		float: none;
+	}
+	#footer .logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	#footer .logo, .copyright {
+		text-align: center;
+	}
+	
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.srv-items {
+		text-align: center;
+	}
+	.srv-item {
+		width: 25%;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+	.srv-item {
+		width: 33.333333%;
+	}
+}
+@media only screen and (max-width: 599px) {
+	.srv-item {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.stn-heading {
+		font-size: 2.25em;
+	}
+	.stn-descr p {
+		font-size: 1em;
+		margin-top: 15px;
+	}
+	.rounded-btn {
+		font-size: 1.75em;
+	}
+}
+@media only screen and (max-width: 479px) {
+	#stn-trg .restr-text-block {
+		margin: 0;
+		width: auto;
+	}
+	.stn-main-heading {
+		font-size: 2em;
+	}
+	.rotate-words {
+		min-height: 28px;
+	}
+	.stn-main-btm .stn-heading {
+		font-size: 1.75em;
+	}
+	.rounded-btn {
+		font-size: 1.5em;
+	} 
+	.stn-main-btm .st-btn .under-btn {
+		font-size: 1em;
+	}
+	.stn-main-btm {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+}
+@media only screen and (max-width: 399px) {
+	.srv-item {
+		width: 100%;
+	}
+}
