@@ -138,7 +138,6 @@ $(document).ready(function(){
 			onSliderLoad: function(){
 				var titles = $('.project-slider-title');
 
-
 				var arrIndex = []
 				titles.map(function(){
 					arrIndex.push($(this).data('title-index'))
@@ -146,6 +145,7 @@ $(document).ready(function(){
 				var maxIndex = Math.max.apply(null, arrIndex);
 				for (var i = 0; i < maxIndex + 1; i++){
 					var currentItem = $('.project-slider-item:not(.bx-clone)');
+					console.log(currentItem.eq(i))
 					var titleIndex = currentItem.find('[data-title-index="' + i + '"]');
 					$('[data-slide-index="' + i + '"]').html(titleIndex.text());
 					$('[data-slide-index="' + i + '"]').attr('data-ajax-url', currentItem.eq(i).data('ajax-url'))
