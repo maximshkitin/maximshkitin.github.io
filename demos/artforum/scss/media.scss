@@ -222,12 +222,11 @@
 		height: auto;
 	}
 	.map-info-box {
-		display: none;
+		position: relative;
 		padding: 25px 15px;
 		text-align: center;
 		top: auto;
-		bottom: 15px;
-		width: 50%;
+		width: 100%;
 		.social-list {
 			display: inline-block;
 		}
@@ -301,9 +300,6 @@
 }
 
 @media only screen and (max-width: 599px) {
-	.map-info-box {
-		display: none;
-	}
 	.news-content-img {
 		float: none!important;
 		text-align: center;
