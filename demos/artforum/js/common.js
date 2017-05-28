@@ -159,7 +159,7 @@ $(document).ready(function(){
 									$('.pii-wrapper.active').removeClass('active');
 									$('#project-item-' + i).fadeIn(delay).addClass('active');
 									$('.aside-wrapper .project-title').html(linkText).fadeIn(delay);
-								},delay);
+								},delay + 50);
 
 
 								$('.pii-heading:not(".no-click")').click(function(){
@@ -186,7 +186,7 @@ $(document).ready(function(){
 								$('.pii-wrapper.active').removeClass('active');
 								$('#project-item-' + i).fadeIn(delay).addClass('active');
 								$('.aside-wrapper .project-title').html(linkText).fadeIn(delay);
-							},delay);
+							},delay + 50);
 						}
 
 					}
