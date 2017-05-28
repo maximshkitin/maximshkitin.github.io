@@ -75,7 +75,7 @@ $(document).ready(function(){
 				// upload new content
 
 				var newEl = '<div class="tab-content" id="tab-content-' + i + '"></div>';
-				$('#tab-content-1'.after(function(){
+				$('#tab-content-1').after(function(){
 					return newEl;
 				});
 				$('#tab-content-' + i).load('ajax/tab-' + i + '.html', function(){
