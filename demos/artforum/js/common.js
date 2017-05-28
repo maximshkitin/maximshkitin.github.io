@@ -136,6 +136,61 @@ $(document).ready(function(){
 	if ($('.slider-ajax').length) {
 		var ajaxSlider = $('.slider-ajax').bxSlider({
 			onSliderLoad: function(){
+				$('.slider-ajax-container .bx-pager-link').click(function(){
+					var i = $(this).data('slide-index') + 1;
+					var linkText = $(this).text()
+					if (!$(this).hasClass('active')) {
+
+						var delay = 400
+
+						if (!$('#project-item-' + i).length) {
+
+							// upload new content
+
+							var newEl = '<div class="pii-wrapper" id="project-item-' + i + '"></div>';
+							$('#project-item-1').after(function(){
+								return newEl;
+							});
+							$('#project-item-' + i).load('ajax/project-' + i + '.html', function(){
+
+								$('.pii-wrapper.active').fadeOut(delay);
+								$('.aside-wrapper .project-title').fadeOut(delay);
+								setTimeout(function(){
+									$('.pii-wrapper.active').removeClass('active');
+									$('#project-item-' + i).fadeIn(delay).addClass('active');
+									$('.aside-wrapper .project-title').html(linkText).fadeIn(delay);
+								},delay);
+
+
+								$('.pii-heading:not(".no-click")').click(function(){
+									var item = $(this).closest('.project-info-item');
+									item.find('.pii-content').slideToggle(300);
+									item.toggleClass('active');
+									if (!item.hasClass('active')) {
+										item.find('.pii-show-status').html('+');
+									}
+									else {
+										item.find('.pii-show-status').html('–');
+									}
+								});
+							});
+
+						}
+						else {
+
+							// show existed content
+
+							$('.pii-wrapper.active').fadeOut(delay);
+							$('.aside-wrapper .project-title').fadeOut(delay);
+							setTimeout(function(){
+								$('.pii-wrapper.active').removeClass('active');
+								$('#project-item-' + i).fadeIn(delay).addClass('active');
+								$('.aside-wrapper .project-title').html(linkText).fadeIn(delay);
+							},delay);
+						}
+
+					}
+				});
 				var titles = $('.project-slider-title');
 
 				var arrIndex = []
@@ -233,61 +288,5 @@ $(document).ready(function(){
 
 
 	// slider ajax
-
-	$('.slider-ajax-container .bx-pager-link').click(function(){
-		var i = $(this).data('slide-index') + 1;
-		var linkText = $(this).text()
-		if (!$(this).hasClass('active')) {
-
-			var delay = 400
-
-			if (!$('#project-item-' + i).length) {
-
-				// upload new content
-
-				var newEl = '<div class="pii-wrapper" id="project-item-' + i + '"></div>';
-				$('#project-item-1').after(function(){
-					return newEl;
-				});
-				$('#project-item-' + i).load('ajax/project-' + i + '.html', function(){
-
-					$('.pii-wrapper.active').fadeOut(delay);
-					$('.aside-wrapper .project-title').fadeOut(delay);
-					setTimeout(function(){
-						$('.pii-wrapper.active').removeClass('active');
-						$('#project-item-' + i).fadeIn(delay).addClass('active');
-						$('.aside-wrapper .project-title').html(linkText).fadeIn(delay);
-					},delay);
-
-
-					$('.pii-heading:not(".no-click")').click(function(){
-						var item = $(this).closest('.project-info-item');
-						item.find('.pii-content').slideToggle(300);
-						item.toggleClass('active');
-						if (!item.hasClass('active')) {
-							item.find('.pii-show-status').html('+');
-						}
-						else {
-							item.find('.pii-show-status').html('–');
-						}
-					});
-				});
-
-			}
-			else {
-
-				// show existed content
-
-				$('.pii-wrapper.active').fadeOut(delay);
-				$('.aside-wrapper .project-title').fadeOut(delay);
-				setTimeout(function(){
-					$('.pii-wrapper.active').removeClass('active');
-					$('#project-item-' + i).fadeIn(delay).addClass('active');
-					$('.aside-wrapper .project-title').html(linkText).fadeIn(delay);
-				},delay);
-			}
-
-		}
-	});
 
 });
