@@ -35,9 +35,33 @@ function closePopUp() {
 	$('.pop-up').remove();
 }
 
-function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
+function checkForms(fields) {
+	var flag = true;
+	fields.map(function(i, val){
+		if ($(val).attr('type') == 'email') {
+			var reg = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i;
+			var email = $(val).val();
+			if (!reg.test(email)) {
+				flag = false;
+				$(val).css('border-color', 'red');
+			}
+			else {
+				$(val).css('border-color', '#ccc');
+			}
+		}
+		else {
+			if ($(val).val() == '') {
+				flag = false;
+				$(val).css('border-color', 'red');
+			}
+			else {
+				$(val).css('border-color', '#ccc');
+			}
+		}
+		
+	});
+	if (flag) return true;
+	else return false;
 }
 
 
@@ -119,7 +143,7 @@ $(document).ready(function(){
 
 	$('.validate-form').submit(function(){
 		var itemsToCheck = $(this).find('.text-field');
-		if(isEmpty(itemsToCheck) || validateEmail(email)) 
+		if(!checkForms(itemsToCheck)) 
 			return false
 	});
 
