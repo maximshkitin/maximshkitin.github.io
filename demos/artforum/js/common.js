@@ -86,6 +86,19 @@ $(document).ready(function(){
 		$('.mobile-navigation').slideToggle(400);
 	});
 
+	$('#main-arrow-down').click(function(){
+		var delay = 800
+		console.log('4')
+		var isSafari = /safari/.test(navigator.userAgent.toLowerCase());
+		if (isSafari) {
+	 		$('body').animate({ scrollTop: $('#main-banner').height() }, delay);
+		} 
+	    else {
+	     	$('html').animate({ scrollTop: $('#main-banner').height() }, delay);
+	    }
+		return false;
+	});
+
 	// tabs
 
 	$('.tab').click(function(){
