@@ -17,7 +17,7 @@ var marker = new google.maps.Marker({
 
 function drawPopUp(el) {
 	$.ajax({
-       url: "components/pop-up.php",
+       url: "components/pop-up.html",
        type: "POST",
        success: function(data) {
        		$('footer').after(data);

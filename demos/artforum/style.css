@@ -2151,6 +2151,8 @@ address {
     .g-small-box .gallery-item {
       width: 50%;
       float: left; }
+  .pop-up-container {
+    width: 90%; }
   .stn-gallery .post-category-list,
   .stn-gallery .stn-heading,
   .stn-heading,
