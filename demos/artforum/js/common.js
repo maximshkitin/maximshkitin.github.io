@@ -160,6 +160,16 @@ $(document).ready(function(){
 			return false
 	});
 
+	$('#data-accept').change(function(){
+		if ($(this).is(':checked')) {
+			$(this).closest('.validate-checkbox')
+			.find('.input-style.submit').removeClass('prevent-click')
+		}
+		else
+			$(this).closest('.validate-checkbox')
+			.find('.input-style.submit').addClass('prevent-click')
+	});
+
 
 	// slider
 

@@ -1281,6 +1281,9 @@ h1, h2, h3, h4, h5, h6 {
     opacity: .9; }
     .input-style.submit:hover {
       opacity: 1; }
+  .input-style.prevent-click {
+    background-color: #ccc;
+    pointer-events: none; }
 
 .text-field:focus {
   border: 1px solid #516b89; }
