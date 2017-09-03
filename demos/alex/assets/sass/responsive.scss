@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1199px) {
+	.input-wrapper {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 12px;
+	}
+	.text-box {
+		width: 100%;
+		margin: 0;
+	}
+}

@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="assets/style.css">
 	<style type="text/css">
 	   
 	</style>
 
 	<title>Google Maps JavaScript API v3 Example: Places Autocomplete</title>
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places" type="text/javascript"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBzdT5vjvSDamqlCc0fObbKatsA953QTmY&sensor=false&amp;libraries=places" type="text/javascript"></script>
 	<script type="text/javascript">
 
 	   function initialize() {
@@ -33,58 +35,56 @@
 			</a>
 		</div>
 	</header>
-   <div>
-   	<section class="stn">
-   		<div class="container">
-   			<div class="tabs">
-   				<ul class="clearfix">
-   					<li class="tab-item">
-   						<a class="active" href="#" data-tab-name="jobs">
-   							Jobs
-   						</a>
-   					</li>
-   					<li class="tab-item">
-   						<a href="#" data-tab-name="talent">
-   							Talent
-   						</a>
-   					</li>
-   				</ul>
-   			</div>
-   			<div class="form-container">
-   				<div class="form-wrapper form-wrapper-jobs" style="display: block;">
-   					<form action="">
-   						<div class="input-wrapper">
-   							<span></span>
-   							<input type="text" placeholder="Keyword" class="text-box autocomplete">
-   						</div>
-   						<div class="input-wrapper">
-   							<span class="map-marker"></span>
-   							<input type="text" class="text-box" id="search-google-api" type="text"  placeholder="Location" autocomplete="on">
-   						</div>
-	   					<button type="submit" class="btn ct-btn--o btn-default">
-							<span>Search</span>
-	   					</button>
-	   				</form>
-   				</div>
-   				<div class="form-wrapper form-wrapper-talent">
-   					<form action="">
-	   					<div class="input-wrapper">
-   							<span></span>
-   							<input type="text" placeholder="Keyword" class="text-box autocomplete">
-   						</div>
-   						<div class="input-wrapper">
-   							<span class="map-marker"></span>
-   							<input type="text" class="text-box" id="search-google-api-2" type="text"  placeholder="Location" autocomplete="on">
-   						</div>
-	   					<button type="submit" class="btn ct-btn--o btn-default">
-							<span>Search</span>
-	   					</button>
-	   				</form>
-   				</div>
-   			</div>
-   		</div>
-   	</section>
-   </div>
+	<section class="stn">
+		<div class="container">
+			<div class="tabs">
+				<ul class="clearfix">
+					<li class="tab-item">
+						<a class="active" href="#" data-tab-name="jobs">
+							Jobs
+						</a>
+					</li>
+					<li class="tab-item">
+						<a href="#" data-tab-name="talent">
+							Talent
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="form-container">
+				<div class="form-wrapper form-wrapper-jobs" style="display: block;">
+					<form action="">
+						<div class="input-wrapper">
+							<span></span>
+							<input type="text" placeholder="Keyword" class="text-box autocomplete" required>
+						</div>
+						<div class="input-wrapper">
+							<span class="map-marker"></span>
+							<input type="text" class="text-box" id="search-google-api" type="text"  placeholder="Location" autocomplete="on" required>
+						</div>
+   					<button type="submit" class="btn ct-btn--o btn-default">
+						<span>Search</span>
+   					</button>
+   				</form>
+				</div>
+				<div class="form-wrapper form-wrapper-talent">
+					<form action="">
+   					<div class="input-wrapper">
+							<span></span>
+							<input type="text" placeholder="Keyword" class="text-box autocomplete" required>
+						</div>
+						<div class="input-wrapper">
+							<span class="map-marker"></span>
+							<input type="text" class="text-box" id="search-google-api-2" type="text"  placeholder="Location" autocomplete="on" required>
+						</div>
+   					<button type="submit" class="btn ct-btn--o btn-default">
+						<span>Search</span>
+   					</button>
+   				</form>
+				</div>
+			</div>
+		</div>
+	</section>
    <script src="assets/js/jquery.min.js"></script>
    <script src="assets/js/jquery-ui.min.js"></script>
    <script src="assets/js/common.js"></script>

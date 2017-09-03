@@ -1098,3 +1098,24 @@ body {
 .btn span {
   position: relative;
   z-index: 3; }
+
+.ui-autocomplete {
+  padding: 5px 10px; }
+
+.ui-menu-item {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .ui-menu-item:not(:last-child) {
+    border-bottom: 1px solid #ccc; }
+
+@media only screen and (max-width: 1199px) {
+  .input-wrapper {
+    display: block;
+    margin-bottom: 10px; } }
+
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 12px; }
+  .text-box {
+    width: 100%;
+    margin: 0; } }

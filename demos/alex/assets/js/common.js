@@ -2,10 +2,13 @@ $(document).ready(function() {
 
 
 	$.getJSON("assets/data.json", function(result){
-        // $.each(result, function(i, field){
-        //     $("div").append(field + " ");
-        // });
-        console.log(result);
+        var arr = [];
+
+        result.data.forEach(function(val){
+        	arr.push(val.keyword);
+        });
+        
+        initAutocomplete(arr);
     });
 
 
