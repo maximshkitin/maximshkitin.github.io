@@ -31,7 +31,8 @@ $(document).ready(function() {
 
 	function initAutocomplete(arr) {
 		$( ".autocomplete" ).autocomplete({
-	      source: arr
+	      source: arr,
+	      delay: 100
 	    });
 	}
 
