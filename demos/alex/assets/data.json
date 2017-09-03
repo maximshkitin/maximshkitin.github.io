@@ -1,0 +1,45 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"keyword": "Kickboxing"
+		},
+		{
+			"id": 2,
+			"keyword": "Boxing"
+		},
+		{
+			"id": 3,
+			"keyword": "Judo"
+		},
+		{
+			"id": 4,
+			"keyword": "Muay Thai"
+		},
+		{
+			"id": 5,
+			"keyword": "Jiu-jitsu"
+		},
+		{
+			"id": 6,
+			"keyword": "Wrestling"
+		},
+		{
+			"id": 7,
+			"keyword": "Sambo"
+		},
+		{
+			"id": 8,
+			"keyword": "Karate"
+		},
+		{
+			"id": 9,
+			"keyword": "Kendo"
+		},
+		{
+			"id": 10,
+			"keyword": "MMA"
+		}
+
+	]
+}
